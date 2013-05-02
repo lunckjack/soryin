@@ -29,7 +29,7 @@
 	3、view_time.js       时间
 	
 	4、view_location.js   地点
-	 
+	
 	5、view_organize.js   组织
 	
 	6、view_activitys.js  小活动
