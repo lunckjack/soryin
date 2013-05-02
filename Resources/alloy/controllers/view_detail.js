@@ -4,11 +4,11 @@ function Controller() {
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
-    $.__views.qs2 = Ti.UI.createView({
+    $.__views.view_detail = Ti.UI.createView({
         backgroundColor: "white",
-        id: "qs2"
+        id: "view_detail"
     });
-    $.__views.qs2 && $.addTopLevelView($.__views.qs2);
+    $.__views.view_detail && $.addTopLevelView($.__views.view_detail);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

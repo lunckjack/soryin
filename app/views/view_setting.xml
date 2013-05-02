@@ -1,4 +1,25 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<ScrollView id="scrollView" showVerticalScrollIndicator="true"
+		showHorizontalScrollIndicator="true">
+		<View layout="vertical">
+			<Label text="登录" class="lab_title" />
+			<TableView id='table1' separatorColor="#cecece" height="100dp">
+				<TableViewRow>
+					<Label>done.....</Label>
+				</TableViewRow>
+			</TableView>
+			<Label text="向导" class="lab_title" />
+			<TableView id='table2' separatorColor="#cecece" height="100dp">
+				<TableViewRow>
+					<Label>done.....</Label>
+				</TableViewRow>
+			</TableView>
+			<Label text="其他" class="lab_title" />
+			<TableView id='table3' separatorColor="#cecece" height="100dp">
+				<TableViewRow>
+					<Label>done.....</Label>
+				</TableViewRow>
+			</TableView>
+		</View>
+	</ScrollView>
 </Alloy>

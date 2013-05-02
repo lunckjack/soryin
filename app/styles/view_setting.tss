@@ -1,3 +1,12 @@
 ".container": {
-	backgroundColor: "white"
-}
+	backgroundColor:'#f2f2f2'
+},
+'.lab_title':{
+	font : {
+			fontSize : '24',
+			fontFamily : 'HiraginoSansGB-W3',
+	},
+	textAlign:"right",
+	right : 10,
+	top:20
+ }

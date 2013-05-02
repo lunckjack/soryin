@@ -2,62 +2,66 @@
 	<Window class="container">
 		<ScrollableView id="scrollable" scrollingEnabled="false">
 			<View layout="vertical">
-				<View layout="horizontal" id="viewTop">
-					<View layout="vertical" id="view_myself">
-						<Label id="lab_myself" class="eventFontMySelf" />
-						<Label id="label1" text="我" class="conditionlabelSelf" />
+
+				<!-- 头部 -->
+				<View id="viewTop">
+					<View id="view_left">
+						<Label id="icon_me" class="iconFont" />
+						<Label text="我" class="lab_me" />
 					</View>
-					<View layout="vertical" id="view_addPage">
-						<View id="defView" layout="vertical">
-							<Label id="lab_addPage" class="eventFontAddPage" />
-							<Label id="label1" text="添加封面" />
-						</View>
+					<View id="view_right">
+						<Label id="icon_cover" class="iconFont" />
+						<Label text="添加封面" class="lab_cover" />
 					</View>
 				</View>
-				<View id="viewFun" />
+
+				<!-- 内容 -->
 				<ScrollView id="scrollView"
 					showHorizontalScrollIndifcator="true" showVerticalScrollIndicator="true"
 					layout="vertical">
-					<View layout="vertical" id="viewContent">
-						<View layout="horizontal" height="110">
-							<View id="vv1" layout="horizontal">
-								<Label class="eventFontExpressence" id="experienceIcon"></Label>
-								<View layout="vertical" left="5">
-									<Label class="conditionnumExpress">36</Label>
-									<Label class="conditionlabel1">经验</Label>
-								</View>
-							</View>
-							<View id="vv2" layout="horizontal"x>
-								<Label class="eventFontJibie" id="levelIcon"></Label>
-								<View layout="vertical" >
-									<Label class="conditionnumJibie">1</Label>
-									<Label class="conditionlabel1">级别</Label>
-								</View>
+
+					<View id="viewContent">
+						<!-- 经验 级别 -->
+						<View id="view_express" class="view_fontL">
+							<Label class="iconFont" id="icon_express"></Label>
+							<View class="view_lab">
+								<Label class="fontNum" id="expressNum">36</Label>
+								<Label id="lab_express">经验</Label>
 							</View>
 						</View>
-						<View layout="horizontal" height="110">
-							<View id="vv3" layout="horizontal">
-								<Label class="eventFontAttention" id="attentionIcon"></Label>
-								<View layout="vertical">
-									<Label class="conditionnumAttention">5</Label>
-									<Label class="conditionlabel1">关注</Label>
-								</View>
+
+						<View id="view_level" class="view_fontR">
+							<Label class="iconFont" id="icon_level"></Label>
+							<View class="view_lab">
+								<Label class="fontNum" id="levelNum">1</Label>
+								<Label id="lab_level">级别</Label>
 							</View>
+						</View>
+						<!-- 关注 -->
+						<View id="view_attention" class="view_fontB">
+							<Label class="iconFont" id="icon_attention"></Label>
+							<View class="view_lab">
+								<Label class="fontNum" id="attentionNum">5</Label>
+								<Label id="lab_attention">关注</Label>
+							</View>
+
 						</View>
 					</View>
-					<View layout="horizontal" id="viewBoottom">
-						<View id="vv4" layout="horizontal">
-							<Label class="eventFontFamily" id="likeIcon"></Label>
-							<View layout="vertical">
-								<Label class="conditionnum1">0%</Label>
-								<Label class="conditionlabel1">喜好</Label>
+
+					<!-- 底部 -->
+					<View id="viewBoottom">
+						<View id="view_like" class="view_fontL">
+							<Label class="iconFont" id="icon_like"></Label>
+							<View class="view_lab">
+								<Label class="fontNum" id="likePercent">0%</Label>
+								<Label id="lab_like">喜好</Label>
 							</View>
 						</View>
-						<View id="vv5" layout="horizontal">
-							<Label class="eventFontFamily" id="bodyIcon"></Label>
-							<View layout="vertical">
-								<Label class="conditionnum1">0%</Label>
-								<Label class="conditionlabel1">身体</Label>
+						<View id="view_body" class="view_fontR">
+							<Label class="iconFont" id="icon_body"></Label>
+							<View class="view_lab">
+								<Label class="fontNum" id="bodyPercent">0%</Label>
+								<Label id="lab_body">身体</Label>
 							</View>
 						</View>
 					</View>
@@ -65,7 +69,7 @@
 			</View>
 			<View>
 				<View id="content"></View>
-				<ImageView id="backBtn"></ImageView>
+				<Label id="backBtn" />
 			</View>
 		</ScrollableView>
 	</Window>

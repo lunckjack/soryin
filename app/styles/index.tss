@@ -1,210 +1,108 @@
-'.container':{
+".container": { 
 	backgroundColor:'#f2f2f2',
-	top:0
-},
-'#view_Function':{
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE
-}
-'#view_myself':{
-	width:'110',
-	height:'110',
-	backgroundColor:'#F39C12'
 },
 //顶部
-'#viewTop':{
-	width:Titanium.UI.FILL,
+'#viewTop': { 
 	height:'110',
-}
-// 中部
-'#viewContent':{
 	width:Titanium.UI.FILL,
+},
+'#viewContent': { 
 	height:'200',
-	backgroundColor:'#ffffff',
-	borderRadius:'10',
-	borderWidth:'2',
-	borderColor:'#f2f2f2',
-	top:10,
-	left:10,
-	right:10,
-	bottom:10
-},
-//底部
-'#viewBoottom':{
 	width:Titanium.UI.FILL,
-	height:'110',
-	backgroundColor:'#ffffff',
+	backgroundColor:'#fff',
 	borderRadius:'10',
-	borderWidth:'2',
+	borderWidth:'1',
 	borderColor:'#f2f2f2',
-	left:10,
-	right:10,
-	bottom:10
-},
-'#view_addPage':{
-	width:Titanium.UI.FILL,
-	height:'110',
-	backgroundColor:'#ffffff'
-},
-'#defView':{
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE,
+	top:'10',
+	left:'10',
+	right:'10'
 }
-'#vv1':{
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE,
-	top:10
+,
+'#viewBoottom': { 
+	height:'100',
+	width:Titanium.UI.FILL,
+	backgroundColor:'#fff',
+	borderRadius:'10',
+	borderWidth:'1',
+	borderColor:'#f2f2f2',
+	top:'10',
+	left:'10',
+	right:'10'
 },
-'#vv2':{
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE,
-	top:10
+'#view_left': { 
+	height:'110',
+	layout:"vertical",
+	width:'110',
+	backgroundColor:'#F39C12',
+	left:0
 },
-'#vv3':{
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE,
-	top:10
+'#view_right': { 
+	height:'110',
+	layout:"vertical",
+	backgroundColor:'#fff',
+	right:0
 },
-'#vv4':{
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE,
-	top:10,
-	right:'5dp'
+//iconFont
+'.iconFont':{
+	font:{
+		fontSize:'60',
+	    fontFamily : 'soryin'
+ },
+	top:0
 },
-'#vv5':{
-	width:'140dp',
-	height:'110dp',
+'#backBtn':{
+	font:{
+		fontSize:'70',
+	    fontFamily : 'soryin',
+ },
+ bottom:0,
+ left:0,
+ color:'#f2f2f2',
+  opacity:'0.5'
 },
-'.conditionlabelSelf':{
+'.lab_me':{
 	font:{
 		fontSize:'30',
 	    fontFamily : 'HiraginoSansGB-W3',
 	    fontWeight:'bold'
-   },
-   color:'#ffffff'
-}
-'.conditionlabel1':{
-	font:{
-		fontSize:'15',
-	    fontFamily : 'HiraginoSansGB-W3',
-	    fontWeight:'bold'
-   }
-},
-'.conditionnum1':{
-	color:'#fbaf0a',
-	top:'20dp',
-	font:{
-		fontSize:'36dp',
-	    fontFamily : 'Orbitron'
-    }
-},
-'.conditionnumExpress':{
-	color:'#28aaff',
+  },
+  color:'#fff'
+}, 
+'.lab_cover':{
+  color:'#ccc'
+}, 
+'.fontNum':{
 	font:{
 		fontSize:'35',
-	    fontFamily : 'Orbitron'
-    }	
-},
-'.conditionnumJibie':{
-	color:'#28aaff',
-	font:{
-		fontSize:'36dp',
-	    fontFamily : 'Orbitron'
-	   }
- },
- '.conditionnumAttention':{
-	color:'#ed1e79',
-	top:'20dp',
-	font:{
-		fontSize:'36dp',
-	    fontFamily : 'Orbitron'
-	  }
- },
-'.eventFontExpressence':{
-	color:'#28aaff',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
-	top:0
-},
-'.eventFontJibie':{
-	color:'#28aaff',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
- top:0
-},'.eventFontPublish':{
-	color:'#fbb03b',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
-
-},
-'.eventFontScan':{
-	color:'#fbb03b',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
-
-},
-'.eventFontJibie':{
-	color:'#28aaff',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
-
- },
- '.eventFontAttention':{
-	color:'#ed1e79',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
- 
-},
-'.eventFontFamily':{
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
-	  },
-	 
- },
- '.eventFontMySelf':{
- 	color:'#ffffff',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
-	  }
+		fontFamily : 'Orbitron'
   },
- '.eventFontAddPage':{
- 	color:'#cccccc',
-	font:{
-		fontSize:'60',
-	    fontFamily : 'soryin'
- },
-
+  color:'#ccc'
 },
-'#backBtn':{
-	image:'/imgs/utility/back.png',
-	borderWidth:0,
-	backgroundColor:'transparent',
-	width:'70dp',
-	height:'70dp',
-	bottom:0,
-	left:0
+'.view_fontL': { 
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout:"horizontal",
+	left:10,
+	top:10
 },
-'#viewFun':{
-	width:Titanium.UI.FILL,
-	height:Titanium.UI.SIZE
+'.view_fontR': { 
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout:"horizontal",
+	top:10,
+	right:10
 },
-'#scrollView':{
-	width:Titanium.UI.FILL,
-	height:Titanium.UI.FILL,
-	
-
+'.view_fontB': { 
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout:"horizontal",
+	left:10,
+	bottom:0
+},
+'.view_lab': { 
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout:"vertical",
+	left:5,
+	bottom:10
 }
