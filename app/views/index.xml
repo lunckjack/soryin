@@ -1,5 +1,72 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<ScrollableView id="scrollable" scrollingEnabled="false">
+			<View layout="vertical">
+				<View layout="horizontal" id="viewTop">
+					<View layout="vertical" id="view_myself">
+						<Label id="lab_myself" class="eventFontMySelf" />
+						<Label id="label1" text="我" class="conditionlabelSelf" />
+					</View>
+					<View layout="vertical" id="view_addPage">
+						<View id="defView" layout="vertical">
+							<Label id="lab_addPage" class="eventFontAddPage" />
+							<Label id="label1" text="添加封面" />
+						</View>
+					</View>
+				</View>
+				<View id="viewFun" />
+				<ScrollView id="scrollView"
+					showHorizontalScrollIndifcator="true" showVerticalScrollIndicator="true"
+					layout="vertical">
+					<View layout="vertical" id="viewContent">
+						<View layout="horizontal" height="110">
+							<View id="vv1" layout="horizontal">
+								<Label class="eventFontExpressence" id="experienceIcon"></Label>
+								<View layout="vertical" left="5">
+									<Label class="conditionnumExpress">36</Label>
+									<Label class="conditionlabel1">经验</Label>
+								</View>
+							</View>
+							<View id="vv2" layout="horizontal"x>
+								<Label class="eventFontJibie" id="levelIcon"></Label>
+								<View layout="vertical" >
+									<Label class="conditionnumJibie">1</Label>
+									<Label class="conditionlabel1">级别</Label>
+								</View>
+							</View>
+						</View>
+						<View layout="horizontal" height="110">
+							<View id="vv3" layout="horizontal">
+								<Label class="eventFontAttention" id="attentionIcon"></Label>
+								<View layout="vertical">
+									<Label class="conditionnumAttention">5</Label>
+									<Label class="conditionlabel1">关注</Label>
+								</View>
+							</View>
+						</View>
+					</View>
+					<View layout="horizontal" id="viewBoottom">
+						<View id="vv4" layout="horizontal">
+							<Label class="eventFontFamily" id="likeIcon"></Label>
+							<View layout="vertical">
+								<Label class="conditionnum1">0%</Label>
+								<Label class="conditionlabel1">喜好</Label>
+							</View>
+						</View>
+						<View id="vv5" layout="horizontal">
+							<Label class="eventFontFamily" id="bodyIcon"></Label>
+							<View layout="vertical">
+								<Label class="conditionnum1">0%</Label>
+								<Label class="conditionlabel1">身体</Label>
+							</View>
+						</View>
+					</View>
+				</ScrollView>
+			</View>
+			<View>
+				<View id="content"></View>
+				<ImageView id="backBtn"></ImageView>
+			</View>
+		</ScrollableView>
 	</Window>
 </Alloy>

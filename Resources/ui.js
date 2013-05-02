@@ -149,9 +149,9 @@ function StatusRow(status) {
 var _ = require("alloy/underscore"), Backbone = require("alloy/backbone");
 
 exports.alert = function(titleid, textid) {
-    Ti.UI.createNotification({
-        message: L(textid),
-        duration: Ti.UI.NOTIFICATION_DURATION_LONG
+    Ti.UI.createAlertDialog({
+        title: L(titleid),
+        message: L(textid)
     }).show();
 };
 
