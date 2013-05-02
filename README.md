@@ -2,7 +2,7 @@
 ======
 1)base 部分界面
 ======
-	1、view_main.js 	   主界面
+	1、view_main.js     主界面
 	
 	2、view_setting.js  设置
 	
@@ -26,7 +26,7 @@
 	
 	2、view_detail.js     描述&图片
 	
-	3、view_time.js	      时间
+	3、view_time.js       时间
 	
 	4、view_location.js   地点
 	 
@@ -34,6 +34,6 @@
 	
 	6、view_activitys.js  小活动
 	
-	7、view_person.js 	  人物
+	7、view_person.js     人物
 	
 	8、view_conditon.js   条件、步骤、限制
