@@ -1,21 +1,20 @@
 <Alloy>
-	<ScrollView id="scrollView" showVerticalScrollIndicator="true"
-		showHorizontalScrollIndicator="true">
-		<View layout="vertical">
+	<ScrollView id="scrollView" showVerticalScrollIndicator="true">
+		<View id="setView">
 			<Label text="登录" class="lab_title" />
-			<TableView id='table1' separatorColor="#cecece" height="100dp">
+			<TableView id='table1' scrollable="false">
 				<TableViewRow>
 					<Label>done.....</Label>
 				</TableViewRow>
 			</TableView>
 			<Label text="向导" class="lab_title" />
-			<TableView id='table2' separatorColor="#cecece" height="100dp">
+			<TableView id='table2' height="100" scrollable="false">
 				<TableViewRow>
 					<Label>done.....</Label>
 				</TableViewRow>
 			</TableView>
 			<Label text="其他" class="lab_title" />
-			<TableView id='table3' separatorColor="#cecece" height="100dp">
+			<TableView id='table3' height="50" scrollable="false">
 				<TableViewRow>
 					<Label>done.....</Label>
 				</TableViewRow>

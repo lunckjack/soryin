@@ -16,6 +16,19 @@ $.view_left.addEventListener('click', function() {
 	$.content.add(curview);
 	$.scrollable.scrollToView(1);
 });
+
+// 经验、记录总数
+$.view_express.addEventListener('click', function() {
+	var recordView = Alloy.createController('view_record').getView();
+
+	if (curview != "") {
+		$.content.remove(curview);
+	}
+	curview = recordView;
+	$.content.add(curview);
+	$.scrollable.scrollToView(1);
+});
+
 // 返回
 $.backBtn.addEventListener('click', function() {
 	$.scrollable.scrollToView(0);

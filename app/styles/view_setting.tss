@@ -9,4 +9,15 @@
 	textAlign:"right",
 	right : 10,
 	top:20
- }
+},
+'#table1':{
+	width:Titanium.UI.FILL,
+	height:100,
+	separatorStyle:Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+},
+'#setView':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout:'vertical'
+},
+

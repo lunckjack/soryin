@@ -1,0 +1,30 @@
+<Alloy>
+	<View id="filterView">
+		<Picker id="picker" selectionIndicator="true" useSpinner="true">
+			<PickerColumn id="column1">
+				<!-- On iOS, views can be added to picker rows -->
+				<PickerRow>
+					<Label class="likep">字母</Label>
+				</PickerRow>
+				<PickerRow>
+					<Label class="likep">时间
+					</Label>
+				</PickerRow>
+				<PickerRow>
+					<Label class="likep">类别</Label>
+				</PickerRow>
+
+			</PickerColumn>
+
+			<!-- Picker shorthand notation -->
+			<Column id="column2">
+				<Row>
+					<Label class="likep">全部</Label>
+				</Row>
+				<Row>
+					<Label class="likep">喜欢</Label>
+				</Row>
+			</Column>
+		</Picker>
+	</View>
+</Alloy>

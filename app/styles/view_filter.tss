@@ -1,0 +1,16 @@
+"#filterView": { 
+	height:214,
+	backgroundColor:'black',
+	left:0,
+	bottom:-214
+},
+'#picker':{
+	top:0
+},
+'.likep':{
+	font:{
+		fontSize:24
+	},
+	 textAlign:"center",
+	 width:126
+}

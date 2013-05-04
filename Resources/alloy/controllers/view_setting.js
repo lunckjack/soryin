@@ -1,40 +1,38 @@
 function Controller() {
-    function createSetingView(dataConditionArray, rowTextArray) {
-        for (i = 0; dataConditionArray.length > i; i++) {
+    function createSetingView(dataArray, rowArray, tableDatas) {
+        for (i = 0; dataArray.length > i; i++) {
             var row = Ti.UI.createTableViewRow({
                 height: "50",
                 selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.GRAY
             });
             row.isOpen = false;
+            var line = Ti.UI.createView({
+                height: "50",
+                left: "70",
+                width: "1dp",
+                backgroundColor: "#cecece"
+            });
+            var icon = Ti.UI.createLabel({
+                text: entypo.fromCodePoint(rowArray[i]),
+                left: 20,
+                font: {
+                    fontSize: "30",
+                    fontFamily: "soryin"
+                }
+            });
             var title = Ti.UI.createLabel({
                 font: {
                     fontSize: "25",
                     fontFamily: "HiraginoSansGB-W3"
                 },
-                text: dataConditionArray[i],
-                textAlign: "center",
-                width: "200dp",
-                left: "50dp"
-            });
-            var line = Ti.UI.createView({
-                height: "50",
-                left: "69.5dp",
-                width: "1dp",
-                backgroundColor: "#cecece"
-            });
-            var icon = Ti.UI.createLabel({
-                text: entypo.fromCodePoint(rowTextArray[i]),
-                left: "5dp",
-                textAlign: "center",
-                font: {
-                    fontSize: "30",
-                    fontFamily: "soryin"
-                },
-                color: "#000"
+                text: dataArray[i],
+                left: 80,
+                top: 10,
+                textAlign: "center"
             });
             var arrow = Ti.UI.createLabel({
                 text: entypo.fromCodePoint("0xf3c9"),
-                right: "10dp",
+                right: 10,
                 font: {
                     fontSize: "20",
                     fontFamily: "soryin"
@@ -45,7 +43,7 @@ function Controller() {
             row.add(title);
             row.add(arrow);
             row.arrow = arrow;
-            tableData[i] = row;
+            tableDatas[i] = row;
         }
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
@@ -55,16 +53,17 @@ function Controller() {
     var exports = {};
     $.__views.scrollView = Ti.UI.createScrollView({
         id: "scrollView",
-        showVerticalScrollIndicator: "true",
-        showHorizontalScrollIndicator: "true"
+        showVerticalScrollIndicator: "true"
     });
     $.__views.scrollView && $.addTopLevelView($.__views.scrollView);
-    $.__views.__alloyId33 = Ti.UI.createView({
+    $.__views.setView = Ti.UI.createView({
+        width: Titanium.UI.FILL,
+        height: Titanium.UI.FILL,
         layout: "vertical",
-        id: "__alloyId33"
+        id: "setView"
     });
-    $.__views.scrollView.add($.__views.__alloyId33);
-    $.__views.__alloyId34 = Ti.UI.createLabel({
+    $.__views.scrollView.add($.__views.setView);
+    $.__views.__alloyId49 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -73,27 +72,29 @@ function Controller() {
         right: 10,
         top: 20,
         text: "登录",
-        id: "__alloyId34"
+        id: "__alloyId49"
     });
-    $.__views.__alloyId33.add($.__views.__alloyId34);
-    $.__views.__alloyId35 = Ti.UI.createTableViewRow({
-        id: "__alloyId35"
+    $.__views.setView.add($.__views.__alloyId49);
+    $.__views.__alloyId50 = Ti.UI.createTableViewRow({
+        id: "__alloyId50"
     });
-    var __alloyId36 = [];
-    __alloyId36.push($.__views.__alloyId35);
-    $.__views.__alloyId37 = Ti.UI.createLabel({
+    var __alloyId51 = [];
+    __alloyId51.push($.__views.__alloyId50);
+    $.__views.__alloyId52 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId37"
+        id: "__alloyId52"
     });
-    $.__views.__alloyId35.add($.__views.__alloyId37);
+    $.__views.__alloyId50.add($.__views.__alloyId52);
     $.__views.table1 = Ti.UI.createTableView({
-        data: __alloyId36,
+        width: Titanium.UI.FILL,
+        height: 100,
+        separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
+        data: __alloyId51,
         id: "table1",
-        separatorColor: "#cecece",
-        height: "100dp"
+        scrollable: "false"
     });
-    $.__views.__alloyId33.add($.__views.table1);
-    $.__views.__alloyId38 = Ti.UI.createLabel({
+    $.__views.setView.add($.__views.table1);
+    $.__views.__alloyId53 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -102,27 +103,27 @@ function Controller() {
         right: 10,
         top: 20,
         text: "向导",
-        id: "__alloyId38"
+        id: "__alloyId53"
     });
-    $.__views.__alloyId33.add($.__views.__alloyId38);
-    $.__views.__alloyId39 = Ti.UI.createTableViewRow({
-        id: "__alloyId39"
+    $.__views.setView.add($.__views.__alloyId53);
+    $.__views.__alloyId54 = Ti.UI.createTableViewRow({
+        id: "__alloyId54"
     });
-    var __alloyId40 = [];
-    __alloyId40.push($.__views.__alloyId39);
-    $.__views.__alloyId41 = Ti.UI.createLabel({
+    var __alloyId55 = [];
+    __alloyId55.push($.__views.__alloyId54);
+    $.__views.__alloyId56 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId41"
+        id: "__alloyId56"
     });
-    $.__views.__alloyId39.add($.__views.__alloyId41);
+    $.__views.__alloyId54.add($.__views.__alloyId56);
     $.__views.table2 = Ti.UI.createTableView({
-        data: __alloyId40,
+        data: __alloyId55,
         id: "table2",
-        separatorColor: "#cecece",
-        height: "100dp"
+        height: "100",
+        scrollable: "false"
     });
-    $.__views.__alloyId33.add($.__views.table2);
-    $.__views.__alloyId42 = Ti.UI.createLabel({
+    $.__views.setView.add($.__views.table2);
+    $.__views.__alloyId57 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -131,26 +132,26 @@ function Controller() {
         right: 10,
         top: 20,
         text: "其他",
-        id: "__alloyId42"
+        id: "__alloyId57"
     });
-    $.__views.__alloyId33.add($.__views.__alloyId42);
-    $.__views.__alloyId43 = Ti.UI.createTableViewRow({
-        id: "__alloyId43"
+    $.__views.setView.add($.__views.__alloyId57);
+    $.__views.__alloyId58 = Ti.UI.createTableViewRow({
+        id: "__alloyId58"
     });
-    var __alloyId44 = [];
-    __alloyId44.push($.__views.__alloyId43);
-    $.__views.__alloyId45 = Ti.UI.createLabel({
+    var __alloyId59 = [];
+    __alloyId59.push($.__views.__alloyId58);
+    $.__views.__alloyId60 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId45"
+        id: "__alloyId60"
     });
-    $.__views.__alloyId43.add($.__views.__alloyId45);
+    $.__views.__alloyId58.add($.__views.__alloyId60);
     $.__views.table3 = Ti.UI.createTableView({
-        data: __alloyId44,
+        data: __alloyId59,
         id: "table3",
-        separatorColor: "#cecece",
-        height: "100dp"
+        height: "50",
+        scrollable: "false"
     });
-    $.__views.__alloyId33.add($.__views.table3);
+    $.__views.setView.add($.__views.table3);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var entypo = require("ti.entypo");
@@ -186,19 +187,18 @@ function Controller() {
             },
             text: rowtitle,
             textAlign: "center",
-            width: "200",
-            left: "50",
-            color: "#ffffff"
+            left: 80,
+            color: "#ffffff",
+            top: 10
         });
         var icon = Ti.UI.createLabel({
             text: rowtext,
-            left: "5",
-            textAlign: "center",
+            left: 20,
             font: {
                 fontSize: "30",
                 fontFamily: "soryin"
             },
-            color: "#ffffff"
+            color: "#fff"
         });
         var arrow = Ti.UI.createLabel({
             text: entypo.fromCodePoint("0xf3c9"),
@@ -206,7 +206,8 @@ function Controller() {
             font: {
                 fontSize: "20",
                 fontFamily: "soryin"
-            }
+            },
+            color: "#fff"
         });
         row.add(icon);
         row.add(title);
@@ -218,13 +219,13 @@ function Controller() {
     var dataConditionArray = [ "快速上手", "缩影语言" ];
     var rowTextArray = [ "0xe03a", "0xe03b" ];
     var tableData = [];
-    createSetingView(dataConditionArray, rowTextArray);
+    createSetingView(dataConditionArray, rowTextArray, tableData);
     $.table2.setData(tableData);
-    tableData = [];
-    dataConditionArray = [ "推荐给朋友", "帮我们改进" ];
-    rowTextArray = [ "0xe035", "0xe036" ];
-    createSetingView(dataConditionArray, rowTextArray);
-    $.table3.setData(tableData);
+    var otableData = [];
+    var odataConditionArray = [ "版权" ];
+    var orowTextArray = [ "0xe036" ];
+    createSetingView(odataConditionArray, orowTextArray, otableData);
+    $.table3.setData(otableData);
     _.extend($, exports);
 }
 

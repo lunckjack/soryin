@@ -356,10 +356,10 @@ function Controller() {
             fontSize: "70",
             fontFamily: "soryin"
         },
-        bottom: 0,
+        bottom: -10,
         left: 0,
-        color: "#f2f2f2",
-        opacity: "0.5",
+        color: "#ccc",
+        opacity: "0.8",
         id: "backBtn"
     });
     $.__views.__alloyId10.add($.__views.backBtn);
@@ -380,6 +380,13 @@ function Controller() {
         var setView = Alloy.createController("view_setting").getView();
         "" != curview && $.content.remove(curview);
         curview = setView;
+        $.content.add(curview);
+        $.scrollable.scrollToView(1);
+    });
+    $.view_express.addEventListener("click", function() {
+        var recordView = Alloy.createController("view_record").getView();
+        "" != curview && $.content.remove(curview);
+        curview = recordView;
         $.content.add(curview);
         $.scrollable.scrollToView(1);
     });

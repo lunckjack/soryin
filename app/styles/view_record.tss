@@ -1,3 +1,80 @@
-".container": {
-	backgroundColor: "white"
+".container": { backgroundColor:"#f2f2f2"
+},
+'.recordTime': { 
+	width:Titanium.UI.FILL,
+	height:22,
+	backgroundColor:'#494949',
+	top:0,
+}
+,
+"#recordTime":{
+	color:'#fff',
+	font : {
+			fontSize : '15',
+			fontFamily : 'HiraginoSansGB-W3',
+	},
+	bottom:0
+},
+'.viewSort':{
+	width:150,
+	height:50,
+	backgroundColor:'#fff',
+	borderRadius:'20',
+	borderWidth:'1',
+	borderColor:'#ccc',
+	right:0,
+	bottom:20
+},
+//iconFont
+'.iconFont':{
+	font:{
+		fontSize:'40',
+	    fontFamily : 'soryin'
+ },
+	top:5,
+	right:5,
+	bottom:5
+},
+'#recordNum':{
+	left:5,
+	font:{
+		fontSize:'35',
+		fontFamily : 'Orbitron'
+  },
+  color:'#F39C12'
+},
+'#sortNum':{
+	font:{
+		fontSize:'103',
+		fontFamily : 'Orbitron'
+  },
+  color:'#F39C12',
+  top:100
+}
+'#table':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top:22
+},
+'.labelNum':{
+	color:'#F39C12'
+},
+'.labNumText':{
+	color:'#F39C12',
+	top:150,
+	right:30
+},
+'#viewSort':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor:"#000"
+},
+'.circleView':{
+	width:50,
+	height:50,
+	backgroundColor:'#fff',
+	borderRadius:'25',
+	borderColor:'#fff',
+	right:0,
+	bottom:20
 }

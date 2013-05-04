@@ -1,4 +1,31 @@
 <Alloy>
 	<View class="container">
+		<!-- 头部 -->
+		<View class="recordTime">
+			<Label id="recordTime">11月1日</Label>
+		</View>
+
+		<!-- 列表内容 -->
+		<TableView id="table" />
+
+		<!-- 底部排序 -->
+		<View class="viewSort" id="sortView">
+			<!-- 记录总数 -->
+			<Label id="recordNum">36</Label>
+			<Label class="labelNum">条</Label>
+
+		</View>
+		<View class="circleView">
+			<Label id="icon_sort" class="iconFont"></Label>
+		</View>
+		<!-- 排序 view -->
+		<View id="viewSort" visible="false">
+			<View>
+				<Label class="labNumText">条</Label>
+				<Label id="sortNum">36</Label>
+			</View>
+			<Label id="icon_sort11" class="iconFont"></Label>
+			<Require id="filterView" formFactor="handheld" src="view_filter" />
+		</View>
 	</View>
 </Alloy>

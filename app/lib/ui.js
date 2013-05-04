@@ -23,7 +23,7 @@ exports.zoom = function(view, callback) {
 	var matrix = Ti.UI.create2DMatrix();
 	view.animate({
 		transform : matrix,
-		opacity : 0.9,
+		opacity : 0.8,
 		duration : 300
 	}, function() {
 		callback && callback();
