@@ -37,3 +37,4 @@
 	7、view_person.js     人物
 	
 	8、view_conditon.js   条件、步骤、限制
+===
