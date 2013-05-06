@@ -1,5 +1,5 @@
 var entypo = require('ti.entypo');
-
+var ui = require('ui');
 var curHeight = Ti.Platform.displayCaps.platformHeight;
 var curWidth = Ti.Platform.displayCaps.platformWidth;
 
@@ -25,6 +25,18 @@ $.view_express.addEventListener('click', function() {
 		$.content.remove(curview);
 	}
 	curview = recordView;
+	$.content.add(curview);
+	$.scrollable.scrollToView(1);
+});
+
+// 级别
+$.view_level.addEventListener('click', function() {
+	var levelView = Alloy.createController('view_level').getView();
+
+	if (curview != "") {
+		$.content.remove(curview);
+	}
+	curview = levelView;
 	$.content.add(curview);
 	$.scrollable.scrollToView(1);
 });
@@ -79,7 +91,7 @@ function setIconFont() {
 	$.icon_me.text = entypo.fromCodePoint("0xe007");
 	$.icon_me.color = "#fff";
 	// icon 封面
-	$.icon_cover.text = entypo.fromCodePoint("0xf1b2");
+	$.icon_cover.text = entypo.fromCodePoint("0xe02b");
 	$.icon_cover.color = "#ccc";
 	// icon 经验
 	$.icon_express.text = entypo.fromCodePoint("0xf2b0");
@@ -109,7 +121,49 @@ function setIconFont() {
 
 	// 返回
 	$.backBtn.text = entypo.fromCodePoint("0xe023");
+
+	$.splashBackBtn.text = entypo.fromCodePoint("0xe023");
+
+	$.splashIcon.text = entypo.fromCodePoint("0xe007");
+	$.splashIcon.color = "#fff";
+
+	$.viewIcon2.text = entypo.fromCodePoint("0xe07f");
+	$.viewIcon2.color = "#fff";
+
 }
 // 设置icon
 setIconFont();
+
+// 第一次启动显示说明
+var loadFirst = Ti.App.Properties.getBool('loadFist', true);
+if (loadFirst) {
+	$.readView1.visible = true;
+	ui.zoom($.readView1, function() {
+		// Ti.App.Properties.setBool('loadFist', false);
+	});
+
+	$.readView1.addEventListener('click', function() {
+		this.visible = false;
+		$.readView2.visible = true;
+		ui.zoom($.readView2, function() {
+
+		});
+	});
+	$.readView2.addEventListener('click', function() {
+		this.visible = false;
+		$.readView3.visible = true;
+		ui.zoom($.readView3, function() {
+
+		});
+	});
+	$.splashBackBtn.addEventListener('click', function() {
+		ui.unzoom($.readView3, function() {
+
+		});
+	});
+	
+	$.viewInfo1.top = (curHeight / 2) - $.viewInfo1.height;
+	$.viewInfo2.top = (curHeight / 2) - $.viewInfo2.height;
+}
+
 $.index.open();

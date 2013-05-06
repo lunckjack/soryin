@@ -1,4 +1,10 @@
 <Alloy>
-	<View class="container">
+	<View id="levelView">
+		<!-- 顶部 -->
+		<View id="topView" class="topView">
+			
+		</View>
+		<!-- 内容 -->
+		<TableView id="table" />
 	</View>
 </Alloy>

@@ -81,7 +81,7 @@ $.table2.setData(tableData);
 var otableData = [];
 // dataConditionArray = [ '推荐', '意见','版权','条款' ];
 var odataConditionArray = [ '版权' ];
-var orowTextArray = [ '0xe036' ];
+var orowTextArray = [ '0xa9' ];
 createSetingView(odataConditionArray, orowTextArray, otableData);
 $.table3.setData(otableData);
 

@@ -5,7 +5,7 @@
 
 				<!-- 头部 -->
 				<View id="viewTop">
-					<View id="view_left">
+					<View id="view_left" class="view_left">
 						<Label id="icon_me" class="iconFont" />
 						<Label text="我" class="lab_me" />
 					</View>
@@ -72,5 +72,33 @@
 				<Label id="backBtn" />
 			</View>
 		</ScrollableView>
+
+		<!-- 说明 1 -->
+		<View id="readView1" visible="false" class="splashView">
+			<View class="view_left">
+				<Label class="iconFont" id="splashIcon" />
+				<Label text="我" class="lab_me" />
+			</View>
+			<View class="viewInfo" id="viewInfo1">
+				<Label class="splashLabel">类别</Label>
+				<View class="line"></View>
+				<Label class="splashText">缩影信息</Label>
+				<View class="line"></View>
+			</View>
+		</View>
+		<!-- 说明 2 -->
+		<View id="readView2" visible="false" class="splashView">
+			<Label class="splashview2Icon" id="viewIcon2" />
+		</View>
+		<!-- 说明 3 -->
+		<View id="readView3" visible="false" class="splashView">
+			<View class="viewInfo" id="viewInfo2">
+				<Label class="splashLabel">返回</Label>
+				<View class="line"></View>
+				<Label class="splashText">缩影信息</Label>
+				<View class="line"></View>
+			</View>
+			<Label id="splashBackBtn" />
+		</View>
 	</Window>
 </Alloy>

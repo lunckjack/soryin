@@ -1,4 +1,24 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="container" title="自我" navBarHidden="true">
+		<View layout="vertical">
+			<View top="0" layout="horizontal" id="tab">
+				<View id="tab1">
+					<View layout="horizontal" top="10dp" left="50dp">
+						<Label id="l2" class="eventFontFamily" />
+						<Label id="l1" class="lab_text">描述</Label>
+					</View>
+				</View>
+				<View id="tab2">
+					<View layout="horizontal" top="10dp" left="50dp">
+						<Label id="l4" class="eventFontFamily" />
+						<Label id="l3" class="lab_text">图片</Label>
+					</View>
+				</View>
+			</View>
+			<ScrollView id="scrollView" showVerticalScrollIndicator="true"
+				showHorizontalScrollIndicator="true">
+				<View id="contentView" layout="vertical"></View>
+			</ScrollView>
+		</View>
+	</Window>
 </Alloy>

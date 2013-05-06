@@ -1,71 +1,46 @@
 function Controller() {
-    function loadTableView() {
-        var bc;
-        for (var i = 0; 10 > i; i++) {
-            bc = 0 == i % 2 ? "#F7F3F2" : "#fff";
-            var row = Ti.UI.createTableViewRow({
-                height: 60,
-                selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.BLUE,
-                backgroundColor: bc
+    function __alloyId66() {
+        var models = __alloyId65.models;
+        var len = models.length;
+        var rows = [];
+        for (var i = 0; len > i; i++) {
+            var __alloyId63 = models[i];
+            __alloyId63.__transform = {};
+            var __alloyId64 = Alloy.createController("recordRow", {
+                $model: __alloyId63
             });
-            var image = Ti.UI.createImageView({
-                image: "/images/myimage.png",
-                left: 0,
-                width: 60,
-                height: 60
-            });
-            var title = Ti.UI.createLabel({
-                font: {
-                    fontSize: "24",
-                    fontFamily: "HiraginoSansGB-W3"
-                },
-                text: "艾薇塔",
-                textAlign: "center",
-                color: "#4A4A4A",
-                left: 80,
-                top: 20
-            });
-            var line = Ti.UI.createView({
-                height: 60,
-                left: "60",
-                width: "1dp",
-                backgroundColor: "#cecece"
-            });
-            var arrow = Ti.UI.createLabel({
-                text: entypo.fromCodePoint("0xf3c9"),
-                right: 10,
-                font: {
-                    fontSize: "20",
-                    fontFamily: "soryin"
-                }
-            });
-            row.add(image);
-            row.add(line);
-            row.add(title);
-            row.add(arrow);
-            row.arrow = arrow;
-            tableData[i] = row;
+            rows.push(__alloyId64.getViewEx({
+                recurse: true
+            }));
         }
-        $.table.setData(tableData);
+        $.__views.table.setData(rows);
+    }
+    function addItem(e) {
+        alert(e.index);
+        alert(e.data);
+        e.data.backgroundColor = 0 == e.index % 2 ? "#F7F3F2" : "#fff";
+        common.addItem(myModels);
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
+    var __defers = {};
+    Alloy.Collections.instance("record");
     $.__views.view_record = Ti.UI.createView({
         backgroundColor: "#f2f2f2",
         id: "view_record"
     });
     $.__views.view_record && $.addTopLevelView($.__views.view_record);
-    $.__views.__alloyId44 = Ti.UI.createView({
+    $.__views.__alloyId60 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
         top: 0,
-        id: "__alloyId44"
+        id: "__alloyId60"
     });
-    $.__views.view_record.add($.__views.__alloyId44);
+    $.__views.view_record.add($.__views.__alloyId60);
     $.__views.recordTime = Ti.UI.createLabel({
         color: "#fff",
         font: {
@@ -76,7 +51,7 @@ function Controller() {
         text: "11月1日",
         id: "recordTime"
     });
-    $.__views.__alloyId44.add($.__views.recordTime);
+    $.__views.__alloyId60.add($.__views.recordTime);
     $.__views.table = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.SIZE,
@@ -84,6 +59,8 @@ function Controller() {
         id: "table"
     });
     $.__views.view_record.add($.__views.table);
+    var __alloyId65 = Alloy.Collections["record"] || record;
+    __alloyId65.on("fetch destroy change add remove reset", __alloyId66);
     $.__views.sortView = Ti.UI.createView({
         width: 150,
         height: 50,
@@ -107,13 +84,13 @@ function Controller() {
         id: "recordNum"
     });
     $.__views.sortView.add($.__views.recordNum);
-    $.__views.__alloyId45 = Ti.UI.createLabel({
+    $.__views.__alloyId67 = Ti.UI.createLabel({
         color: "#F39C12",
         text: "条",
-        id: "__alloyId45"
+        id: "__alloyId67"
     });
-    $.__views.sortView.add($.__views.__alloyId45);
-    $.__views.__alloyId46 = Ti.UI.createView({
+    $.__views.sortView.add($.__views.__alloyId67);
+    $.__views.__alloyId68 = Ti.UI.createView({
         width: 50,
         height: 50,
         backgroundColor: "#fff",
@@ -121,9 +98,9 @@ function Controller() {
         borderColor: "#fff",
         right: 0,
         bottom: 20,
-        id: "__alloyId46"
+        id: "__alloyId68"
     });
-    $.__views.view_record.add($.__views.__alloyId46);
+    $.__views.view_record.add($.__views.__alloyId68);
     $.__views.icon_sort = Ti.UI.createLabel({
         font: {
             fontSize: "40",
@@ -134,7 +111,7 @@ function Controller() {
         bottom: 5,
         id: "icon_sort"
     });
-    $.__views.__alloyId46.add($.__views.icon_sort);
+    $.__views.__alloyId68.add($.__views.icon_sort);
     $.__views.viewSort = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.FILL,
@@ -143,18 +120,18 @@ function Controller() {
         visible: "false"
     });
     $.__views.view_record.add($.__views.viewSort);
-    $.__views.__alloyId47 = Ti.UI.createView({
-        id: "__alloyId47"
+    $.__views.__alloyId69 = Ti.UI.createView({
+        id: "__alloyId69"
     });
-    $.__views.viewSort.add($.__views.__alloyId47);
-    $.__views.__alloyId48 = Ti.UI.createLabel({
+    $.__views.viewSort.add($.__views.__alloyId69);
+    $.__views.__alloyId70 = Ti.UI.createLabel({
         color: "#F39C12",
         top: 150,
         right: 30,
         text: "条",
-        id: "__alloyId48"
+        id: "__alloyId70"
     });
-    $.__views.__alloyId47.add($.__views.__alloyId48);
+    $.__views.__alloyId69.add($.__views.__alloyId70);
     $.__views.sortNum = Ti.UI.createLabel({
         font: {
             fontSize: "103",
@@ -165,7 +142,7 @@ function Controller() {
         text: "36",
         id: "sortNum"
     });
-    $.__views.__alloyId47.add($.__views.sortNum);
+    $.__views.__alloyId69.add($.__views.sortNum);
     $.__views.icon_sort11 = Ti.UI.createLabel({
         font: {
             fontSize: "40",
@@ -184,16 +161,29 @@ function Controller() {
         });
         $.__views.filterView.setParent($.__views.viewSort);
     }
-    exports.destroy = function() {};
+    $.__views.__alloyId71 = Ti.UI.createButton({
+        height: "40dp",
+        width: "40dp",
+        title: "+",
+        bottom: 0,
+        right: 0,
+        id: "__alloyId71"
+    });
+    $.__views.view_record.add($.__views.__alloyId71);
+    addItem ? $.__views.__alloyId71.addEventListener("click", addItem) : __defers["$.__views.__alloyId71!click!addItem"] = true;
+    exports.destroy = function() {
+        __alloyId65.off("fetch destroy change add remove reset", __alloyId66);
+    };
     _.extend($, $.__views);
     var entypo = require("ti.entypo");
     var ui = require("ui");
-    var tableData = [];
+    var myModels = Alloy.Collections.record;
+    var common = require("common");
     $.table.addEventListener("scrollend", function() {
         ui.translate2($.sortView, 0, 0, 0, 200, function() {});
     });
     $.table.addEventListener("scroll", function() {
-        ui.translate2($.sortView, 110, 0, 0, 200, function() {});
+        ui.translate2($.sortView, 150, 0, 0, 200, function() {});
     });
     $.icon_sort.addEventListener("click", function() {
         $.viewSort.visible = true;
@@ -206,9 +196,9 @@ function Controller() {
             ui.unzoom($.viewSort, function() {});
         });
     });
-    loadTableView();
     $.icon_sort.text = entypo.fromCodePoint("0xe027");
     $.icon_sort.color = "#F39C12";
+    __defers["$.__views.__alloyId71!click!addItem"] && $.__views.__alloyId71.addEventListener("click", addItem);
     _.extend($, exports);
 }
 

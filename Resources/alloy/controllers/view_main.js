@@ -9,19 +9,19 @@ function Controller() {
         id: "view_main"
     });
     $.__views.view_main && $.addTopLevelView($.__views.view_main);
-    var __alloyId22 = [];
-    $.__views.__alloyId23 = Ti.UI.createView({
+    var __alloyId36 = [];
+    $.__views.__alloyId37 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId23"
+        id: "__alloyId37"
     });
-    __alloyId22.push($.__views.__alloyId23);
+    __alloyId36.push($.__views.__alloyId37);
     $.__views.viewTop = Ti.UI.createView({
         height: "110",
         layout: "horizontal",
         width: Titanium.UI.FILL,
         id: "viewTop"
     });
-    $.__views.__alloyId23.add($.__views.viewTop);
+    $.__views.__alloyId37.add($.__views.viewTop);
     $.__views.view_left = Ti.UI.createView({
         height: "110",
         layout: "vertical",
@@ -37,16 +37,16 @@ function Controller() {
         id: "icon_me"
     });
     $.__views.view_left.add($.__views.icon_me);
-    $.__views.__alloyId24 = Ti.UI.createLabel({
+    $.__views.__alloyId38 = Ti.UI.createLabel({
         font: {
             fontSize: "30",
             fontFamily: "HiraginoSansGB-W3",
             fontWeight: "bold"
         },
         text: "我",
-        id: "__alloyId24"
+        id: "__alloyId38"
     });
-    $.__views.view_left.add($.__views.__alloyId24);
+    $.__views.view_left.add($.__views.__alloyId38);
     $.__views.view_right = Ti.UI.createView({
         height: "110",
         layout: "vertical",
@@ -62,113 +62,113 @@ function Controller() {
         id: "icon_cover"
     });
     $.__views.view_right.add($.__views.icon_cover);
-    $.__views.__alloyId25 = Ti.UI.createLabel({
+    $.__views.__alloyId39 = Ti.UI.createLabel({
         font: {
             fontSize: "30"
         },
         color: "#ccc",
         text: "添加封面",
-        id: "__alloyId25"
+        id: "__alloyId39"
     });
-    $.__views.view_right.add($.__views.__alloyId25);
+    $.__views.view_right.add($.__views.__alloyId39);
     $.__views.scrollView = Ti.UI.createScrollView({
         id: "scrollView",
         showHorizontalScrollIndifcator: "true",
         showVerticalScrollIndicator: "true",
         layout: "vertical"
     });
-    $.__views.__alloyId23.add($.__views.scrollView);
+    $.__views.__alloyId37.add($.__views.scrollView);
     $.__views.viewContent = Ti.UI.createView({
         layout: "vertical",
         id: "viewContent"
     });
     $.__views.scrollView.add($.__views.viewContent);
-    $.__views.__alloyId26 = Ti.UI.createView({
+    $.__views.__alloyId40 = Ti.UI.createView({
         layout: "horizontal",
         height: "110",
-        id: "__alloyId26"
+        id: "__alloyId40"
     });
-    $.__views.viewContent.add($.__views.__alloyId26);
+    $.__views.viewContent.add($.__views.__alloyId40);
     $.__views.vv1 = Ti.UI.createView({
         id: "vv1",
         layout: "horizontal"
     });
-    $.__views.__alloyId26.add($.__views.vv1);
+    $.__views.__alloyId40.add($.__views.vv1);
     $.__views.experienceIcon = Ti.UI.createLabel({
         id: "experienceIcon"
     });
     $.__views.vv1.add($.__views.experienceIcon);
-    $.__views.__alloyId27 = Ti.UI.createView({
+    $.__views.__alloyId41 = Ti.UI.createView({
         layout: "vertical",
         left: "5",
-        id: "__alloyId27"
+        id: "__alloyId41"
     });
-    $.__views.vv1.add($.__views.__alloyId27);
-    $.__views.__alloyId28 = Ti.UI.createLabel({
+    $.__views.vv1.add($.__views.__alloyId41);
+    $.__views.__alloyId42 = Ti.UI.createLabel({
         text: "36",
-        id: "__alloyId28"
+        id: "__alloyId42"
     });
-    $.__views.__alloyId27.add($.__views.__alloyId28);
-    $.__views.__alloyId29 = Ti.UI.createLabel({
+    $.__views.__alloyId41.add($.__views.__alloyId42);
+    $.__views.__alloyId43 = Ti.UI.createLabel({
         text: "经验",
-        id: "__alloyId29"
+        id: "__alloyId43"
     });
-    $.__views.__alloyId27.add($.__views.__alloyId29);
+    $.__views.__alloyId41.add($.__views.__alloyId43);
     $.__views.vv2 = Ti.UI.createView({
         id: "vv2",
         layout: "horizontal",
         x: "x"
     });
-    $.__views.__alloyId26.add($.__views.vv2);
+    $.__views.__alloyId40.add($.__views.vv2);
     $.__views.levelIcon = Ti.UI.createLabel({
         id: "levelIcon"
     });
     $.__views.vv2.add($.__views.levelIcon);
-    $.__views.__alloyId30 = Ti.UI.createView({
+    $.__views.__alloyId44 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId30"
+        id: "__alloyId44"
     });
-    $.__views.vv2.add($.__views.__alloyId30);
-    $.__views.__alloyId31 = Ti.UI.createLabel({
+    $.__views.vv2.add($.__views.__alloyId44);
+    $.__views.__alloyId45 = Ti.UI.createLabel({
         text: "1",
-        id: "__alloyId31"
+        id: "__alloyId45"
     });
-    $.__views.__alloyId30.add($.__views.__alloyId31);
-    $.__views.__alloyId32 = Ti.UI.createLabel({
+    $.__views.__alloyId44.add($.__views.__alloyId45);
+    $.__views.__alloyId46 = Ti.UI.createLabel({
         text: "级别",
-        id: "__alloyId32"
+        id: "__alloyId46"
     });
-    $.__views.__alloyId30.add($.__views.__alloyId32);
-    $.__views.__alloyId33 = Ti.UI.createView({
+    $.__views.__alloyId44.add($.__views.__alloyId46);
+    $.__views.__alloyId47 = Ti.UI.createView({
         layout: "horizontal",
         height: "110",
-        id: "__alloyId33"
+        id: "__alloyId47"
     });
-    $.__views.viewContent.add($.__views.__alloyId33);
+    $.__views.viewContent.add($.__views.__alloyId47);
     $.__views.vv3 = Ti.UI.createView({
         id: "vv3",
         layout: "horizontal"
     });
-    $.__views.__alloyId33.add($.__views.vv3);
+    $.__views.__alloyId47.add($.__views.vv3);
     $.__views.attentionIcon = Ti.UI.createLabel({
         id: "attentionIcon"
     });
     $.__views.vv3.add($.__views.attentionIcon);
-    $.__views.__alloyId34 = Ti.UI.createView({
+    $.__views.__alloyId48 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId34"
+        id: "__alloyId48"
     });
-    $.__views.vv3.add($.__views.__alloyId34);
-    $.__views.__alloyId35 = Ti.UI.createLabel({
+    $.__views.vv3.add($.__views.__alloyId48);
+    $.__views.__alloyId49 = Ti.UI.createLabel({
         text: "5",
-        id: "__alloyId35"
+        id: "__alloyId49"
     });
-    $.__views.__alloyId34.add($.__views.__alloyId35);
-    $.__views.__alloyId36 = Ti.UI.createLabel({
+    $.__views.__alloyId48.add($.__views.__alloyId49);
+    $.__views.__alloyId50 = Ti.UI.createLabel({
         text: "关注",
-        id: "__alloyId36"
+        id: "__alloyId50"
     });
-    $.__views.__alloyId34.add($.__views.__alloyId36);
+    $.__views.__alloyId48.add($.__views.__alloyId50);
     $.__views.viewBoottom = Ti.UI.createView({
         layout: "horizontal",
         id: "viewBoottom"
@@ -183,21 +183,21 @@ function Controller() {
         id: "likeIcon"
     });
     $.__views.vv4.add($.__views.likeIcon);
-    $.__views.__alloyId37 = Ti.UI.createView({
+    $.__views.__alloyId51 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId37"
+        id: "__alloyId51"
     });
-    $.__views.vv4.add($.__views.__alloyId37);
-    $.__views.__alloyId38 = Ti.UI.createLabel({
+    $.__views.vv4.add($.__views.__alloyId51);
+    $.__views.__alloyId52 = Ti.UI.createLabel({
         text: "0%",
-        id: "__alloyId38"
+        id: "__alloyId52"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId38);
-    $.__views.__alloyId39 = Ti.UI.createLabel({
+    $.__views.__alloyId51.add($.__views.__alloyId52);
+    $.__views.__alloyId53 = Ti.UI.createLabel({
         text: "喜好",
-        id: "__alloyId39"
+        id: "__alloyId53"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId39);
+    $.__views.__alloyId51.add($.__views.__alloyId53);
     $.__views.vv5 = Ti.UI.createView({
         id: "vv5",
         layout: "horizontal"
@@ -207,35 +207,35 @@ function Controller() {
         id: "bodyIcon"
     });
     $.__views.vv5.add($.__views.bodyIcon);
-    $.__views.__alloyId40 = Ti.UI.createView({
+    $.__views.__alloyId54 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId40"
+        id: "__alloyId54"
     });
-    $.__views.vv5.add($.__views.__alloyId40);
-    $.__views.__alloyId41 = Ti.UI.createLabel({
+    $.__views.vv5.add($.__views.__alloyId54);
+    $.__views.__alloyId55 = Ti.UI.createLabel({
         text: "0%",
-        id: "__alloyId41"
+        id: "__alloyId55"
     });
-    $.__views.__alloyId40.add($.__views.__alloyId41);
-    $.__views.__alloyId42 = Ti.UI.createLabel({
+    $.__views.__alloyId54.add($.__views.__alloyId55);
+    $.__views.__alloyId56 = Ti.UI.createLabel({
         text: "身体",
-        id: "__alloyId42"
+        id: "__alloyId56"
     });
-    $.__views.__alloyId40.add($.__views.__alloyId42);
-    $.__views.__alloyId43 = Ti.UI.createView({
-        id: "__alloyId43"
+    $.__views.__alloyId54.add($.__views.__alloyId56);
+    $.__views.__alloyId57 = Ti.UI.createView({
+        id: "__alloyId57"
     });
-    __alloyId22.push($.__views.__alloyId43);
+    __alloyId36.push($.__views.__alloyId57);
     $.__views.content = Ti.UI.createView({
         id: "content"
     });
-    $.__views.__alloyId43.add($.__views.content);
+    $.__views.__alloyId57.add($.__views.content);
     $.__views.backBtn = Ti.UI.createImageView({
         id: "backBtn"
     });
-    $.__views.__alloyId43.add($.__views.backBtn);
+    $.__views.__alloyId57.add($.__views.backBtn);
     $.__views.scrollable = Ti.UI.createScrollableView({
-        views: __alloyId22,
+        views: __alloyId36,
         id: "scrollable",
         scrollingEnabled: "false"
     });

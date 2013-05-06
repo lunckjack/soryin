@@ -63,7 +63,7 @@ function Controller() {
         id: "setView"
     });
     $.__views.scrollView.add($.__views.setView);
-    $.__views.__alloyId49 = Ti.UI.createLabel({
+    $.__views.__alloyId72 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -72,29 +72,29 @@ function Controller() {
         right: 10,
         top: 20,
         text: "登录",
-        id: "__alloyId49"
+        id: "__alloyId72"
     });
-    $.__views.setView.add($.__views.__alloyId49);
-    $.__views.__alloyId50 = Ti.UI.createTableViewRow({
-        id: "__alloyId50"
+    $.__views.setView.add($.__views.__alloyId72);
+    $.__views.__alloyId73 = Ti.UI.createTableViewRow({
+        id: "__alloyId73"
     });
-    var __alloyId51 = [];
-    __alloyId51.push($.__views.__alloyId50);
-    $.__views.__alloyId52 = Ti.UI.createLabel({
+    var __alloyId74 = [];
+    __alloyId74.push($.__views.__alloyId73);
+    $.__views.__alloyId75 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId52"
+        id: "__alloyId75"
     });
-    $.__views.__alloyId50.add($.__views.__alloyId52);
+    $.__views.__alloyId73.add($.__views.__alloyId75);
     $.__views.table1 = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: 100,
         separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
-        data: __alloyId51,
+        data: __alloyId74,
         id: "table1",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table1);
-    $.__views.__alloyId53 = Ti.UI.createLabel({
+    $.__views.__alloyId76 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -103,27 +103,27 @@ function Controller() {
         right: 10,
         top: 20,
         text: "向导",
-        id: "__alloyId53"
+        id: "__alloyId76"
     });
-    $.__views.setView.add($.__views.__alloyId53);
-    $.__views.__alloyId54 = Ti.UI.createTableViewRow({
-        id: "__alloyId54"
+    $.__views.setView.add($.__views.__alloyId76);
+    $.__views.__alloyId77 = Ti.UI.createTableViewRow({
+        id: "__alloyId77"
     });
-    var __alloyId55 = [];
-    __alloyId55.push($.__views.__alloyId54);
-    $.__views.__alloyId56 = Ti.UI.createLabel({
+    var __alloyId78 = [];
+    __alloyId78.push($.__views.__alloyId77);
+    $.__views.__alloyId79 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId56"
+        id: "__alloyId79"
     });
-    $.__views.__alloyId54.add($.__views.__alloyId56);
+    $.__views.__alloyId77.add($.__views.__alloyId79);
     $.__views.table2 = Ti.UI.createTableView({
-        data: __alloyId55,
+        data: __alloyId78,
         id: "table2",
         height: "100",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table2);
-    $.__views.__alloyId57 = Ti.UI.createLabel({
+    $.__views.__alloyId80 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -132,21 +132,21 @@ function Controller() {
         right: 10,
         top: 20,
         text: "其他",
-        id: "__alloyId57"
+        id: "__alloyId80"
     });
-    $.__views.setView.add($.__views.__alloyId57);
-    $.__views.__alloyId58 = Ti.UI.createTableViewRow({
-        id: "__alloyId58"
+    $.__views.setView.add($.__views.__alloyId80);
+    $.__views.__alloyId81 = Ti.UI.createTableViewRow({
+        id: "__alloyId81"
     });
-    var __alloyId59 = [];
-    __alloyId59.push($.__views.__alloyId58);
-    $.__views.__alloyId60 = Ti.UI.createLabel({
+    var __alloyId82 = [];
+    __alloyId82.push($.__views.__alloyId81);
+    $.__views.__alloyId83 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId60"
+        id: "__alloyId83"
     });
-    $.__views.__alloyId58.add($.__views.__alloyId60);
+    $.__views.__alloyId81.add($.__views.__alloyId83);
     $.__views.table3 = Ti.UI.createTableView({
-        data: __alloyId59,
+        data: __alloyId82,
         id: "table3",
         height: "50",
         scrollable: "false"
@@ -223,7 +223,7 @@ function Controller() {
     $.table2.setData(tableData);
     var otableData = [];
     var odataConditionArray = [ "版权" ];
-    var orowTextArray = [ "0xe036" ];
+    var orowTextArray = [ "0xa9" ];
     createSetingView(odataConditionArray, orowTextArray, otableData);
     $.table3.setData(otableData);
     _.extend($, exports);

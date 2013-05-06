@@ -29,12 +29,13 @@
 	left:'10',
 	right:'10'
 },
-'#view_left': { 
+'.view_left':{
 	height:'110',
 	layout:"vertical",
 	width:'110',
 	backgroundColor:'#F39C12',
-	left:0
+	left:0,
+	top:0
 },
 '#view_right': { 
 	height:'110',
@@ -50,6 +51,13 @@
  },
 	top:0
 },
+'.splashview2Icon':{
+	font:{
+		fontSize:'150',
+	    fontFamily : 'soryin'
+ },
+ 
+}
 '#backBtn':{
 	font:{
 		fontSize:'70',
@@ -60,6 +68,16 @@
  color:'#ccc',
  opacity:'0.8'
 },
+'#splashBackBtn':{
+	font:{
+		fontSize:'70',
+	    fontFamily : 'soryin',
+ },
+ bottom:-10,
+ left:0,
+ color:'#fff',
+ opacity:'0.8'
+}
 '.lab_me':{
 	font:{
 		fontSize:'30',
@@ -105,4 +123,39 @@
 	layout:"vertical",
 	left:5,
 	bottom:10
+},
+'.splashView':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor:"#000",
+},
+'.splashLabel':{
+	font:{
+		fontSize:'60',
+	    fontFamily : 'HiraginoSansGB-W3',
+  },
+  color:'#fff',
+  bottom:-10
+},
+'.line':{
+	width:120,
+	height:1,
+	bottom:0,
+	left:0,
+	right:0,
+	borderWidth:1,
+	borderColor:'#F39C12'
+},
+'.splashText':{
+	font:{
+		fontSize:'30',
+	    fontFamily : 'HiraginoSansGB-W3',
+	    
+  },
+  color:'#F39C12',
+},
+'.viewInfo':{
+	layout:'vertical',
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
 }
