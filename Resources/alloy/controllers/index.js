@@ -1,4 +1,8 @@
 function Controller() {
+    function scrollToView(parentView, curView, curIndex) {
+        parentView.add(curView);
+        $.scrollable.scrollToView(curIndex);
+    }
     function setIconFont() {
         $.icon_me.text = entypo.fromCodePoint("0xe007");
         $.icon_me.color = "#fff";
@@ -24,7 +28,8 @@ function Controller() {
         $.icon_body.color = "#494949";
         $.bodyPercent.color = "#494949";
         $.lab_body.color = "#494949";
-        $.backBtn.text = entypo.fromCodePoint("0xe023");
+        $.backToIndex.text = entypo.fromCodePoint("0xe023");
+        $.backToParent.text = entypo.fromCodePoint("0xe023");
         $.splashBackBtn.text = entypo.fromCodePoint("0xe023");
         $.splashIcon.text = entypo.fromCodePoint("0xe007");
         $.splashIcon.color = "#fff";
@@ -357,7 +362,7 @@ function Controller() {
         id: "content"
     });
     $.__views.__alloyId10.add($.__views.content);
-    $.__views.backBtn = Ti.UI.createLabel({
+    $.__views.backToIndex = Ti.UI.createLabel({
         font: {
             fontSize: "70",
             fontFamily: "soryin"
@@ -366,9 +371,29 @@ function Controller() {
         left: 0,
         color: "#ccc",
         opacity: "0.8",
-        id: "backBtn"
+        id: "backToIndex"
     });
-    $.__views.__alloyId10.add($.__views.backBtn);
+    $.__views.__alloyId10.add($.__views.backToIndex);
+    $.__views.__alloyId11 = Ti.UI.createView({
+        id: "__alloyId11"
+    });
+    __alloyId1.push($.__views.__alloyId11);
+    $.__views.childContent = Ti.UI.createView({
+        id: "childContent"
+    });
+    $.__views.__alloyId11.add($.__views.childContent);
+    $.__views.backToParent = Ti.UI.createLabel({
+        font: {
+            fontSize: "70",
+            fontFamily: "soryin"
+        },
+        bottom: -10,
+        left: 0,
+        color: "#ccc",
+        opacity: "0.8",
+        id: "backToParent"
+    });
+    $.__views.__alloyId11.add($.__views.backToParent);
     $.__views.scrollable = Ti.UI.createScrollableView({
         views: __alloyId1,
         id: "scrollable",
@@ -383,16 +408,16 @@ function Controller() {
         visible: "false"
     });
     $.__views.index.add($.__views.readView1);
-    $.__views.__alloyId11 = Ti.UI.createView({
+    $.__views.__alloyId12 = Ti.UI.createView({
         height: "110",
         layout: "vertical",
         width: "110",
         backgroundColor: "#F39C12",
         left: 0,
         top: 0,
-        id: "__alloyId11"
+        id: "__alloyId12"
     });
-    $.__views.readView1.add($.__views.__alloyId11);
+    $.__views.readView1.add($.__views.__alloyId12);
     $.__views.splashIcon = Ti.UI.createLabel({
         font: {
             fontSize: "60",
@@ -401,8 +426,8 @@ function Controller() {
         top: 0,
         id: "splashIcon"
     });
-    $.__views.__alloyId11.add($.__views.splashIcon);
-    $.__views.__alloyId12 = Ti.UI.createLabel({
+    $.__views.__alloyId12.add($.__views.splashIcon);
+    $.__views.__alloyId13 = Ti.UI.createLabel({
         font: {
             fontSize: "30",
             fontFamily: "HiraginoSansGB-W3",
@@ -410,9 +435,9 @@ function Controller() {
         },
         color: "#fff",
         text: "我",
-        id: "__alloyId12"
+        id: "__alloyId13"
     });
-    $.__views.__alloyId11.add($.__views.__alloyId12);
+    $.__views.__alloyId12.add($.__views.__alloyId13);
     $.__views.viewInfo1 = Ti.UI.createView({
         layout: "vertical",
         width: Titanium.UI.SIZE,
@@ -420,7 +445,7 @@ function Controller() {
         id: "viewInfo1"
     });
     $.__views.readView1.add($.__views.viewInfo1);
-    $.__views.__alloyId13 = Ti.UI.createLabel({
+    $.__views.__alloyId14 = Ti.UI.createLabel({
         font: {
             fontSize: "60",
             fontFamily: "HiraginoSansGB-W3"
@@ -428,10 +453,10 @@ function Controller() {
         color: "#fff",
         bottom: -10,
         text: "类别",
-        id: "__alloyId13"
+        id: "__alloyId14"
     });
-    $.__views.viewInfo1.add($.__views.__alloyId13);
-    $.__views.__alloyId14 = Ti.UI.createView({
+    $.__views.viewInfo1.add($.__views.__alloyId14);
+    $.__views.__alloyId15 = Ti.UI.createView({
         width: 120,
         height: 1,
         bottom: 0,
@@ -439,20 +464,20 @@ function Controller() {
         right: 0,
         borderWidth: 1,
         borderColor: "#F39C12",
-        id: "__alloyId14"
+        id: "__alloyId15"
     });
-    $.__views.viewInfo1.add($.__views.__alloyId14);
-    $.__views.__alloyId15 = Ti.UI.createLabel({
+    $.__views.viewInfo1.add($.__views.__alloyId15);
+    $.__views.__alloyId16 = Ti.UI.createLabel({
         font: {
             fontSize: "30",
             fontFamily: "HiraginoSansGB-W3"
         },
         color: "#F39C12",
         text: "缩影信息",
-        id: "__alloyId15"
+        id: "__alloyId16"
     });
-    $.__views.viewInfo1.add($.__views.__alloyId15);
-    $.__views.__alloyId16 = Ti.UI.createView({
+    $.__views.viewInfo1.add($.__views.__alloyId16);
+    $.__views.__alloyId17 = Ti.UI.createView({
         width: 120,
         height: 1,
         bottom: 0,
@@ -460,9 +485,9 @@ function Controller() {
         right: 0,
         borderWidth: 1,
         borderColor: "#F39C12",
-        id: "__alloyId16"
+        id: "__alloyId17"
     });
-    $.__views.viewInfo1.add($.__views.__alloyId16);
+    $.__views.viewInfo1.add($.__views.__alloyId17);
     $.__views.readView2 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.FILL,
@@ -494,7 +519,7 @@ function Controller() {
         id: "viewInfo2"
     });
     $.__views.readView3.add($.__views.viewInfo2);
-    $.__views.__alloyId17 = Ti.UI.createLabel({
+    $.__views.__alloyId18 = Ti.UI.createLabel({
         font: {
             fontSize: "60",
             fontFamily: "HiraginoSansGB-W3"
@@ -502,10 +527,10 @@ function Controller() {
         color: "#fff",
         bottom: -10,
         text: "返回",
-        id: "__alloyId17"
+        id: "__alloyId18"
     });
-    $.__views.viewInfo2.add($.__views.__alloyId17);
-    $.__views.__alloyId18 = Ti.UI.createView({
+    $.__views.viewInfo2.add($.__views.__alloyId18);
+    $.__views.__alloyId19 = Ti.UI.createView({
         width: 120,
         height: 1,
         bottom: 0,
@@ -513,20 +538,20 @@ function Controller() {
         right: 0,
         borderWidth: 1,
         borderColor: "#F39C12",
-        id: "__alloyId18"
+        id: "__alloyId19"
     });
-    $.__views.viewInfo2.add($.__views.__alloyId18);
-    $.__views.__alloyId19 = Ti.UI.createLabel({
+    $.__views.viewInfo2.add($.__views.__alloyId19);
+    $.__views.__alloyId20 = Ti.UI.createLabel({
         font: {
             fontSize: "30",
             fontFamily: "HiraginoSansGB-W3"
         },
         color: "#F39C12",
         text: "缩影信息",
-        id: "__alloyId19"
+        id: "__alloyId20"
     });
-    $.__views.viewInfo2.add($.__views.__alloyId19);
-    $.__views.__alloyId20 = Ti.UI.createView({
+    $.__views.viewInfo2.add($.__views.__alloyId20);
+    $.__views.__alloyId21 = Ti.UI.createView({
         width: 120,
         height: 1,
         bottom: 0,
@@ -534,9 +559,9 @@ function Controller() {
         right: 0,
         borderWidth: 1,
         borderColor: "#F39C12",
-        id: "__alloyId20"
+        id: "__alloyId21"
     });
-    $.__views.viewInfo2.add($.__views.__alloyId20);
+    $.__views.viewInfo2.add($.__views.__alloyId21);
     $.__views.splashBackBtn = Ti.UI.createLabel({
         font: {
             fontSize: "70",
@@ -556,30 +581,29 @@ function Controller() {
     var curHeight = Ti.Platform.displayCaps.platformHeight;
     var curWidth = Ti.Platform.displayCaps.platformWidth;
     $.view_right.width = curWidth - 110;
-    var curview = "";
+    $.seting = Alloy.createController("view_setting");
+    $.record = Alloy.createController("view_record");
+    $.visual = Alloy.createController("view_visual");
+    $.level = Alloy.createController("view_level");
     $.view_left.addEventListener("click", function() {
-        var setView = Alloy.createController("view_setting").getView();
-        "" != curview && $.content.remove(curview);
-        curview = setView;
-        $.content.add(curview);
-        $.scrollable.scrollToView(1);
+        scrollToView($.content, $.seting.getView(), 1);
     });
     $.view_express.addEventListener("click", function() {
-        var recordView = Alloy.createController("view_record").getView();
-        "" != curview && $.content.remove(curview);
-        curview = recordView;
-        $.content.add(curview);
-        $.scrollable.scrollToView(1);
+        scrollToView($.content, $.record.getView(), 1);
+    });
+    $.seting.on("onSwitchVisual", function() {
+        scrollToView($.childContent, $.visual.getView(), 2);
     });
     $.view_level.addEventListener("click", function() {
-        var levelView = Alloy.createController("view_level").getView();
-        "" != curview && $.content.remove(curview);
-        curview = levelView;
-        $.content.add(curview);
-        $.scrollable.scrollToView(1);
+        scrollToView($.content, $.level.getView(), 1);
     });
-    $.backBtn.addEventListener("click", function() {
+    $.backToIndex.addEventListener("click", function() {
         $.scrollable.scrollToView(0);
+        $.content.removeAllChildren();
+    });
+    $.backToParent.addEventListener("click", function() {
+        $.scrollable.scrollToView(1);
+        $.childContent.removeAllChildren();
     });
     setIconFont();
     var loadFirst = Ti.App.Properties.getBool("loadFist", true);

@@ -69,7 +69,11 @@
 			</View>
 			<View>
 				<View id="content"></View>
-				<Label id="backBtn" />
+				<Label id="backToIndex" class="backButton" />
+			</View>
+			<View>
+				<View id="childContent"></View>
+				<Label id="backToParent" class="backButton" />
 			</View>
 		</ScrollableView>
 

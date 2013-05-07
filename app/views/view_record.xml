@@ -1,5 +1,6 @@
 <Alloy>
-	<Collection src="record" />
+	<!--
+	<Collection src="record" />-->
 	<View class="container">
 		<!-- 头部 -->
 		<View class="recordTime">
@@ -7,11 +8,11 @@
 		</View>
 
 		<!-- 列表内容 -->
-		<TableView id="table" dataCollection="record">
+		<TableView id="table" >
 			<!-- use a <Require> for our repeated TableViewRow -->
-			<Require src="recordRow" />
+			<!--<Require src="recordRow" />-->
 		</TableView>
-		
+
 		<!-- 底部排序 -->
 		<View class="viewSort" id="sortView">
 			<!-- 记录总数 -->
@@ -31,7 +32,6 @@
 			<Label id="icon_sort11" class="iconFont"></Label>
 			<Require id="filterView" formFactor="handheld" src="view_filter" />
 		</View>
-		
-		<Button class="addButton" onClick="addItem"/>
+		<!--<Button class="addButton" onClick="addItem"/>-->
 	</View>
 </Alloy>

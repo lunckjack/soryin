@@ -36,7 +36,7 @@ for (i = 0; i < loginData.length; i++) {
 		},
 		text : rowtitle,
 		textAlign : "center",
-		
+
 		left : 80,
 		color : '#ffffff',
 		top : 10
@@ -76,7 +76,18 @@ var rowTextArray = [ '0xe03a', '0xe03b' ];
 var tableData = [];
 createSetingView(dataConditionArray, rowTextArray, tableData);
 $.table2.setData(tableData);
+function onClickTable2(e) {
+	alert(e.index);
+	switch (e.index) {
+	case 0:
 
+		break;
+	case 1:
+		// 缩影语言
+		$.trigger('onSwitchVisual', e);
+		break;
+	}
+}
 // 其他
 var otableData = [];
 // dataConditionArray = [ '推荐', '意见','版权','条款' ];

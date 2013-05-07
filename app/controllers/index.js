@@ -4,48 +4,52 @@ var curHeight = Ti.Platform.displayCaps.platformHeight;
 var curWidth = Ti.Platform.displayCaps.platformWidth;
 
 $.view_right.width = curWidth - 110;
-var curview = "";
+$.seting = Alloy.createController('view_setting');
+$.record = Alloy.createController('view_record');
+$.visual = Alloy.createController('view_visual');
+$.level = Alloy.createController('view_level');
+
 // 自我
 $.view_left.addEventListener('click', function() {
-	var setView = Alloy.createController('view_setting').getView();
-
-	if (curview != "") {
-		$.content.remove(curview);
-	}
-	curview = setView;
-	$.content.add(curview);
-	$.scrollable.scrollToView(1);
+	scrollToView($.content, $.seting.getView(), 1);
 });
 
 // 经验、记录总数
 $.view_express.addEventListener('click', function() {
-	var recordView = Alloy.createController('view_record').getView();
+	scrollToView($.content, $.record.getView(), 1);
+});
 
-	if (curview != "") {
-		$.content.remove(curview);
-	}
-	curview = recordView;
-	$.content.add(curview);
-	$.scrollable.scrollToView(1);
+/**
+ * 切换界面
+ * 
+ * @param parentView
+ * @param curView
+ * @param index
+ */
+function scrollToView(parentView, curView, curIndex) {
+	parentView.add(curView);
+	$.scrollable.scrollToView(curIndex);
+}
+
+$.seting.on('onSwitchVisual', function(e) {
+	scrollToView($.childContent, $.visual.getView(), 2);
 });
 
 // 级别
 $.view_level.addEventListener('click', function() {
-	var levelView = Alloy.createController('view_level').getView();
-
-	if (curview != "") {
-		$.content.remove(curview);
-	}
-	curview = levelView;
-	$.content.add(curview);
-	$.scrollable.scrollToView(1);
+	scrollToView($.content, $.level.getView(), 1);
 });
 
-// 返回
-$.backBtn.addEventListener('click', function() {
+// 返回首页
+$.backToIndex.addEventListener('click', function() {
 	$.scrollable.scrollToView(0);
+	$.content.removeAllChildren();
 });
-
+// 返回上一级
+$.backToParent.addEventListener('click', function() {
+	$.scrollable.scrollToView(1);
+	$.childContent.removeAllChildren();
+});
 var icons = [ {
 	'iconName' : "icon_me",
 	'iconColor' : "#fff", // icon 我
@@ -119,8 +123,10 @@ function setIconFont() {
 	$.bodyPercent.color = "#494949";
 	$.lab_body.color = "#494949";
 
-	// 返回
-	$.backBtn.text = entypo.fromCodePoint("0xe023");
+	// 返回首页
+	$.backToIndex.text = entypo.fromCodePoint("0xe023");
+	// 返回上一级
+	$.backToParent.text = entypo.fromCodePoint("0xe023");
 
 	$.splashBackBtn.text = entypo.fromCodePoint("0xe023");
 
@@ -161,7 +167,7 @@ if (loadFirst) {
 
 		});
 	});
-	
+
 	$.viewInfo1.top = (curHeight / 2) - $.viewInfo1.height;
 	$.viewInfo2.top = (curHeight / 2) - $.viewInfo2.height;
 }

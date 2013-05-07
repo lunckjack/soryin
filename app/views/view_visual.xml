@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="container" title="自我" navBarHidden="true">
+	
 		<View layout="vertical">
 			<View top="0" layout="horizontal" id="tab">
 				<View id="tab1">
@@ -20,5 +20,5 @@
 				<View id="contentView" layout="vertical"></View>
 			</ScrollView>
 		</View>
-	</Window>
+	
 </Alloy>

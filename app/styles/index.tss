@@ -57,9 +57,9 @@
 	    fontFamily : 'soryin'
  },
  
-}
-'#backBtn':{
-	font:{
+},
+'.backButton':{
+		font:{
 		fontSize:'70',
 	    fontFamily : 'soryin',
  },

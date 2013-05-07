@@ -8,7 +8,7 @@
 				</TableViewRow>
 			</TableView>
 			<Label text="向导" class="lab_title" />
-			<TableView id='table2' height="100" scrollable="false">
+			<TableView id='table2' height="100" scrollable="false" onClick="onClickTable2">
 				<TableViewRow>
 					<Label>done.....</Label>
 				</TableViewRow>
