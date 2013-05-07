@@ -20,6 +20,8 @@
 	
 	9、view_visual.js   视觉语言（色彩)&(符号)
 	
+	10、view_copyright  版权
+	
 2)block 部分界面
 ======
 	1、view_block.js      block部分
