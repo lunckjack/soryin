@@ -584,7 +584,6 @@ function Controller() {
         bottom: -10,
         left: 0,
         color: "#fff",
-        opacity: "0.8",
         id: "splashBackBtn"
     });
     $.__views.readView3.add($.__views.splashBackBtn);
@@ -645,6 +644,12 @@ function Controller() {
     });
     $.scrollView.addEventListener("click", function() {
         viewAnimation();
+    });
+    $.index.on("hideBackButton", function() {
+        ui.translate2($.backToIndex, 0, 0, 0, 200, function() {});
+    });
+    $.index.on("showBackButton", function() {
+        ui.translate2($.backToIndex, 0, 0, 0, 200, function() {});
     });
     var isAdd = false;
     setIconFont();

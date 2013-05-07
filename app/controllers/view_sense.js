@@ -1,20 +1,8 @@
 var ui = require('ui');
-function moveLine1() {
-	ui.translate2($.line1, -960, 0, 0, 10000, function() {
-
-	});
-}
-
-function moveLine2() {
-	ui.translate2($.line2, 960, 0, 0, 10000, function() {
-
-	});
-}
-
-setTimeout(moveLine1, 10)
-setTimeout(moveLine2, 10)
+var entypo = require('ti.entypo');
 var picker;
 var scanResult;
+$.search = Alloy.createController('view_search');
 setTimeout(function() {
 	// scandit
 	var scanditsdk = require("com.mirasense.scanditsdk");
@@ -22,11 +10,12 @@ setTimeout(function() {
 	// instantiate the Scandit SDK Barcode Picker view
 	picker = scanditsdk.createView({
 		"width" : Ti.Platform.displayCaps.platformWidth,
-		"height" : Ti.Platform.displayCaps.platformHeight
+		"height" : Ti.Platform.displayCaps.platformHeight,
+		backgroundColor : '#f2f2f2'
 	});
 
-	var view_top = Alloy.createController('view_top').getView();
-	var view_function = Alloy.createController('sub_scan').getView();
+	// var view_top = Alloy.createController('view_top').getView();
+	// var view_function = Alloy.createController('sub_scan').getView();
 	// 初始化
 	// Initialize the barcode picker, remember to paste your own app key here.
 	picker.init("fmO1OEi9EeKSCIDaX4SRAsSBxn5OL4SDl8Hr5N/TOi8", 0);
@@ -45,39 +34,52 @@ setTimeout(function() {
 
 		scanResult = e.barcode;
 
-		if (scanResult.indexOf('soryin') > 0) {
-			// 跳转block主界面
-			var mainViewCon = Alloy.createController('evt_main', {
-				barcode : e.barcode,
-				symbology : e.symbology,
-				isCamera : true
-			});
-
-			var mainView = mainViewCon.getView();
-			// 隐藏底部tab
-			mainView.hideTabBar();
-			mainViewCon.init();
-			mainView.open({
-				animated : true
-			});
-			// mytabGroup.fireEvent('refleshLog');
-			$.mainWin.fireEvent('cameraClose');
-			$.mainWin.close();
-		} else {
-			alert('不合法的扫描请求！');
-			$.mainWin.close();
-		}
+		// if (scanResult.indexOf('soryin') > 0) {
+		// // 跳转block主界面
+		// var mainViewCon = Alloy.createController('evt_main', {
+		// barcode : e.barcode,
+		// symbology : e.symbology,
+		// isCamera : true
+		// });
+		//
+		// var mainView = mainViewCon.getView();
+		// // 隐藏底部tab
+		// mainView.hideTabBar();
+		// mainViewCon.init();
+		// mainView.open({
+		// animated : true
+		// });
+		// // mytabGroup.fireEvent('refleshLog');
+		// $.mainWin.fireEvent('cameraClose');
+		// $.mainWin.close();
+		// } else {
+		// alert('不合法的扫描请求！');
+		// // $.mainWin.close();
+		// }
 	});
 
 	// Start the scanning proces
 	picker.startScanning();
 	$.cameraView.add(picker);
-	$.mainWin.add(view_top);
-	$.mainWin.add(view_function);
 
-}, 10)
-// 返回
-$.backBtn.addEventListener('click', function() {
-	picker.stopScanning();
-	$.mainWin.close();
+}, 10);
+
+$.iconSense.text = entypo.fromCodePoint("0xe02f");
+$.viewSearch.addEventListener('click', function() {
+	$.view.visible = true;
+	ui.zoom($.view, function() {
+		ui.translate2($.searchView.getView('searchView'), 0, -180, 0, 200,
+				function() {
+					$.trigger('hideBackButton', e);
+				});
+	});
+
+});
+$.view.addEventListener('click', function() {
+	ui.translate2($.searchView.getView('searchView'), 0, 180, 0, 200,
+			function() {
+				ui.unzoom($.view, function() {
+					$.trigger('showBackButton', e);
+				});
+			});
 });

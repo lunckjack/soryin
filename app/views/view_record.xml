@@ -29,7 +29,7 @@
 				<Label class="labNumText">条</Label>
 				<Label id="sortNum">36</Label>
 			</View>
-			<Label id="icon_sort11" class="iconFont"></Label>
+			<Label id="icon_sort11" class="iconCircleFont"></Label>
 			<Require id="filterView" formFactor="handheld" src="view_filter" />
 		</View>
 		<!--<Button class="addButton" onClick="addItem"/>-->

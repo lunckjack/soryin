@@ -76,7 +76,6 @@
  bottom:-10,
  left:0,
  color:'#fff',
- opacity:'0.8'
 }
 '.lab_me':{
 	font:{

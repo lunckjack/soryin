@@ -102,6 +102,18 @@ $.scrollView.addEventListener('click', function() {
 	viewAnimation();
 });
 
+//$.index.on('hideBackButton', function(e) {
+//	ui.translate2($.backToIndex, 0, 0, 0, 200, function() {
+//
+//	});
+//
+//});
+//$.index.on('showBackButton', function(e) {
+//	ui.translate2($.backToIndex, 0, 0, 0, 200, function() {
+//		
+//	});
+//
+//});
 var isAdd = false;
 /**
  * 扫描和发布按钮现实，有动画

@@ -25,16 +25,6 @@
 	right:0,
 	bottom:20
 },
-//iconFont
-'.iconFont':{
-	font:{
-		fontSize:'40',
-	    fontFamily : 'soryin'
- },
-	top:5,
-	right:5,
-	bottom:5
-},
 '#recordNum':{
 	left:5,
 	font:{
@@ -68,13 +58,4 @@
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.FILL,
 	backgroundColor:"#000"
-},
-'.circleView':{
-	width:50,
-	height:50,
-	backgroundColor:'#fff',
-	borderRadius:'25',
-	borderColor:'#fff',
-	right:0,
-	bottom:20
 }
