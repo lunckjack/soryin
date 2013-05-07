@@ -158,4 +158,9 @@
 	layout:'vertical',
 	width:Titanium.UI.SIZE,
 	height:Titanium.UI.SIZE,
+},
+'#viewFun':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	backgroundColor:'#f2f2f2'
 }

@@ -58,14 +58,14 @@ function Controller() {
         id: "view_record"
     });
     $.__views.view_record && $.addTopLevelView($.__views.view_record);
-    $.__views.__alloyId59 = Ti.UI.createView({
+    $.__views.__alloyId63 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
         top: 0,
-        id: "__alloyId59"
+        id: "__alloyId63"
     });
-    $.__views.view_record.add($.__views.__alloyId59);
+    $.__views.view_record.add($.__views.__alloyId63);
     $.__views.recordTime = Ti.UI.createLabel({
         color: "#fff",
         font: {
@@ -76,7 +76,7 @@ function Controller() {
         text: "11月1日",
         id: "recordTime"
     });
-    $.__views.__alloyId59.add($.__views.recordTime);
+    $.__views.__alloyId63.add($.__views.recordTime);
     $.__views.table = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.SIZE,
@@ -107,13 +107,13 @@ function Controller() {
         id: "recordNum"
     });
     $.__views.sortView.add($.__views.recordNum);
-    $.__views.__alloyId60 = Ti.UI.createLabel({
+    $.__views.__alloyId64 = Ti.UI.createLabel({
         color: "#F39C12",
         text: "条",
-        id: "__alloyId60"
+        id: "__alloyId64"
     });
-    $.__views.sortView.add($.__views.__alloyId60);
-    $.__views.__alloyId61 = Ti.UI.createView({
+    $.__views.sortView.add($.__views.__alloyId64);
+    $.__views.__alloyId65 = Ti.UI.createView({
         width: 50,
         height: 50,
         backgroundColor: "#fff",
@@ -121,9 +121,9 @@ function Controller() {
         borderColor: "#fff",
         right: 0,
         bottom: 20,
-        id: "__alloyId61"
+        id: "__alloyId65"
     });
-    $.__views.view_record.add($.__views.__alloyId61);
+    $.__views.view_record.add($.__views.__alloyId65);
     $.__views.icon_sort = Ti.UI.createLabel({
         font: {
             fontSize: "40",
@@ -134,7 +134,7 @@ function Controller() {
         bottom: 5,
         id: "icon_sort"
     });
-    $.__views.__alloyId61.add($.__views.icon_sort);
+    $.__views.__alloyId65.add($.__views.icon_sort);
     $.__views.viewSort = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.FILL,
@@ -143,18 +143,18 @@ function Controller() {
         visible: "false"
     });
     $.__views.view_record.add($.__views.viewSort);
-    $.__views.__alloyId62 = Ti.UI.createView({
-        id: "__alloyId62"
+    $.__views.__alloyId66 = Ti.UI.createView({
+        id: "__alloyId66"
     });
-    $.__views.viewSort.add($.__views.__alloyId62);
-    $.__views.__alloyId63 = Ti.UI.createLabel({
+    $.__views.viewSort.add($.__views.__alloyId66);
+    $.__views.__alloyId67 = Ti.UI.createLabel({
         color: "#F39C12",
         top: 150,
         right: 30,
         text: "条",
-        id: "__alloyId63"
+        id: "__alloyId67"
     });
-    $.__views.__alloyId62.add($.__views.__alloyId63);
+    $.__views.__alloyId66.add($.__views.__alloyId67);
     $.__views.sortNum = Ti.UI.createLabel({
         font: {
             fontSize: "103",
@@ -165,7 +165,7 @@ function Controller() {
         text: "36",
         id: "sortNum"
     });
-    $.__views.__alloyId62.add($.__views.sortNum);
+    $.__views.__alloyId66.add($.__views.sortNum);
     $.__views.icon_sort11 = Ti.UI.createLabel({
         font: {
             fontSize: "40",

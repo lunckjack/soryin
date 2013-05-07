@@ -8,7 +8,9 @@ $.seting = Alloy.createController('view_setting');
 $.record = Alloy.createController('view_record');
 $.visual = Alloy.createController('view_visual');
 $.level = Alloy.createController('view_level');
-
+$.fun = Alloy.createController('view_fun');
+$.publish = Alloy.createController('view_publish');
+$.sense = Alloy.createController('view_sense');
 // 自我
 $.view_left.addEventListener('click', function() {
 	scrollToView($.content, $.seting.getView(), 1);
@@ -30,6 +32,19 @@ function scrollToView(parentView, curView, curIndex) {
 	parentView.add(curView);
 	$.scrollable.scrollToView(curIndex);
 }
+/**
+ * 发布
+ */
+$.fun.on('onSwitchPublish', function(e) {
+	scrollToView($.content, $.publish.getView(), 1);
+});
+
+/**
+ * 读取
+ */
+$.fun.on('onSwitchSense', function(e) {
+	scrollToView($.content, $.sense.getView(), 1);
+});
 /**
  * 腾讯QQ
  */
@@ -79,6 +94,26 @@ $.backToParent.addEventListener('click', function() {
 	$.scrollable.scrollToView(1);
 	$.childContent.removeAllChildren();
 });
+
+$.scrollView.addEventListener('scrollend', function() {
+	viewAnimation();
+});
+$.scrollView.addEventListener('click', function() {
+	viewAnimation();
+});
+
+var isAdd = false;
+/**
+ * 扫描和发布按钮现实，有动画
+ */
+function viewAnimation() {
+	if (!isAdd) {
+		$.viewFun.add($.fun.getView());
+		$.scrollView.scrollTo(0, 100);
+		isAdd = true;
+	}
+
+}
 var icons = [ {
 	'iconName' : "icon_me",
 	'iconColor' : "#fff", // icon 我
@@ -174,7 +209,7 @@ var loadFirst = Ti.App.Properties.getBool('loadFist', true);
 if (loadFirst) {
 	$.readView1.visible = true;
 	ui.zoom($.readView1, function() {
-		// Ti.App.Properties.setBool('loadFist', false);
+		Ti.App.Properties.setBool('loadFist', false);
 	});
 
 	$.readView1.addEventListener('click', function() {

@@ -3,6 +3,13 @@ function Controller() {
         parentView.add(curView);
         $.scrollable.scrollToView(curIndex);
     }
+    function viewAnimation() {
+        if (!isAdd) {
+            $.viewFun.add($.fun.getView());
+            $.scrollView.scrollTo(0, 100);
+            isAdd = true;
+        }
+    }
     function setIconFont() {
         $.icon_me.text = entypo.fromCodePoint("0xe007");
         $.icon_me.color = "#fff";
@@ -118,6 +125,13 @@ function Controller() {
         layout: "vertical"
     });
     $.__views.__alloyId2.add($.__views.scrollView);
+    $.__views.viewFun = Ti.UI.createView({
+        width: Titanium.UI.FILL,
+        height: Titanium.UI.SIZE,
+        backgroundColor: "#f2f2f2",
+        id: "viewFun"
+    });
+    $.__views.scrollView.add($.__views.viewFun);
     $.__views.viewContent = Ti.UI.createView({
         height: "200",
         width: Titanium.UI.FILL,
@@ -585,17 +599,29 @@ function Controller() {
     $.record = Alloy.createController("view_record");
     $.visual = Alloy.createController("view_visual");
     $.level = Alloy.createController("view_level");
+    $.fun = Alloy.createController("view_fun");
+    $.publish = Alloy.createController("view_publish");
+    $.sense = Alloy.createController("view_sense");
     $.view_left.addEventListener("click", function() {
         scrollToView($.content, $.seting.getView(), 1);
     });
     $.view_express.addEventListener("click", function() {
         scrollToView($.content, $.record.getView(), 1);
     });
+    $.fun.on("onSwitchPublish", function() {
+        scrollToView($.content, $.publish.getView(), 1);
+    });
+    $.fun.on("onSwitchSense", function() {
+        scrollToView($.content, $.sense.getView(), 1);
+    });
     $.seting.on("onSwitchQQ", function() {
         alert("腾讯QQ");
     });
     $.seting.on("onSwitchSina", function() {
         alert("新浪微博");
+    });
+    $.seting.on("onSwitchSplash", function() {
+        alert("快速上手");
     });
     $.seting.on("onSwitchVisual", function() {
         scrollToView($.childContent, $.visual.getView(), 2);
@@ -614,11 +640,20 @@ function Controller() {
         $.scrollable.scrollToView(1);
         $.childContent.removeAllChildren();
     });
+    $.scrollView.addEventListener("scrollend", function() {
+        viewAnimation();
+    });
+    $.scrollView.addEventListener("click", function() {
+        viewAnimation();
+    });
+    var isAdd = false;
     setIconFont();
     var loadFirst = Ti.App.Properties.getBool("loadFist", true);
     if (loadFirst) {
         $.readView1.visible = true;
-        ui.zoom($.readView1, function() {});
+        ui.zoom($.readView1, function() {
+            Ti.App.Properties.setBool("loadFist", false);
+        });
         $.readView1.addEventListener("click", function() {
             this.visible = false;
             $.readView2.visible = true;
