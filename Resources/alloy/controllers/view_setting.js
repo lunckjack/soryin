@@ -1,6 +1,15 @@
 function Controller() {
+    function onClickTable1(e) {
+        switch (e.index) {
+          case 0:
+            $.trigger("onSwitchQQ", e);
+            break;
+
+          case 1:
+            $.trigger("onSwitchSina", e);
+        }
+    }
     function onClickTable2(e) {
-        alert(e.index);
         switch (e.index) {
           case 0:
             break;
@@ -9,11 +18,19 @@ function Controller() {
             $.trigger("onSwitchVisual", e);
         }
     }
+    function onClickTable3(e) {
+        switch (e.index) {
+          case 0:
+            $.trigger("onSwitchCopyRight", e);
+            break;
+
+          case 1:        }
+    }
     function createSetingView(dataArray, rowArray, tableDatas) {
         for (i = 0; dataArray.length > i; i++) {
             var row = Ti.UI.createTableViewRow({
                 height: "50",
-                selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.GRAY
+                selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.BLUE
             });
             row.isOpen = false;
             var line = Ti.UI.createView({
@@ -105,6 +122,7 @@ function Controller() {
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table1);
+    onClickTable1 ? $.__views.table1.addEventListener("click", onClickTable1) : __defers["$.__views.table1!click!onClickTable1"] = true;
     $.__views.__alloyId68 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
@@ -164,6 +182,7 @@ function Controller() {
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table3);
+    onClickTable3 ? $.__views.table3.addEventListener("click", onClickTable3) : __defers["$.__views.table3!click!onClickTable3"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     var entypo = require("ti.entypo");
@@ -238,7 +257,9 @@ function Controller() {
     var orowTextArray = [ "0xa9" ];
     createSetingView(odataConditionArray, orowTextArray, otableData);
     $.table3.setData(otableData);
+    __defers["$.__views.table1!click!onClickTable1"] && $.__views.table1.addEventListener("click", onClickTable1);
     __defers["$.__views.table2!click!onClickTable2"] && $.__views.table2.addEventListener("click", onClickTable2);
+    __defers["$.__views.table3!click!onClickTable3"] && $.__views.table3.addEventListener("click", onClickTable3);
     _.extend($, exports);
 }
 

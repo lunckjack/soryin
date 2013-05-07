@@ -591,8 +591,17 @@ function Controller() {
     $.view_express.addEventListener("click", function() {
         scrollToView($.content, $.record.getView(), 1);
     });
+    $.seting.on("onSwitchQQ", function() {
+        alert("腾讯QQ");
+    });
+    $.seting.on("onSwitchSina", function() {
+        alert("新浪微博");
+    });
     $.seting.on("onSwitchVisual", function() {
         scrollToView($.childContent, $.visual.getView(), 2);
+    });
+    $.seting.on("onSwitchCopyRight", function() {
+        alert("版权信息");
     });
     $.view_level.addEventListener("click", function() {
         scrollToView($.content, $.level.getView(), 1);

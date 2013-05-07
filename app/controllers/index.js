@@ -30,9 +30,38 @@ function scrollToView(parentView, curView, curIndex) {
 	parentView.add(curView);
 	$.scrollable.scrollToView(curIndex);
 }
+/**
+ * 腾讯QQ
+ */
+$.seting.on('onSwitchQQ', function(e) {
+	alert('腾讯QQ');
+});
+/**
+ * 新浪微博
+ */
+$.seting.on('onSwitchSina', function(e) {
+	alert('新浪微博');
+});
+/**
+ * 快速上手
+ */
+$.seting.on('onSwitchSplash', function(e) {
+	alert('快速上手');
+});
 
+/**
+ * 视觉语言
+ */
 $.seting.on('onSwitchVisual', function(e) {
 	scrollToView($.childContent, $.visual.getView(), 2);
+});
+
+/**
+ * 版权信息
+ */
+$.seting.on('onSwitchCopyRight', function(e) {
+	// scrollToView($.childContent, $.visual.getView(), 2);
+	alert('版权信息');
 });
 
 // 级别
