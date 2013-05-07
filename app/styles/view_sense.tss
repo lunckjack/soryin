@@ -1,3 +1,30 @@
-".container": {
-	backgroundColor: "white"
-}
+'.container':{
+	backgroundColor:'black'
+},
+'#line1':{
+	left:0,
+	backgroundImage:'/imgs/utility/line1.png',
+	width:'960dp',
+	height:'30dp',
+	top:'100dp'
+},
+'#line2':{
+	right:0,
+	width:'960dp',
+	backgroundImage:'/imgs/utility/line2.png',
+	height:'30dp',
+	top:'200dp'
+},
+'#loadlabel':{
+	top:'130dp',
+	font:{fontSize:'60dp'},
+	color:'#fbaf3a'
+},
+'#topbar': {
+	backgroundImage:'/imgs/header/topbar.png',
+	backgroundColor:'black',
+	height:'44dp',
+	top:0
+},
+
+
