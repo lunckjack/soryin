@@ -11,6 +11,8 @@ $.level = Alloy.createController('view_level');
 $.fun = Alloy.createController('view_fun');
 $.publish = Alloy.createController('view_publish');
 $.sense = Alloy.createController('view_sense');
+$.like = Alloy.createController('view_like');
+$.body = Alloy.createController('view_body');
 // 自我
 $.view_left.addEventListener('click', function() {
 	scrollToView($.content, $.seting.getView(), 1);
@@ -84,6 +86,16 @@ $.view_level.addEventListener('click', function() {
 	scrollToView($.content, $.level.getView(), 1);
 });
 
+// 喜好
+
+$.view_like.addEventListener('click', function() {
+	scrollToView($.content, $.like.getView(), 1);
+});
+// 身体
+
+$.view_body.addEventListener('click', function() {
+	scrollToView($.content, $.body.getView(), 1);
+});
 // 返回首页
 $.backToIndex.addEventListener('click', function() {
 	$.scrollable.scrollToView(0);
@@ -95,11 +107,11 @@ $.backToParent.addEventListener('click', function() {
 	$.childContent.removeAllChildren();
 });
 
-//滚动结束调用此函数
+// 滚动结束调用此函数
 $.scrollView.addEventListener('scrollend', function() {
 	viewAnimation();
 });
-//单击时候触发
+// 单击时候触发
 $.scrollView.addEventListener('click', function() {
 	viewAnimation();
 });
@@ -146,47 +158,11 @@ function viewAnimation() {
 	}
 
 }
-var icons = [ {
-	'iconName' : "icon_me",
-	'iconColor' : "#fff", // icon 我
-	'iconCode' : "0xe007"
-}, {
-	'iconName' : 'icon_cover',
-	'iconColor' : '#ccc', // icon 封面
-	'iconCode' : '0xf1b2'
-}, {
-	'iconName' : 'icon_express',
-	'iconColor' : '#fff', // icon 经验
-	'iconCode' : '0xf2b0'
-}, {
-	'iconName' : 'icon_level',
-	'iconColor' : '#fff', // icon 级别
-	'iconCode' : '0xf2e6'
-}, {
-	'iconName' : 'icon_attention',
-	'iconColor' : '#fff', // icon 关注
-	'iconCode' : '#ED1E79'
-}, {
-	'iconName' : 'icon_like',
-	'iconColor' : '#494949', // icon 喜好
-	'iconCode' : '#0xe029'
-}, {
-	'iconName' : 'icon_body',
-	'iconColor' : '#494949', // icon 身体
-	'iconCode' : '#0xe007'
-} ];
 
 /**
  * set icon
  */
 function setIconFont() {
-	// for ( var i = 0; i < icons.length; i++) {
-	// var iconName = icons[i].iconName;
-	// var iconColor = icons[i].iconColor;
-	// var iconCode = icons[i].iconCode;
-	//		
-	//		
-	// }
 	// icon 我
 	$.icon_me.text = entypo.fromCodePoint("0xe007");
 	$.icon_me.color = "#fff";

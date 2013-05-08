@@ -1,3 +1,5 @@
 module.exports = {
-    dependencies: {}
+    dependencies: {
+        checkbox: "1.0"
+    }
 };

@@ -47,8 +47,8 @@
 	width:Titanium.UI.SIZE,
 	height:Titanium.UI.SIZE,
 	left:10,
-	 color:'#F39C12',
-	 top:10
+	color:'#F39C12',
+	top:10
 }
 
 '.rowTable':{

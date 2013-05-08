@@ -1,0 +1,30 @@
+"#checkbox": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#chk": {
+	color: '#000',
+	textAlign: 'center',
+	width: '16dp',
+	height: '16dp',
+	borderWidth: 3,
+	borderColor: 'black',
+	left: 1,
+	top: 0,
+	borderRadius:'8',
+	font: {
+		fontSize: 16,
+		fontWeight: 'bold'
+	},
+},
+"#lbl": {
+	color: '#000',
+	font: {
+		fontSize: 18,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	left: 10
+}

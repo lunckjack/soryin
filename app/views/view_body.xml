@@ -1,4 +1,17 @@
 <Alloy>
 	<View class="container">
+		
+	    
+		<Widget id="checkbox1" src="checkbox" color="red"
+			message="checkbox1" />
+		
+		<Widget id="checkbox2" src="checkbox" color="red"
+			message="checkbox2" />
+		
+		<Widget id="checkbox3" src="checkbox" color="red"
+			message="checkbox3" />
+		
+		<Widget id="checkbox4" src="checkbox" color="red"
+			message="checkbox4" />
 	</View>
 </Alloy>

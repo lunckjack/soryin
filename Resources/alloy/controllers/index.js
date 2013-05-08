@@ -607,6 +607,8 @@ function Controller() {
     $.fun = Alloy.createController("view_fun");
     $.publish = Alloy.createController("view_publish");
     $.sense = Alloy.createController("view_sense");
+    $.like = Alloy.createController("view_like");
+    $.body = Alloy.createController("view_body");
     $.view_left.addEventListener("click", function() {
         scrollToView($.content, $.seting.getView(), 1);
     });
@@ -636,6 +638,12 @@ function Controller() {
     });
     $.view_level.addEventListener("click", function() {
         scrollToView($.content, $.level.getView(), 1);
+    });
+    $.view_like.addEventListener("click", function() {
+        scrollToView($.content, $.like.getView(), 1);
+    });
+    $.view_body.addEventListener("click", function() {
+        scrollToView($.content, $.body.getView(), 1);
     });
     $.backToIndex.addEventListener("click", function() {
         $.scrollable.scrollToView(0);
