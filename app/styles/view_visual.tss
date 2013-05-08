@@ -1,20 +1,20 @@
 '.eventFontFamily':{
 	font:{
-		fontSize:'20dp',
+		fontSize:20,
 		opacity:'0.5',
 	    fontFamily : 'soryin'
   }
 },
 'lab_text':{
 	font:{
-		fontSize:'24dp',
-		fontFamily : 'HiraginoSansGB-W6'
+		fontSize:'24',
+		fontFamily : 'HiraginoSansGB-W3'
 	},
 	left:10
 },
 '#tab':{
 	width:Titanium.UI.FILL,
-	height:'50dp'
+	height:'50'
 },
 '#contentView':{
 	backgroundColor:'#fff'

@@ -95,24 +95,32 @@ $.backToParent.addEventListener('click', function() {
 	$.childContent.removeAllChildren();
 });
 
+//滚动结束调用此函数
 $.scrollView.addEventListener('scrollend', function() {
 	viewAnimation();
 });
+//单击时候触发
 $.scrollView.addEventListener('click', function() {
 	viewAnimation();
 });
-
+/**
+ * 隐藏回退按钮
+ */
 function hideBackIndexButton() {
 
 	ui.translate2($.backToIndex, -70, 0, 0, 200, function() {
 
 	});
 }
+/**
+ * 显示回退按钮
+ */
 function showBackIndexButton() {
 	ui.translate2($.backToIndex, 0, 0, 0, 200, function() {
 
 	});
 }
+
 $.sense.on('hideBackButton', function(e) {
 	hideBackIndexButton();
 });

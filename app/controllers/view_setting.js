@@ -22,7 +22,7 @@ for (i = 0; i < loginData.length; i++) {
 	}
 
 	var row = Ti.UI.createTableViewRow({
-		height : '50',
+		height : '60',
 		selectionStyle : Titanium.UI.iPhone.TableViewCellSelectionStyle.BLUE,
 		backgroundColor : rowcolor,
 		selectedBackgroundColor : selBackColor
@@ -39,7 +39,7 @@ for (i = 0; i < loginData.length; i++) {
 
 		left : 80,
 		color : '#ffffff',
-		top : 10
+		top : 20
 	});
 
 	// 图标
@@ -134,13 +134,13 @@ $.table3.setData(otableData);
 function createSetingView(dataArray, rowArray, tableDatas) {
 for (i = 0; i < dataArray.length; i++) {
 	var row = Ti.UI.createTableViewRow({
-		height : '50',
+		height : '60',
 		selectionStyle : Titanium.UI.iPhone.TableViewCellSelectionStyle.BLUE
 	});
 	row.isOpen = false;
 
 	var line = Ti.UI.createView({
-		height : '50',
+		height : '60',
 		left : '70',
 		width : '1dp',
 		backgroundColor : "#cecece"
@@ -162,7 +162,7 @@ for (i = 0; i < dataArray.length; i++) {
 		},
 		text : dataArray[i],
 		left : 80,
-		top : 10,
+		top : 20,
 		textAlign : "center",
 	});
 	var arrow = Ti.UI.createLabel({

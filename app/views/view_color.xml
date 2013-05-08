@@ -1,0 +1,9 @@
+<Alloy>
+	<View class="container">
+		<View class="topView">
+			<Label id="iconColor" class="iconColorFont"></Label>
+		</View>
+		<TableView id="colorTable">
+		</TableView>
+	</View>
+</Alloy>

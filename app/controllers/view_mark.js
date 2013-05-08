@@ -1,0 +1,10 @@
+var entypo = require('ti.entypo');
+$.iconUser.text = entypo.fromCodePoint("0xe06f");
+$.iconLogout.text = entypo.fromCodePoint("0xe047");
+$.iconEnter.text = entypo.fromCodePoint("0xf3c9");
+$.iconExpend.text = entypo.fromCodePoint("0xe011");
+$.iconFun.text = entypo.fromCodePoint("0xe02f");
+$.iconSort.text = entypo.fromCodePoint("0xe027");
+$.iconSave.text = entypo.fromCodePoint("0xe077");
+$.iconRet.text = entypo.fromCodePoint("0xe023");
+$.iconLogo.text = entypo.fromCodePoint("0xe054");

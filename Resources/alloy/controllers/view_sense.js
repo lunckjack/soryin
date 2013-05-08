@@ -9,14 +9,14 @@ function Controller() {
         id: "view_sense"
     });
     $.__views.view_sense && $.addTopLevelView($.__views.view_sense);
-    $.__views.__alloyId68 = Ti.UI.createView({
-        id: "__alloyId68"
+    $.__views.__alloyId107 = Ti.UI.createView({
+        id: "__alloyId107"
     });
-    $.__views.view_sense.add($.__views.__alloyId68);
+    $.__views.view_sense.add($.__views.__alloyId107);
     $.__views.cameraView = Ti.UI.createView({
         id: "cameraView"
     });
-    $.__views.__alloyId68.add($.__views.cameraView);
+    $.__views.__alloyId107.add($.__views.cameraView);
     $.__views.viewSearch = Ti.UI.createView({
         width: 50,
         height: 50,

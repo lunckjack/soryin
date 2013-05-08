@@ -1,17 +1,16 @@
 <Alloy>
-	
 		<View layout="vertical">
 			<View top="0" layout="horizontal" id="tab">
 				<View id="tab1">
 					<View layout="horizontal" top="10dp" left="50dp">
 						<Label id="l2" class="eventFontFamily" />
-						<Label id="l1" class="lab_text">描述</Label>
+						<Label id="l1" class="lab_text">色彩</Label>
 					</View>
 				</View>
 				<View id="tab2">
 					<View layout="horizontal" top="10dp" left="50dp">
 						<Label id="l4" class="eventFontFamily" />
-						<Label id="l3" class="lab_text">图片</Label>
+						<Label id="l3" class="lab_text">符号</Label>
 					</View>
 				</View>
 			</View>
@@ -20,5 +19,4 @@
 				<View id="contentView" layout="vertical"></View>
 			</ScrollView>
 		</View>
-	
 </Alloy>

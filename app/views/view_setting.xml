@@ -2,20 +2,20 @@
 	<ScrollView id="scrollView" showVerticalScrollIndicator="true">
 		<View id="setView">
 			<Label text="登录" class="lab_title" />
-			<TableView id='table1' scrollable="false" onClick="onClickTable1">
+			<TableView id='table1' scrollable="false" onClick="onClickTable1" height="120" >
 				<TableViewRow>
 					<Label>done.....</Label>
 				</TableViewRow>
 			</TableView>
 			<Label text="向导" class="lab_title" />
-			<TableView id='table2' height="100" scrollable="false"
+			<TableView id='table2' height="120" scrollable="false"
 				onClick="onClickTable2">
 				<TableViewRow>
 					<Label>done.....</Label>
 				</TableViewRow>
 			</TableView>
 			<Label text="其他" class="lab_title" />
-			<TableView id='table3' height="50" scrollable="false"
+			<TableView id='table3' height="60" scrollable="false"
 				onClick="onClickTable3">
 				<TableViewRow>
 					<Label>done.....</Label>

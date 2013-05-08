@@ -389,8 +389,8 @@ function Controller() {
         },
         bottom: -10,
         left: 0,
-        color: "#ccc",
         opacity: "0.8",
+        color: "#ccc",
         id: "backToIndex"
     });
     $.__views.__alloyId10.add($.__views.backToIndex);
@@ -409,8 +409,8 @@ function Controller() {
         },
         bottom: -10,
         left: 0,
-        color: "#ccc",
         opacity: "0.8",
+        color: "#ccc",
         id: "backToParent"
     });
     $.__views.__alloyId11.add($.__views.backToParent);
