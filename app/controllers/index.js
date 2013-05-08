@@ -102,18 +102,30 @@ $.scrollView.addEventListener('click', function() {
 	viewAnimation();
 });
 
-//$.index.on('hideBackButton', function(e) {
-//	ui.translate2($.backToIndex, 0, 0, 0, 200, function() {
-//
-//	});
-//
-//});
-//$.index.on('showBackButton', function(e) {
-//	ui.translate2($.backToIndex, 0, 0, 0, 200, function() {
-//		
-//	});
-//
-//});
+function hideBackIndexButton() {
+
+	ui.translate2($.backToIndex, -70, 0, 0, 200, function() {
+
+	});
+}
+function showBackIndexButton() {
+	ui.translate2($.backToIndex, 0, 0, 0, 200, function() {
+
+	});
+}
+$.sense.on('hideBackButton', function(e) {
+	hideBackIndexButton();
+});
+$.sense.on('showBackButton', function(e) {
+	showBackIndexButton();
+});
+
+$.record.on('hideBackButton', function(e) {
+	hideBackIndexButton();
+});
+$.record.on('showBackButton', function(e) {
+	showBackIndexButton();
+});
 var isAdd = false;
 /**
  * 扫描和发布按钮现实，有动画

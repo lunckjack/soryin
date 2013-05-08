@@ -47,7 +47,10 @@ function Controller() {
                     fontFamily: "HiraginoSansGB-W3"
                 },
                 color: "#fff",
-                left: 5
+                left: 5,
+                width: 100,
+                height: Titanium.UI.SIZE,
+                top: 5
             });
             view.add(icon);
             view.add(desc);

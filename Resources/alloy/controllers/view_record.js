@@ -125,6 +125,14 @@ function Controller() {
     });
     $.__views.view_record.add($.__views.__alloyId65);
     $.__views.icon_sort = Ti.UI.createLabel({
+        font: {
+            fontSize: "40",
+            fontFamily: "soryin"
+        },
+        top: 5,
+        right: 5,
+        bottom: 5,
+        color: "#F39C12",
         id: "icon_sort"
     });
     $.__views.__alloyId65.add($.__views.icon_sort);
@@ -189,15 +197,18 @@ function Controller() {
     $.table.addEventListener("scroll", function() {
         ui.translate2($.sortView, 150, 0, 0, 70, function() {});
     });
-    $.icon_sort.addEventListener("click", function() {
+    $.icon_sort.addEventListener("click", function(e) {
         $.viewSort.visible = true;
+        $.trigger("hideBackButton", e);
         ui.zoom($.viewSort, function() {
             ui.translate2($.filterView.getView("filterView"), 0, -214, 0, 200, function() {});
         });
     });
-    $.viewSort.addEventListener("click", function() {
+    $.viewSort.addEventListener("click", function(e) {
         ui.translate2($.filterView.getView("filterView"), 0, 214, 0, 200, function() {
-            ui.unzoom($.viewSort, function() {});
+            ui.unzoom($.viewSort, function() {
+                $.trigger("showBackButton", e);
+            });
         });
     });
     loadTableView();

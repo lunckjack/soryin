@@ -57,7 +57,7 @@ setTimeout(function() {
 		// // $.mainWin.close();
 		// }
 	});
-
+	
 	// Start the scanning proces
 	picker.startScanning();
 	$.cameraView.add(picker);
@@ -65,17 +65,18 @@ setTimeout(function() {
 }, 10);
 
 $.iconSense.text = entypo.fromCodePoint("0xe02f");
-$.viewSearch.addEventListener('click', function() {
+$.viewSearch.addEventListener('click', function(e) {
 	$.view.visible = true;
+	$.trigger('hideBackButton', e);
 	ui.zoom($.view, function() {
 		ui.translate2($.searchView.getView('searchView'), 0, -180, 0, 200,
 				function() {
-					$.trigger('hideBackButton', e);
+					
 				});
 	});
 
 });
-$.view.addEventListener('click', function() {
+$.view.addEventListener('click', function(e) {
 	ui.translate2($.searchView.getView('searchView'), 0, 180, 0, 200,
 			function() {
 				ui.unzoom($.view, function() {

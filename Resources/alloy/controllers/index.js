@@ -3,6 +3,12 @@ function Controller() {
         parentView.add(curView);
         $.scrollable.scrollToView(curIndex);
     }
+    function hideBackIndexButton() {
+        ui.translate2($.backToIndex, -70, 0, 0, 200, function() {});
+    }
+    function showBackIndexButton() {
+        ui.translate2($.backToIndex, 0, 0, 0, 200, function() {});
+    }
     function viewAnimation() {
         if (!isAdd) {
             $.viewFun.add($.fun.getView());
@@ -645,11 +651,17 @@ function Controller() {
     $.scrollView.addEventListener("click", function() {
         viewAnimation();
     });
-    $.index.on("hideBackButton", function() {
-        ui.translate2($.backToIndex, 0, 0, 0, 200, function() {});
+    $.sense.on("hideBackButton", function() {
+        hideBackIndexButton();
     });
-    $.index.on("showBackButton", function() {
-        ui.translate2($.backToIndex, 0, 0, 0, 200, function() {});
+    $.sense.on("showBackButton", function() {
+        showBackIndexButton();
+    });
+    $.record.on("hideBackButton", function() {
+        hideBackIndexButton();
+    });
+    $.record.on("showBackButton", function() {
+        showBackIndexButton();
     });
     var isAdd = false;
     setIconFont();

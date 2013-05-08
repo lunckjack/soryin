@@ -81,22 +81,23 @@ $.table.addEventListener('scroll', function() {
 });
 
 // 筛选
-$.icon_sort.addEventListener('click', function() {
+$.icon_sort.addEventListener('click', function(e) {
 
 	$.viewSort.visible = true;
-
+	$.trigger('hideBackButton', e);
 	ui.zoom($.viewSort, function() {
 		ui.translate2($.filterView.getView("filterView"), 0, -214, 0, 200,
 				function() {
+					
 				});
 	});
 
 });
-$.viewSort.addEventListener('click', function() {
+$.viewSort.addEventListener('click', function(e) {
 	ui.translate2($.filterView.getView("filterView"), 0, 214, 0, 200,
 			function() {
 				ui.unzoom($.viewSort, function() {
-
+					$.trigger('showBackButton', e);
 				});
 			});
 
