@@ -77,31 +77,31 @@ function Controller() {
     $.iconColor.text = entypo.fromCodePoint("0xe070");
     var colors = [ {
         colorName: "缩影橙",
-        iconColor: "#F39C12",
+        iconColor: Alloy.Globals.soryinOrangeColor,
         colorDesc: "缩影信息|功能"
     }, {
         colorName: "石灰绿",
-        iconColor: "#2ECC71",
+        iconColor: Alloy.Globals.soryinGreenColor,
         colorDesc: "即将|正确|通行"
     }, {
         colorName: "大洞蓝",
-        iconColor: "#29ABE2",
+        iconColor: Alloy.Globals.soryinBlueColor,
         colorDesc: "一般信息"
     }, {
         colorName: "石榴红",
-        iconColor: "#BF382A",
+        iconColor: Alloy.Globals.soryinSlRedColor,
         colorDesc: "结束|警告|危险"
     }, {
         colorName: "小桃红",
-        iconColor: "#ED1E79",
+        iconColor: Alloy.Globals.soryinPinkColor,
         colorDesc: "喜欢"
     }, {
         colorName: "矿物灰",
-        iconColor: "#494949",
+        iconColor: Alloy.Globals.soryinKwGrayColor,
         colorDesc: "文字内容|陪衬"
     }, {
         colorName: "石棉灰",
-        iconColor: "#7F8C8D",
+        iconColor: Alloy.Globals.soryinSmGrayColor,
         colorDesc: "其他辅助"
     } ];
     var tableData = [];

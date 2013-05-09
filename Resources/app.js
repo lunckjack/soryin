@@ -1,19 +1,19 @@
 var Alloy = require("alloy"), _ = Alloy._, Backbone = Alloy.Backbone;
 
-Alloy.Globals.soryinBgColor = "#f2f2f2";
+Alloy.Globals.soryinBgColor = "#f7f3f2";
 
-Alloy.Globals.soryinOrangeColor = "#F39C12";
+Alloy.Globals.soryinOrangeColor = "#f29b11";
 
-Alloy.Globals.soryinGreenColor = "#2ECC71";
+Alloy.Globals.soryinGreenColor = "#2ecc71";
 
-Alloy.Globals.soryinBlueColor = "#29ABE2";
+Alloy.Globals.soryinBlueColor = "#28aae1";
 
-Alloy.Globals.soryinSlRedColor = "#BF382A";
+Alloy.Globals.soryinSlRedColor = "#bf382a";
 
-Alloy.Globals.soryinPinkColor = "#ED1E79";
+Alloy.Globals.soryinPinkColor = "#ec1d78";
 
 Alloy.Globals.soryinKwGrayColor = "#494949";
 
-Alloy.Globals.soryinSmGrayColor = "#7F8C8D";
+Alloy.Globals.soryinSmGrayColor = "#7e8b8c";
 
 Alloy.createController("index");

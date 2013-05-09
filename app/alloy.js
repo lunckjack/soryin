@@ -10,18 +10,18 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 //系统默认背景颜色
-Alloy.Globals.soryinBgColor = "#f2f2f2";
+Alloy.Globals.soryinBgColor = "#f7f3f2";
 // 缩影橙
-Alloy.Globals.soryinOrangeColor = "#F39C12";
+Alloy.Globals.soryinOrangeColor = "#f29b11";
 // 石灰绿
-Alloy.Globals.soryinGreenColor = "#2ECC71";
+Alloy.Globals.soryinGreenColor = "#2ecc71";
 // 大洞蓝
-Alloy.Globals.soryinBlueColor = "#29ABE2";
+Alloy.Globals.soryinBlueColor = "#28aae1";
 // 石榴红
-Alloy.Globals.soryinSlRedColor = "#BF382A";
+Alloy.Globals.soryinSlRedColor = "#bf382a";
 // 小桃红
-Alloy.Globals.soryinPinkColor = "#ED1E79";
+Alloy.Globals.soryinPinkColor = "#ec1d78";
 // 矿物灰
-Alloy.Globals.soryinKwGrayColor = "#494949";
+Alloy.Globals.soryinKwGrayColor = "#494949";	
 // 石棉灰
-Alloy.Globals.soryinSmGrayColor = "#7F8C8D";
+Alloy.Globals.soryinSmGrayColor = "#7e8b8c";
