@@ -38,20 +38,20 @@ function Controller() {
         id: "view_block"
     });
     $.__views.view_block && $.addTopLevelView($.__views.view_block);
-    var __alloyId15 = [];
-    $.__views.__alloyId16 = Ti.UI.createView({
+    var __alloyId30 = [];
+    $.__views.__alloyId31 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId16"
+        id: "__alloyId31"
     });
-    __alloyId15.push($.__views.__alloyId16);
+    __alloyId30.push($.__views.__alloyId31);
     $.__views.viewTop = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: "110",
         id: "viewTop"
     });
-    $.__views.__alloyId16.add($.__views.viewTop);
+    $.__views.__alloyId31.add($.__views.viewTop);
     $.__views.viewTop_viewEventType = Ti.UI.createView({
-        backgroundColor: "F39C12",
+        backgroundColor: Alloy.Globals.btn_orange,
         width: 110,
         height: 110,
         left: 0,
@@ -66,7 +66,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "soryin"
         },
-        color: "F2F2F2",
+        color: Alloy.Globals.near_whilte,
         left: 5,
         top: 5,
         id: "icon_V"
@@ -84,14 +84,14 @@ function Controller() {
             fontSize: "49",
             fontFamily: "soryin"
         },
-        color: "FFFFFF",
+        color: Alloy.Globals.whilte,
         left: 10,
         top: 10,
         id: "icon_eventType"
     });
     $.__views.viewTop_viewEventType_iconView.add($.__views.icon_eventType);
     $.__views.text_eventType = Ti.UI.createLabel({
-        color: "FFFFFF",
+        color: Alloy.Globals.whilte,
         font: {
             fontSize: "28.5",
             fontFamily: "冬青黑体简体中文"
@@ -105,24 +105,24 @@ function Controller() {
         id: "img_default"
     });
     $.__views.viewTop.add($.__views.img_default);
-    $.__views.__alloyId17 = Ti.UI.createScrollView({
+    $.__views.__alloyId32 = Ti.UI.createScrollView({
         showVerticalScrollIndicator: "true",
         layout: "vertical",
-        id: "__alloyId17"
+        id: "__alloyId32"
     });
-    $.__views.__alloyId16.add($.__views.__alloyId17);
+    $.__views.__alloyId31.add($.__views.__alloyId32);
     $.__views.viewTimeAndLocation = Ti.UI.createView({
         height: 100,
         width: Titanium.UI.FILL,
         borderRadius: 6,
-        borderColor: "CCCCCC",
+        borderColor: Alloy.Globals.gray,
         left: 10,
         top: 10,
         right: 10,
         id: "viewTimeAndLocation",
         layout: "horizontal"
     });
-    $.__views.__alloyId17.add($.__views.viewTimeAndLocation);
+    $.__views.__alloyId32.add($.__views.viewTimeAndLocation);
     $.__views.viewTimeAndLocation_Time = Ti.UI.createView({
         width: 150,
         height: 100,
@@ -137,7 +137,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "2ECC71",
+        color: Alloy.Globals.green,
         left: 15,
         top: 20,
         id: "viewTimeAndLocation_Time_icon"
@@ -153,7 +153,7 @@ function Controller() {
             fontSize: "30",
             fontFamily: "Orbitron"
         },
-        color: "2ECC71",
+        color: Alloy.Globals.green,
         left: 17.5,
         top: 20,
         id: "viewTimeAndLocation_Time_textView_bigText"
@@ -164,7 +164,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewTimeAndLocation_Time_textView_smallText"
@@ -184,7 +184,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "2ECC71",
+        color: Alloy.Globals.green,
         left: 15,
         top: 20,
         id: "viewTimeAndLocation_Location_icon",
@@ -201,7 +201,7 @@ function Controller() {
             fontSize: "30",
             fontFamily: "Orbitron"
         },
-        color: "2ECC71",
+        color: Alloy.Globals.green,
         left: 17.5,
         top: 20,
         id: "viewTimeAndLocation_Location_textView_bigText"
@@ -212,7 +212,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.green,
         left: 17,
         top: 0,
         id: "viewTimeAndLocation_Location_textView_smallText"
@@ -222,14 +222,14 @@ function Controller() {
         height: 100,
         width: Titanium.UI.FILL,
         borderRadius: 6,
-        borderColor: "CCCCCC",
+        borderColor: Alloy.Globals.gray,
         left: 10,
         top: 10,
         right: 10,
         id: "viewEntity",
         layout: "horizontal"
     });
-    $.__views.__alloyId17.add($.__views.viewEntity);
+    $.__views.__alloyId32.add($.__views.viewEntity);
     $.__views.viewEntity_organization = Ti.UI.createView({
         width: 150,
         height: 100,
@@ -244,7 +244,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "7F8C8D",
+        color: Alloy.Globals.blue_grey,
         left: 15,
         top: 20,
         id: "viewEntity_organization_icon"
@@ -271,7 +271,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewEntity_organization_textView_smallText"
@@ -291,7 +291,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "7F8C8D",
+        color: Alloy.Globals.blue_grey,
         left: 15,
         top: 20,
         id: "viewEntity_personal_icon"
@@ -318,7 +318,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewEntity_personal_textView_smallText"
@@ -328,7 +328,7 @@ function Controller() {
         height: 200,
         width: Titanium.UI.FILL,
         borderRadius: 6,
-        borderColor: "CCCCCC",
+        borderColor: Alloy.Globals.gray,
         left: 10,
         top: 10,
         right: 10,
@@ -336,7 +336,7 @@ function Controller() {
         id: "viewFoot",
         layout: "vertical"
     });
-    $.__views.__alloyId17.add($.__views.viewFoot);
+    $.__views.__alloyId32.add($.__views.viewFoot);
     $.__views.viewFoot_top = Ti.UI.createView({
         height: 100,
         width: Titanium.UI.FILL,
@@ -358,7 +358,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "7F8C8D",
+        color: Alloy.Globals.blue_grey,
         left: 15,
         top: 20,
         id: "viewFoot_top_activityList_icon"
@@ -385,7 +385,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewFoot_top_activityList_textView_smallText"
@@ -405,7 +405,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "7F8C8D",
+        color: Alloy.Globals.blue_grey,
         left: 15,
         top: 20,
         id: "viewFoot_top_condition_icon"
@@ -432,7 +432,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewFoot_top_condition_textView_smallText"
@@ -459,7 +459,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "7F8C8D",
+        color: Alloy.Globals.blue_grey,
         left: 15,
         top: 20,
         id: "viewFoot_foot_steps_icon"
@@ -486,7 +486,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewFoot_foot_steps_textView_smallText"
@@ -506,7 +506,7 @@ function Controller() {
             fontSize: "60",
             fontFamily: "soryin"
         },
-        color: "7F8C8D",
+        color: Alloy.Globals.blue_grey,
         left: 15,
         top: 20,
         id: "viewFoot_foot_constrain_icon"
@@ -533,19 +533,19 @@ function Controller() {
             fontSize: "15",
             fontFamily: "冬青黑体简体中文"
         },
-        color: "CCCCCC",
+        color: Alloy.Globals.gray,
         left: 17,
         top: 0,
         id: "viewFoot_foot_constrain_textView_smallText"
     });
     $.__views.viewFoot_foot_constrain_textView.add($.__views.viewFoot_foot_constrain_textView_smallText);
     $.__views.maskview = Ti.UI.createView({
-        backgroundColor: "black",
+        backgroundColor: Alloy.Globals.black,
         opacity: 0,
         id: "maskview",
         visible: "false"
     });
-    $.__views.__alloyId16.add($.__views.maskview);
+    $.__views.__alloyId31.add($.__views.maskview);
     $.__views.actionview = Ti.UI.createView({
         backgroundColor: "transparent",
         id: "actionview"
@@ -560,15 +560,15 @@ function Controller() {
         layout: "vertical"
     });
     $.__views.actionview.add($.__views.m2);
-    $.__views.__alloyId18 = Ti.UI.createView({
+    $.__views.__alloyId33 = Ti.UI.createView({
         layout: "horizontal",
-        id: "__alloyId18"
+        id: "__alloyId33"
     });
-    $.__views.m2.add($.__views.__alloyId18);
+    $.__views.m2.add($.__views.__alloyId33);
     $.__views.email = Ti.UI.createView({
         id: "email"
     });
-    $.__views.__alloyId18.add($.__views.email);
+    $.__views.__alloyId33.add($.__views.email);
     $.__views.toEmail = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -577,15 +577,15 @@ function Controller() {
         id: "toEmail"
     });
     $.__views.email.add($.__views.toEmail);
-    $.__views.__alloyId19 = Ti.UI.createLabel({
+    $.__views.__alloyId34 = Ti.UI.createLabel({
         text: "电子邮件",
-        id: "__alloyId19"
+        id: "__alloyId34"
     });
-    $.__views.email.add($.__views.__alloyId19);
+    $.__views.email.add($.__views.__alloyId34);
     $.__views.msg = Ti.UI.createView({
         id: "msg"
     });
-    $.__views.__alloyId18.add($.__views.msg);
+    $.__views.__alloyId33.add($.__views.msg);
     $.__views.toMsg = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -594,15 +594,15 @@ function Controller() {
         id: "toMsg"
     });
     $.__views.msg.add($.__views.toMsg);
-    $.__views.__alloyId20 = Ti.UI.createLabel({
+    $.__views.__alloyId35 = Ti.UI.createLabel({
         text: "短信",
-        id: "__alloyId20"
+        id: "__alloyId35"
     });
-    $.__views.msg.add($.__views.__alloyId20);
+    $.__views.msg.add($.__views.__alloyId35);
     $.__views.evernote = Ti.UI.createView({
         id: "evernote"
     });
-    $.__views.__alloyId18.add($.__views.evernote);
+    $.__views.__alloyId33.add($.__views.evernote);
     $.__views.toEvernote = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -611,30 +611,30 @@ function Controller() {
         id: "toEvernote"
     });
     $.__views.evernote.add($.__views.toEvernote);
-    $.__views.__alloyId21 = Ti.UI.createLabel({
+    $.__views.__alloyId36 = Ti.UI.createLabel({
         text: "印象笔记",
-        id: "__alloyId21"
+        id: "__alloyId36"
     });
-    $.__views.evernote.add($.__views.__alloyId21);
+    $.__views.evernote.add($.__views.__alloyId36);
     $.__views.line = Ti.UI.createView({
         width: "310dp",
         height: "1",
         border: "1",
-        backgroundColor: "#fff",
+        backgroundColor: Alloy.Globals.whilte,
         top: "5dp",
         bottom: "5dp",
         id: "line"
     });
     $.__views.m2.add($.__views.line);
-    $.__views.__alloyId22 = Ti.UI.createView({
+    $.__views.__alloyId37 = Ti.UI.createView({
         layout: "horizontal",
-        id: "__alloyId22"
+        id: "__alloyId37"
     });
-    $.__views.m2.add($.__views.__alloyId22);
+    $.__views.m2.add($.__views.__alloyId37);
     $.__views.msg = Ti.UI.createView({
         id: "msg"
     });
-    $.__views.__alloyId22.add($.__views.msg);
+    $.__views.__alloyId37.add($.__views.msg);
     $.__views.toWeixin = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -643,15 +643,15 @@ function Controller() {
         id: "toWeixin"
     });
     $.__views.msg.add($.__views.toWeixin);
-    $.__views.__alloyId23 = Ti.UI.createLabel({
+    $.__views.__alloyId38 = Ti.UI.createLabel({
         text: "微信",
-        id: "__alloyId23"
+        id: "__alloyId38"
     });
-    $.__views.msg.add($.__views.__alloyId23);
+    $.__views.msg.add($.__views.__alloyId38);
     $.__views.copy = Ti.UI.createView({
         id: "copy"
     });
-    $.__views.__alloyId22.add($.__views.copy);
+    $.__views.__alloyId37.add($.__views.copy);
     $.__views.toWeibo = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -660,14 +660,14 @@ function Controller() {
         id: "toWeibo"
     });
     $.__views.copy.add($.__views.toWeibo);
-    $.__views.__alloyId24 = Ti.UI.createLabel({
+    $.__views.__alloyId39 = Ti.UI.createLabel({
         text: "微博",
-        id: "__alloyId24"
+        id: "__alloyId39"
     });
-    $.__views.copy.add($.__views.__alloyId24);
+    $.__views.copy.add($.__views.__alloyId39);
     $.__views.scrollable = Ti.UI.createScrollableView({
-        backgroundColor: "F7F3F2",
-        views: __alloyId15,
+        backgroundColor: Alloy.Globals.reg_gray,
+        views: __alloyId30,
         id: "scrollable"
     });
     $.__views.view_block.add($.__views.scrollable);

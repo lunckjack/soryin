@@ -26,15 +26,15 @@ function Controller() {
         id: "pb"
     });
     $.__views.progressView.add($.__views.pb);
-    $.__views.__alloyId42 = Ti.UI.createView({
-        id: "__alloyId42"
+    $.__views.__alloyId59 = Ti.UI.createView({
+        id: "__alloyId59"
     });
-    $.__views.view_like.add($.__views.__alloyId42);
-    $.__views.__alloyId43 = Ti.UI.createLabel({
+    $.__views.view_like.add($.__views.__alloyId59);
+    $.__views.__alloyId60 = Ti.UI.createLabel({
         text: "喜好",
-        id: "__alloyId43"
+        id: "__alloyId60"
     });
-    $.__views.__alloyId42.add($.__views.__alloyId43);
+    $.__views.__alloyId59.add($.__views.__alloyId60);
     $.__views.table = Ti.UI.createTableView({
         id: "table",
         scrollable: "false",

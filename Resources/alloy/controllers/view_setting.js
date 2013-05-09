@@ -92,11 +92,7 @@ function Controller() {
         id: "setView"
     });
     $.__views.scrollView.add($.__views.setView);
-<<<<<<< HEAD
-    $.__views.__alloyId71 = Ti.UI.createLabel({
-=======
-    $.__views.__alloyId110 = Ti.UI.createLabel({
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+    $.__views.__alloyId132 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -105,54 +101,30 @@ function Controller() {
         right: 10,
         top: 20,
         text: "登录",
-<<<<<<< HEAD
-        id: "__alloyId71"
+        id: "__alloyId132"
     });
-    $.__views.setView.add($.__views.__alloyId71);
-    $.__views.__alloyId72 = Ti.UI.createTableViewRow({
-        id: "__alloyId72"
+    $.__views.setView.add($.__views.__alloyId132);
+    $.__views.__alloyId133 = Ti.UI.createTableViewRow({
+        id: "__alloyId133"
     });
-    var __alloyId73 = [];
-    __alloyId73.push($.__views.__alloyId72);
-    $.__views.__alloyId74 = Ti.UI.createLabel({
+    var __alloyId134 = [];
+    __alloyId134.push($.__views.__alloyId133);
+    $.__views.__alloyId135 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId74"
+        id: "__alloyId135"
     });
-    $.__views.__alloyId72.add($.__views.__alloyId74);
-=======
-        id: "__alloyId110"
-    });
-    $.__views.setView.add($.__views.__alloyId110);
-    $.__views.__alloyId111 = Ti.UI.createTableViewRow({
-        id: "__alloyId111"
-    });
-    var __alloyId112 = [];
-    __alloyId112.push($.__views.__alloyId111);
-    $.__views.__alloyId113 = Ti.UI.createLabel({
-        text: "done.....",
-        id: "__alloyId113"
-    });
-    $.__views.__alloyId111.add($.__views.__alloyId113);
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+    $.__views.__alloyId133.add($.__views.__alloyId135);
     $.__views.table1 = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: "120",
         separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
-<<<<<<< HEAD
-        data: __alloyId73,
-=======
-        data: __alloyId112,
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+        data: __alloyId134,
         id: "table1",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table1);
-<<<<<<< HEAD
-    $.__views.__alloyId75 = Ti.UI.createLabel({
-=======
     onClickTable1 ? $.__views.table1.addEventListener("click", onClickTable1) : __defers["$.__views.table1!click!onClickTable1"] = true;
-    $.__views.__alloyId114 = Ti.UI.createLabel({
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+    $.__views.__alloyId136 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -161,50 +133,28 @@ function Controller() {
         right: 10,
         top: 20,
         text: "向导",
-<<<<<<< HEAD
-        id: "__alloyId75"
+        id: "__alloyId136"
     });
-    $.__views.setView.add($.__views.__alloyId75);
-    $.__views.__alloyId76 = Ti.UI.createTableViewRow({
-        id: "__alloyId76"
+    $.__views.setView.add($.__views.__alloyId136);
+    $.__views.__alloyId137 = Ti.UI.createTableViewRow({
+        id: "__alloyId137"
     });
-    var __alloyId77 = [];
-    __alloyId77.push($.__views.__alloyId76);
-    $.__views.__alloyId78 = Ti.UI.createLabel({
+    var __alloyId138 = [];
+    __alloyId138.push($.__views.__alloyId137);
+    $.__views.__alloyId139 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId78"
+        id: "__alloyId139"
     });
-    $.__views.__alloyId76.add($.__views.__alloyId78);
+    $.__views.__alloyId137.add($.__views.__alloyId139);
     $.__views.table2 = Ti.UI.createTableView({
-        data: __alloyId77,
-=======
-        id: "__alloyId114"
-    });
-    $.__views.setView.add($.__views.__alloyId114);
-    $.__views.__alloyId115 = Ti.UI.createTableViewRow({
-        id: "__alloyId115"
-    });
-    var __alloyId116 = [];
-    __alloyId116.push($.__views.__alloyId115);
-    $.__views.__alloyId117 = Ti.UI.createLabel({
-        text: "done.....",
-        id: "__alloyId117"
-    });
-    $.__views.__alloyId115.add($.__views.__alloyId117);
-    $.__views.table2 = Ti.UI.createTableView({
-        data: __alloyId116,
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+        data: __alloyId138,
         id: "table2",
         height: "120",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table2);
-<<<<<<< HEAD
-    $.__views.__alloyId79 = Ti.UI.createLabel({
-=======
     onClickTable2 ? $.__views.table2.addEventListener("click", onClickTable2) : __defers["$.__views.table2!click!onClickTable2"] = true;
-    $.__views.__alloyId118 = Ti.UI.createLabel({
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+    $.__views.__alloyId140 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -213,39 +163,21 @@ function Controller() {
         right: 10,
         top: 20,
         text: "其他",
-<<<<<<< HEAD
-        id: "__alloyId79"
+        id: "__alloyId140"
     });
-    $.__views.setView.add($.__views.__alloyId79);
-    $.__views.__alloyId80 = Ti.UI.createTableViewRow({
-        id: "__alloyId80"
+    $.__views.setView.add($.__views.__alloyId140);
+    $.__views.__alloyId141 = Ti.UI.createTableViewRow({
+        id: "__alloyId141"
     });
-    var __alloyId81 = [];
-    __alloyId81.push($.__views.__alloyId80);
-    $.__views.__alloyId82 = Ti.UI.createLabel({
+    var __alloyId142 = [];
+    __alloyId142.push($.__views.__alloyId141);
+    $.__views.__alloyId143 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId82"
+        id: "__alloyId143"
     });
-    $.__views.__alloyId80.add($.__views.__alloyId82);
+    $.__views.__alloyId141.add($.__views.__alloyId143);
     $.__views.table3 = Ti.UI.createTableView({
-        data: __alloyId81,
-=======
-        id: "__alloyId118"
-    });
-    $.__views.setView.add($.__views.__alloyId118);
-    $.__views.__alloyId119 = Ti.UI.createTableViewRow({
-        id: "__alloyId119"
-    });
-    var __alloyId120 = [];
-    __alloyId120.push($.__views.__alloyId119);
-    $.__views.__alloyId121 = Ti.UI.createLabel({
-        text: "done.....",
-        id: "__alloyId121"
-    });
-    $.__views.__alloyId119.add($.__views.__alloyId121);
-    $.__views.table3 = Ti.UI.createTableView({
-        data: __alloyId120,
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+        data: __alloyId142,
         id: "table3",
         height: "60",
         scrollable: "false"

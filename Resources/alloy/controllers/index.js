@@ -613,15 +613,7 @@ function Controller() {
     $.like = Alloy.createController("view_like");
     $.body = Alloy.createController("view_body");
     $.view_left.addEventListener("click", function() {
-<<<<<<< HEAD
-        var setView = Alloy.createController("view_location").getView();
-        "" != curview && $.content.remove(curview);
-        curview = setView;
-        $.content.add(curview);
-        $.scrollable.scrollToView(1);
-=======
         scrollToView($.content, $.seting.getView(), 1);
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     });
     $.view_express.addEventListener("click", function() {
         scrollToView($.content, $.record.getView(), 1);

@@ -33,7 +33,7 @@ function Controller() {
                     fontFamily: "冬青黑体简体中文"
                 },
                 text: title,
-                color: "#2ECC71",
+                color: Alloy.Globals.green,
                 textAlign: "center",
                 width: "150dp",
                 top: 20
@@ -42,7 +42,7 @@ function Controller() {
                 height: "80dp",
                 left: "69.5dp",
                 width: "1dp",
-                backgroundColor: "#CBCBCB"
+                backgroundColor: Alloy.Globals.gray
             });
             var subrow = Ti.UI.createTableViewRow({
                 selectedBackgroundColor: "transparent",
@@ -73,7 +73,7 @@ function Controller() {
                 },
                 left: "5dp",
                 textAlign: "center",
-                color: "#3c3c3c"
+                color: Alloy.Globals.green
             });
             var arrow = Ti.UI.createImageView({
                 image: "/imgs/utility/pointer.png",
@@ -92,7 +92,7 @@ function Controller() {
     }
     function reqLocation() {
         var initOptions = {
-            url: Alloy.Globals.getEvent,
+            url: Alloy.Globals.requestURL,
             method: "POST",
             timeout: 2e4
         };
@@ -116,17 +116,17 @@ function Controller() {
                     height: Titanium.UI.FILL
                 });
                 var labDistancetText = Ti.UI.createLabel({
-                    color: "#29abe2",
+                    color: Alloy.Globals.green,
                     font: {
                         fontSize: "20dp",
-                        fontFamily: "HiraginoSansGB-W3"
+                        fontFamily: "冬青黑体简体中文"
                     },
-                    text: "距离这里",
+                    text: "",
                     width: Titanium.UI.SIZE,
                     height: Titanium.UI.SIZE
                 });
                 var labDistance = Ti.UI.createLabel({
-                    color: "#29abe2",
+                    color: Alloy.Globals.green,
                     font: {
                         fontSize: "60dp",
                         fontFamily: "Orbitron"
@@ -141,9 +141,10 @@ function Controller() {
                     top: "0",
                     font: {
                         fontSize: "25dp",
-                        fontFamily: "HiraginoSansGB-W3"
+                        fontFamily: "冬青黑体简体中文"
                     },
                     text: "公里",
+                    color: Alloy.Globals.green,
                     width: Titanium.UI.SIZE,
                     height: Titanium.UI.SIZE
                 });
@@ -193,37 +194,37 @@ function Controller() {
         navBarHidden: "true"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId39 = Ti.UI.createView({
+    $.__views.__alloyId61 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId39"
+        id: "__alloyId61"
     });
-    $.__views.container.add($.__views.__alloyId39);
-    var __alloyId40 = [];
+    $.__views.container.add($.__views.__alloyId61);
+    var __alloyId62 = [];
     $.__views.scrollableView = Ti.UI.createScrollableView({
         width: Titanium.UI.FILL,
         height: "160dp",
-        views: __alloyId40,
+        views: __alloyId62,
         id: "scrollableView",
         showPagingControl: "true",
         pagingControlOnTop: "true",
         pagingControlColor: "#f2f2f2"
     });
-    $.__views.__alloyId39.add($.__views.scrollableView);
-    $.__views.__alloyId41 = Ti.UI.createTableViewRow({
-        id: "__alloyId41"
+    $.__views.__alloyId61.add($.__views.scrollableView);
+    $.__views.__alloyId63 = Ti.UI.createTableViewRow({
+        id: "__alloyId63"
     });
-    var __alloyId42 = [];
-    __alloyId42.push($.__views.__alloyId41);
-    $.__views.__alloyId43 = Ti.UI.createLabel({
+    var __alloyId64 = [];
+    __alloyId64.push($.__views.__alloyId63);
+    $.__views.__alloyId65 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId43"
+        id: "__alloyId65"
     });
-    $.__views.__alloyId41.add($.__views.__alloyId43);
+    $.__views.__alloyId63.add($.__views.__alloyId65);
     $.__views.table1 = Ti.UI.createTableView({
-        data: __alloyId42,
+        data: __alloyId64,
         id: "table1"
     });
-    $.__views.__alloyId39.add($.__views.table1);
+    $.__views.__alloyId61.add($.__views.table1);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var ui = require("ui");
