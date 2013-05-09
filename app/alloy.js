@@ -22,6 +22,6 @@ Alloy.Globals.soryinSlRedColor = "#bf382a";
 // 小桃红
 Alloy.Globals.soryinPinkColor = "#ec1d78";
 // 矿物灰
-Alloy.Globals.soryinKwGrayColor = "#494949";	
+Alloy.Globals.soryinKwGrayColor = "#494949";
 // 石棉灰
 Alloy.Globals.soryinSmGrayColor = "#7e8b8c";
