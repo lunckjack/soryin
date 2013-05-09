@@ -1,0 +1,84 @@
+<Alloy>
+	<View class="container">
+		<View class="viewTopMark">
+			<Label class="labText">缩影系统</Label>
+		</View>
+
+		<View class="contentView">
+			<View class="rowTable">
+				<View class="leftView">
+					<View class="viewHor">
+						<Label id="iconUser" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">认证用户</Label>
+					</View>
+				</View>
+				<View class="rightView">
+					<View class="viewHor">
+						<Label id="iconLogout" class="iconMarkFont">
+						</Label>
+						<Label class="labMarkTxt">登出</Label>
+					</View>
+				</View>
+			</View>
+
+			<View class="rowTable">
+				<View class="leftView">
+					<View class="viewHor">
+						<Label id="iconEnter" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">进入内容</Label>
+					</View>
+				</View>
+				<View class="rightView">
+					<View class="viewHor">
+						<Label id="iconExpend" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">展开内容</Label>
+					</View>
+				</View>
+
+			</View>
+			<View class="rowTable">
+				<View class="leftView">
+					<View class="viewHor">
+						<Label id="iconFun" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">功能</Label>
+					</View>
+				</View>
+				<View class="rightView">
+					<View class="viewHor">
+						<Label id="iconSort" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">筛选</Label>
+					</View>
+				</View>
+			</View>
+			<View class="rowTable">
+				<View class="leftView">
+					<View class="viewHor">
+						<Label id="iconSave" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">保存</Label>
+					</View>
+				</View>
+				<View class="rightView">
+					<View class="viewHor">
+						<Label id="iconRet" class="iconMarkFont"></Label>
+						<Label class="labMarkTxt">返回</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+
+		<View class="viewTopMark">
+			<Label class="labText">世界通用</Label>
+		</View>
+
+		<View class="contentView">
+			<View class="rowTable">
+				<View class="leftView">
+					<View class="viewHor">
+						<Label id="iconLogo" class="iconMarkFont"></Label>
+						<Label class="labSoryin">缩影Logo</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>

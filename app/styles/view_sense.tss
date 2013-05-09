@@ -1,3 +1,14 @@
-".container": {
-	backgroundColor: "white"
+'.container':{
+	backgroundColor:'#f2f2f2'
+},
+'#loadlabel':{
+	top:'130dp',
+	font:{fontSize:'60dp'},
+	color:'#fbaf3a'
+},
+'#view':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor:"#000"
 }
+

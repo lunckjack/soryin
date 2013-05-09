@@ -5,7 +5,7 @@
 
 				<!-- 头部 -->
 				<View id="viewTop">
-					<View id="view_left">
+					<View id="view_left" class="view_left">
 						<Label id="icon_me" class="iconFont" />
 						<Label text="我" class="lab_me" />
 					</View>
@@ -14,12 +14,12 @@
 						<Label text="添加封面" class="lab_cover" />
 					</View>
 				</View>
-
+				
 				<!-- 内容 -->
 				<ScrollView id="scrollView"
 					showHorizontalScrollIndifcator="true" showVerticalScrollIndicator="true"
 					layout="vertical">
-
+					<View id=viewFun/>
 					<View id="viewContent">
 						<!-- 经验 级别 -->
 						<View id="view_express" class="view_fontL">
@@ -69,8 +69,40 @@
 			</View>
 			<View>
 				<View id="content"></View>
-				<Label id="backBtn" />
+				<Label id="backToIndex" class="backButton" />
+			</View>
+			<View>
+				<View id="childContent"></View>
+				<Label id="backToParent" class="backButton" />
 			</View>
 		</ScrollableView>
+
+		<!-- 说明 1 -->
+		<View id="readView1" visible="false" class="splashView">
+			<View class="view_left">
+				<Label class="iconFont" id="splashIcon" />
+				<Label text="我" class="lab_me" />
+			</View>
+			<View class="viewInfo" id="viewInfo1">
+				<Label class="splashLabel">类别</Label>
+				<View class="line"></View>
+				<Label class="splashText">缩影信息</Label>
+				<View class="line"></View>
+			</View>
+		</View>
+		<!-- 说明 2 -->
+		<View id="readView2" visible="false" class="splashView">
+			<Label class="splashview2Icon" id="viewIcon2" />
+		</View>
+		<!-- 说明 3 -->
+		<View id="readView3" visible="false" class="splashView">
+			<View class="viewInfo" id="viewInfo2">
+				<Label class="splashLabel">返回</Label>
+				<View class="line"></View>
+				<Label class="splashText">缩影信息</Label>
+				<View class="line"></View>
+			</View>
+			<Label id="splashBackBtn" />
+		</View>
 	</Window>
 </Alloy>

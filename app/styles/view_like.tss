@@ -1,3 +1,16 @@
 ".container": {
 	backgroundColor: "white"
+},
+'.progressView':{
+	height:22,
+	width:Titanium.UI.FILL,
+	top:0,
+	backgroundColor: "#fff"
+},
+'.pdView':{
+	height:22,
+	width:Titanium.UI.FILL,
+	backgroundColor: "#F39C12",
+	min:0,
+	max:100
 }

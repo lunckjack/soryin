@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="searchView">
+		<TableView id='searchTable' scrollable="false" onClick="onClickSearchTable">
+	</View>
+</Alloy>

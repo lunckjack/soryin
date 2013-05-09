@@ -1,4 +1,14 @@
 <Alloy>
 	<View class="container">
+		<View>
+			<View id="cameraView"></View>
+		</View>
+		<View class="circleView" id="viewSearch">
+			<Label id="iconSense" class="iconCircleFont"></Label>
+		</View>
+		<!-- 搜索 view -->
+		<View id="view" visible="false">
+			<Require id="searchView" formFactor="handheld" src="view_search" />
+		</View>
 	</View>
 </Alloy>

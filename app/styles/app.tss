@@ -1,0 +1,52 @@
+".row": {
+	backgroundColor: '#fff',
+	height: '50dp'
+},
+".rowTitle": {
+	color: '#222',
+	font: {
+		fontSize: '32dp',
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	left: '20dp',
+	
+},
+".rowImage": {
+	height: '33dp',
+	width: '33dp',
+	left: '0'
+},
+'.iconArrowFont':{
+	right : 10,
+			font : {
+				fontSize : '20',
+				fontFamily : 'soryin'
+			}
+},
+".addButton": {
+	height: '40dp',
+	width: '40dp',
+	title: '+',
+	bottom: 0,
+	right: 0
+},
+'.circleView':{
+	width:50,
+	height:50,
+	backgroundColor:'#fff',
+	borderRadius:'25',
+	borderColor:'#fff',
+	right:0,
+	bottom:20
+},
+'.iconCircleFont':{	
+	font:{
+		fontSize:'40',
+	    fontFamily : 'soryin'
+ },
+	top:5,
+	right:5,
+	bottom:5,
+	color : "#F39C12"
+},

@@ -1,13 +1,41 @@
 function Controller() {
+    function onClickTable1(e) {
+        switch (e.index) {
+          case 0:
+            $.trigger("onSwitchQQ", e);
+            break;
+
+          case 1:
+            $.trigger("onSwitchSina", e);
+        }
+    }
+    function onClickTable2(e) {
+        switch (e.index) {
+          case 0:
+            $.trigger("onSwitchSplash", e);
+            break;
+
+          case 1:
+            $.trigger("onSwitchVisual", e);
+        }
+    }
+    function onClickTable3(e) {
+        switch (e.index) {
+          case 0:
+            $.trigger("onSwitchCopyRight", e);
+            break;
+
+          case 1:        }
+    }
     function createSetingView(dataArray, rowArray, tableDatas) {
         for (i = 0; dataArray.length > i; i++) {
             var row = Ti.UI.createTableViewRow({
-                height: "50",
-                selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.GRAY
+                height: "60",
+                selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.BLUE
             });
             row.isOpen = false;
             var line = Ti.UI.createView({
-                height: "50",
+                height: "60",
                 left: "70",
                 width: "1dp",
                 backgroundColor: "#cecece"
@@ -27,7 +55,7 @@ function Controller() {
                 },
                 text: dataArray[i],
                 left: 80,
-                top: 10,
+                top: 20,
                 textAlign: "center"
             });
             var arrow = Ti.UI.createLabel({
@@ -51,6 +79,7 @@ function Controller() {
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
+    var __defers = {};
     $.__views.scrollView = Ti.UI.createScrollView({
         id: "scrollView",
         showVerticalScrollIndicator: "true"
@@ -63,7 +92,11 @@ function Controller() {
         id: "setView"
     });
     $.__views.scrollView.add($.__views.setView);
+<<<<<<< HEAD
     $.__views.__alloyId71 = Ti.UI.createLabel({
+=======
+    $.__views.__alloyId110 = Ti.UI.createLabel({
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -72,6 +105,7 @@ function Controller() {
         right: 10,
         top: 20,
         text: "登录",
+<<<<<<< HEAD
         id: "__alloyId71"
     });
     $.__views.setView.add($.__views.__alloyId71);
@@ -85,16 +119,40 @@ function Controller() {
         id: "__alloyId74"
     });
     $.__views.__alloyId72.add($.__views.__alloyId74);
+=======
+        id: "__alloyId110"
+    });
+    $.__views.setView.add($.__views.__alloyId110);
+    $.__views.__alloyId111 = Ti.UI.createTableViewRow({
+        id: "__alloyId111"
+    });
+    var __alloyId112 = [];
+    __alloyId112.push($.__views.__alloyId111);
+    $.__views.__alloyId113 = Ti.UI.createLabel({
+        text: "done.....",
+        id: "__alloyId113"
+    });
+    $.__views.__alloyId111.add($.__views.__alloyId113);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.table1 = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
-        height: 100,
+        height: "120",
         separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
+<<<<<<< HEAD
         data: __alloyId73,
+=======
+        data: __alloyId112,
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         id: "table1",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table1);
+<<<<<<< HEAD
     $.__views.__alloyId75 = Ti.UI.createLabel({
+=======
+    onClickTable1 ? $.__views.table1.addEventListener("click", onClickTable1) : __defers["$.__views.table1!click!onClickTable1"] = true;
+    $.__views.__alloyId114 = Ti.UI.createLabel({
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -103,6 +161,7 @@ function Controller() {
         right: 10,
         top: 20,
         text: "向导",
+<<<<<<< HEAD
         id: "__alloyId75"
     });
     $.__views.setView.add($.__views.__alloyId75);
@@ -118,12 +177,34 @@ function Controller() {
     $.__views.__alloyId76.add($.__views.__alloyId78);
     $.__views.table2 = Ti.UI.createTableView({
         data: __alloyId77,
+=======
+        id: "__alloyId114"
+    });
+    $.__views.setView.add($.__views.__alloyId114);
+    $.__views.__alloyId115 = Ti.UI.createTableViewRow({
+        id: "__alloyId115"
+    });
+    var __alloyId116 = [];
+    __alloyId116.push($.__views.__alloyId115);
+    $.__views.__alloyId117 = Ti.UI.createLabel({
+        text: "done.....",
+        id: "__alloyId117"
+    });
+    $.__views.__alloyId115.add($.__views.__alloyId117);
+    $.__views.table2 = Ti.UI.createTableView({
+        data: __alloyId116,
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         id: "table2",
-        height: "100",
+        height: "120",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table2);
+<<<<<<< HEAD
     $.__views.__alloyId79 = Ti.UI.createLabel({
+=======
+    onClickTable2 ? $.__views.table2.addEventListener("click", onClickTable2) : __defers["$.__views.table2!click!onClickTable2"] = true;
+    $.__views.__alloyId118 = Ti.UI.createLabel({
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -132,6 +213,7 @@ function Controller() {
         right: 10,
         top: 20,
         text: "其他",
+<<<<<<< HEAD
         id: "__alloyId79"
     });
     $.__views.setView.add($.__views.__alloyId79);
@@ -147,11 +229,29 @@ function Controller() {
     $.__views.__alloyId80.add($.__views.__alloyId82);
     $.__views.table3 = Ti.UI.createTableView({
         data: __alloyId81,
+=======
+        id: "__alloyId118"
+    });
+    $.__views.setView.add($.__views.__alloyId118);
+    $.__views.__alloyId119 = Ti.UI.createTableViewRow({
+        id: "__alloyId119"
+    });
+    var __alloyId120 = [];
+    __alloyId120.push($.__views.__alloyId119);
+    $.__views.__alloyId121 = Ti.UI.createLabel({
+        text: "done.....",
+        id: "__alloyId121"
+    });
+    $.__views.__alloyId119.add($.__views.__alloyId121);
+    $.__views.table3 = Ti.UI.createTableView({
+        data: __alloyId120,
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         id: "table3",
-        height: "50",
+        height: "60",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table3);
+    onClickTable3 ? $.__views.table3.addEventListener("click", onClickTable3) : __defers["$.__views.table3!click!onClickTable3"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     var entypo = require("ti.entypo");
@@ -174,7 +274,7 @@ function Controller() {
             selBackColor = "red";
         }
         var row = Ti.UI.createTableViewRow({
-            height: "50",
+            height: "60",
             selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.BLUE,
             backgroundColor: rowcolor,
             selectedBackgroundColor: selBackColor
@@ -189,7 +289,7 @@ function Controller() {
             textAlign: "center",
             left: 80,
             color: "#ffffff",
-            top: 10
+            top: 20
         });
         var icon = Ti.UI.createLabel({
             text: rowtext,
@@ -223,9 +323,12 @@ function Controller() {
     $.table2.setData(tableData);
     var otableData = [];
     var odataConditionArray = [ "版权" ];
-    var orowTextArray = [ "0xe036" ];
+    var orowTextArray = [ "0xa9" ];
     createSetingView(odataConditionArray, orowTextArray, otableData);
     $.table3.setData(otableData);
+    __defers["$.__views.table1!click!onClickTable1"] && $.__views.table1.addEventListener("click", onClickTable1);
+    __defers["$.__views.table2!click!onClickTable2"] && $.__views.table2.addEventListener("click", onClickTable2);
+    __defers["$.__views.table3!click!onClickTable3"] && $.__views.table3.addEventListener("click", onClickTable3);
     _.extend($, exports);
 }
 

@@ -58,14 +58,24 @@ function Controller() {
         id: "view_record"
     });
     $.__views.view_record && $.addTopLevelView($.__views.view_record);
+<<<<<<< HEAD
     $.__views.__alloyId66 = Ti.UI.createView({
+=======
+    $.__views.__alloyId104 = Ti.UI.createView({
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
         top: 0,
+<<<<<<< HEAD
         id: "__alloyId66"
     });
     $.__views.view_record.add($.__views.__alloyId66);
+=======
+        id: "__alloyId104"
+    });
+    $.__views.view_record.add($.__views.__alloyId104);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.recordTime = Ti.UI.createLabel({
         color: "#fff",
         font: {
@@ -76,7 +86,11 @@ function Controller() {
         text: "11月1日",
         id: "recordTime"
     });
+<<<<<<< HEAD
     $.__views.__alloyId66.add($.__views.recordTime);
+=======
+    $.__views.__alloyId104.add($.__views.recordTime);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.table = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.SIZE,
@@ -107,6 +121,7 @@ function Controller() {
         id: "recordNum"
     });
     $.__views.sortView.add($.__views.recordNum);
+<<<<<<< HEAD
     $.__views.__alloyId67 = Ti.UI.createLabel({
         color: "#F39C12",
         text: "条",
@@ -114,6 +129,15 @@ function Controller() {
     });
     $.__views.sortView.add($.__views.__alloyId67);
     $.__views.__alloyId68 = Ti.UI.createView({
+=======
+    $.__views.__alloyId105 = Ti.UI.createLabel({
+        color: "#F39C12",
+        text: "条",
+        id: "__alloyId105"
+    });
+    $.__views.sortView.add($.__views.__alloyId105);
+    $.__views.__alloyId106 = Ti.UI.createView({
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         width: 50,
         height: 50,
         backgroundColor: "#fff",
@@ -121,9 +145,15 @@ function Controller() {
         borderColor: "#fff",
         right: 0,
         bottom: 20,
+<<<<<<< HEAD
         id: "__alloyId68"
     });
     $.__views.view_record.add($.__views.__alloyId68);
+=======
+        id: "__alloyId106"
+    });
+    $.__views.view_record.add($.__views.__alloyId106);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.icon_sort = Ti.UI.createLabel({
         font: {
             fontSize: "40",
@@ -132,9 +162,14 @@ function Controller() {
         top: 5,
         right: 5,
         bottom: 5,
+        color: "#F39C12",
         id: "icon_sort"
     });
+<<<<<<< HEAD
     $.__views.__alloyId68.add($.__views.icon_sort);
+=======
+    $.__views.__alloyId106.add($.__views.icon_sort);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.viewSort = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.FILL,
@@ -143,18 +178,32 @@ function Controller() {
         visible: "false"
     });
     $.__views.view_record.add($.__views.viewSort);
+<<<<<<< HEAD
     $.__views.__alloyId69 = Ti.UI.createView({
         id: "__alloyId69"
     });
     $.__views.viewSort.add($.__views.__alloyId69);
     $.__views.__alloyId70 = Ti.UI.createLabel({
+=======
+    $.__views.__alloyId107 = Ti.UI.createView({
+        id: "__alloyId107"
+    });
+    $.__views.viewSort.add($.__views.__alloyId107);
+    $.__views.__alloyId108 = Ti.UI.createLabel({
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
         color: "#F39C12",
         top: 150,
         right: 30,
         text: "条",
+<<<<<<< HEAD
         id: "__alloyId70"
     });
     $.__views.__alloyId69.add($.__views.__alloyId70);
+=======
+        id: "__alloyId108"
+    });
+    $.__views.__alloyId107.add($.__views.__alloyId108);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.sortNum = Ti.UI.createLabel({
         font: {
             fontSize: "103",
@@ -165,7 +214,11 @@ function Controller() {
         text: "36",
         id: "sortNum"
     });
+<<<<<<< HEAD
     $.__views.__alloyId69.add($.__views.sortNum);
+=======
+    $.__views.__alloyId107.add($.__views.sortNum);
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
     $.__views.icon_sort11 = Ti.UI.createLabel({
         font: {
             fontSize: "40",
@@ -174,6 +227,7 @@ function Controller() {
         top: 5,
         right: 5,
         bottom: 5,
+        color: "#F39C12",
         id: "icon_sort11"
     });
     $.__views.viewSort.add($.__views.icon_sort11);
@@ -190,25 +244,27 @@ function Controller() {
     var ui = require("ui");
     var tableData = [];
     $.table.addEventListener("scrollend", function() {
-        ui.translate2($.sortView, 0, 0, 0, 200, function() {});
+        ui.translate2($.sortView, 0, 0, 0, 0, function() {});
     });
     $.table.addEventListener("scroll", function() {
-        ui.translate2($.sortView, 110, 0, 0, 200, function() {});
+        ui.translate2($.sortView, 150, 0, 0, 70, function() {});
     });
-    $.icon_sort.addEventListener("click", function() {
+    $.icon_sort.addEventListener("click", function(e) {
         $.viewSort.visible = true;
+        $.trigger("hideBackButton", e);
         ui.zoom($.viewSort, function() {
             ui.translate2($.filterView.getView("filterView"), 0, -214, 0, 200, function() {});
         });
     });
-    $.viewSort.addEventListener("click", function() {
+    $.viewSort.addEventListener("click", function(e) {
         ui.translate2($.filterView.getView("filterView"), 0, 214, 0, 200, function() {
-            ui.unzoom($.viewSort, function() {});
+            ui.unzoom($.viewSort, function() {
+                $.trigger("showBackButton", e);
+            });
         });
     });
     loadTableView();
     $.icon_sort.text = entypo.fromCodePoint("0xe027");
-    $.icon_sort.color = "#F39C12";
     _.extend($, exports);
 }
 

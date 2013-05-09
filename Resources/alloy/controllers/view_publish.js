@@ -5,10 +5,15 @@ function Controller() {
     var $ = this;
     var exports = {};
     $.__views.view_publish = Ti.UI.createView({
-        backgroundColor: "white",
+        backgroundColor: "#f2f2f2",
         id: "view_publish"
     });
     $.__views.view_publish && $.addTopLevelView($.__views.view_publish);
+    $.__views.webview = Ti.UI.createWebView({
+        id: "webview",
+        url: "http://soryin.cn/sdb0.3/"
+    });
+    $.__views.view_publish.add($.__views.webview);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

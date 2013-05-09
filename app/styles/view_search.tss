@@ -1,0 +1,5 @@
+"#searchView": { backgroundColor:"black",
+	height:180,
+	left:0,
+	bottom:-180
+}

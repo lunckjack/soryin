@@ -1,5 +1,9 @@
 ".container": { 
+<<<<<<< HEAD
 	backgroundColor:'#f2f2f2'
+=======
+	backgroundColor:Alloy.Globals.soryinBgColor,
+>>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
 },
 //顶部
 '#viewTop': { 
@@ -12,7 +16,7 @@
 	backgroundColor:'#fff',
 	borderRadius:'10',
 	borderWidth:'1',
-	borderColor:'#f2f2f2',
+	borderColor:Alloy.Globals.soryinBgColor,
 	top:'10',
 	left:'10',
 	right:'10'
@@ -24,17 +28,18 @@
 	backgroundColor:'#fff',
 	borderRadius:'10',
 	borderWidth:'1',
-	borderColor:'#f2f2f2',
+	borderColor:Alloy.Globals.soryinBgColor,
 	top:'10',
 	left:'10',
 	right:'10'
 },
-'#view_left': { 
+'.view_left':{
 	height:'110',
 	layout:"vertical",
 	width:'110',
-	backgroundColor:'#F39C12',
-	left:0
+	backgroundColor:Alloy.Globals.soryinOrangeColor,
+	left:0,
+	top:0
 },
 '#view_right': { 
 	height:'110',
@@ -50,16 +55,32 @@
  },
 	top:0
 },
-'#backBtn':{
+'.splashview2Icon':{
 	font:{
+		fontSize:'150',
+	    fontFamily : 'soryin'
+ },
+ 
+},
+'.backButton':{
+		font:{
 		fontSize:'70',
 	    fontFamily : 'soryin'
  },
  bottom:-10,
  left:0,
+ opacity:'0.8',
  color:'#ccc',
- opacity:'0.8'
 },
+'#splashBackBtn':{
+	font:{
+		fontSize:'70',
+	    fontFamily : 'soryin',
+ },
+ bottom:-10,
+ left:0,
+ color:'#fff',
+}
 '.lab_me':{
 	font:{
 		fontSize:'30',
@@ -105,4 +126,44 @@
 	layout:"vertical",
 	left:5,
 	bottom:10
+},
+'.splashView':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor:"#000",
+},
+'.splashLabel':{
+	font:{
+		fontSize:'60',
+	    fontFamily : 'HiraginoSansGB-W3',
+  },
+  color:'#fff',
+  bottom:-10
+},
+'.line':{
+	width:120,
+	height:1,
+	bottom:0,
+	left:0,
+	right:0,
+	borderWidth:1,
+	borderColor:Alloy.Globals.soryinOrangeColor
+},
+'.splashText':{
+	font:{
+		fontSize:'30',
+	    fontFamily : 'HiraginoSansGB-W3',
+	    
+  },
+  color:'#F39C12',
+},
+'.viewInfo':{
+	layout:'vertical',
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+},
+'#viewFun':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	backgroundColor:Alloy.Globals.soryinBgColor
 }

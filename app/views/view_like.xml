@@ -1,4 +1,18 @@
 <Alloy>
 	<View class="container">
+		<!-- 进度 -->
+		<View id="progressView" class="progressView">
+			<ProgressBar id="pb" class="pdView" />
+		</View>
+		
+		<!-- 文字描述 -->
+		<View>
+			<Label class="">喜好</Label>
+		</View>
+		
+		<!--内容 -->
+		<TableView id='table' scrollable="false" height="120">
+
+		</TableView>
 	</View>
 </Alloy>

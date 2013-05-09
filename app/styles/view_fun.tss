@@ -1,0 +1,29 @@
+".container": {
+	 width:Titanium.UI.FILL,
+	 height:100
+},
+'#viewPublish': { 
+	left:20,
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+},
+'#viewSense': {
+	right:20,
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+},
+'.iconFont':{
+	font:{
+		fontSize:'60',
+	    fontFamily : 'soryin'
+ },
+ color:'#F39C12'
+},
+'.viewFun':{
+	layout:"horizontal",
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+},
+'.labView':{
+	left:10
+}

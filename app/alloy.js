@@ -12,11 +12,16 @@
 
 //颜色
 Alloy.Globals.green='2ECC71';//绿色
-Alloy.Globals.board_gray='CBCBCB'; //边框灰色
-Alloy.Globals.btn_orange-'F39C12';//按钮橙色
 Alloy.Globals.text_celadon='7F8C8D';//文字灰绿色
+Alloy.Globals.blue_grey="7F8C8D";//蓝灰色
+Alloy.Globals.board_gray='CBCBCB'; //边框灰色
 Alloy.Globals.bar_gray='4A4A4A';//bar灰色
-
+Alloy.Globals.reg_gray='F7F3F2';//红灰色
+Alloy.Globals.gray="CCCCCC";//正宗灰色
+Alloy.Globals.btn_orange-'F39C12';//按钮橙色
+Alloy.Globals.whilte="FFFFFF";// 白色
+Alloy.Globals.near_whilte='F2F2F2';//邻近白
+Alloy.Globals.black='000000';//黑色
 
 //测试数据
 Alloy.Globals.testKey='';

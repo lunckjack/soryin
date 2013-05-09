@@ -1,6 +1,14 @@
 var entypo = require('ti.entypo');
 var ui = require('ui');
+// var myModels = Alloy.Collections.record;
+// var common = require('common');
+/**
+ * function addItem(e) { alert(e.index); alert(e.data); // var index = e.index;
+ * if (e.index % 2 == 0) { e.data.backgroundColor = "#F7F3F2"; } else {
+ * e.data.backgroundColor = "#fff"; } common.addItem(myModels); }
+ */
 
+// var db=require('recordDB');
 var tableData = [];
 function loadTableView() {
 	var bc;
@@ -60,37 +68,36 @@ function loadTableView() {
 
 }
 
-
-
 // 排序按钮出现
 $.table.addEventListener('scrollend', function() {
-	ui.translate2($.sortView, 0, 0, 0, 200, function() {
+	ui.translate2($.sortView, 0, 0, 0, 0, function() {
 
 	});
 });
 $.table.addEventListener('scroll', function() {
-	ui.translate2($.sortView, 110, 0, 0, 200, function() {
+	ui.translate2($.sortView, 150, 0, 0, 70, function() {
 
 	});
 });
 
 // 筛选
-$.icon_sort.addEventListener('click', function() {
+$.icon_sort.addEventListener('click', function(e) {
 
 	$.viewSort.visible = true;
-
+	$.trigger('hideBackButton', e);
 	ui.zoom($.viewSort, function() {
 		ui.translate2($.filterView.getView("filterView"), 0, -214, 0, 200,
 				function() {
+					
 				});
 	});
 
 });
-$.viewSort.addEventListener('click', function() {
+$.viewSort.addEventListener('click', function(e) {
 	ui.translate2($.filterView.getView("filterView"), 0, 214, 0, 200,
 			function() {
 				ui.unzoom($.viewSort, function() {
-
+					$.trigger('showBackButton', e);
 				});
 			});
 
@@ -99,4 +106,3 @@ $.viewSort.addEventListener('click', function() {
 // 创建tableViewRow
 loadTableView();
 $.icon_sort.text = entypo.fromCodePoint("0xe027");
-$.icon_sort.color = "#F39C12";

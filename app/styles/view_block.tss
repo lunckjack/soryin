@@ -5,7 +5,7 @@
 	height:100,
 	width:Titanium.UI.FILL,
 	borderRadius:6,
-	borderColor:"CCCCCC",
+	borderColor:Alloy.Globals.gray,
 	left:10,
 	top:10,
 	right:10
@@ -21,12 +21,12 @@
 		fontSize:'60',
 	    fontFamily : 'soryin'
 	},
-	color:"7F8C8D",
+	color:Alloy.Globals.blue_grey,
 	left:15,
 	top:20
 },
 ".text":{
-	color:"FFFFFF" ,
+	color:Alloy.Globals.whilte,
 	font:{
 		fontSize:'28.5',
 		fontFamily:'冬青黑体简体中文'
@@ -50,7 +50,7 @@
 		fontSize:'15',
 		fontFamily:'冬青黑体简体中文'
 	},
-	color:"CCCCCC",
+	color:Alloy.Globals.gray,
 	left:17,
 	top:0
 }
@@ -65,7 +65,7 @@
 	height:"110"
 },
 "#viewTop_viewEventType":{
-	backgroundColor:"F39C12",
+	backgroundColor:Alloy.Globals.btn_orange,
 	width:110,
 	height:110,
 	left:0
@@ -75,7 +75,7 @@
 	height:15,
 	left:5,
 	top:5,
-	color:"F2F2F2",
+	color:Alloy.Globals.near_whilte,
 	font:{
 		fontSize:'15',
 	    fontFamily : 'soryin'
@@ -90,38 +90,38 @@
 		fontSize:'49',
 		fontFamily : 'soryin'
 	},
-	color:"FFFFFF"
+	color:Alloy.Globals.whilte
 }
 "#text_eventType":{//eventType的文字
 	top:10,
 	left:10
 },
 "#viewTimeAndLocation_Time_icon":{//时间图标
-	color:"2ECC71"
+	color:Alloy.Globals.green
 },
 "#viewTimeAndLocation_Time_textView_bigText":{//时间图标旁边的大数字
-	color:"2ECC71"
+	color:Alloy.Globals.green
 },
 "#viewTimeAndLocation_Time_textView_smallText":{//时间旁边的小数字
-	color:"CCCCCC"
+	color:Alloy.Globals.gray
 },
 "#viewTimeAndLocation_Location_icon":{//距离图标
-	color:"2ECC71"
+	color:Alloy.Globals.green
 },
 "#viewTimeAndLocation_Location_textView_bigText":{//距离旁边的大数字
-	color:"2ECC71"
+	color:Alloy.Globals.green
 },
 "#viewTimeAndLocation_Location_textView_smallText":{//距离旁边的小数字
-	color:"CCCCCC"
+	color:Alloy.Globals.green
 },
 "#viewFoot":{
 	height:200,
 	bottom:10
 },"#scrollable":{
-	backgroundColor:"F7F3F2"
+	backgroundColor:Alloy.Globals.reg_gray
 },
 '#maskview':{
-	backgroundColor:'black',
+	backgroundColor:Alloy.Globals.black,
 	opacity:0
 },
 '#actionview':{
@@ -138,7 +138,7 @@
 	width:"310dp",
 	height:"1",
 	border:"1",
-	backgroundColor:'#fff',
+	backgroundColor:Alloy.Globals.whilte,
 	top:"5dp",
 	bottom:"5dp"
 },
@@ -177,6 +177,6 @@
 	height:'57dp',
 	top:0,
 	image:'/imgs/share/icon-weibo.png'
-},
+}
 
 
