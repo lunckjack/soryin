@@ -17,30 +17,33 @@ function Controller() {
         }
     }
     function setIconFont() {
+        var colorBlue = Alloy.Globals.soryinBlueColor;
+        var pinkColor = Alloy.Globals.soryinPinkColor;
+        var kwColor = Alloy.Globals.soryinKwGrayColor;
         $.icon_me.text = entypo.fromCodePoint("0xe007");
         $.icon_me.color = "#fff";
         $.icon_cover.text = entypo.fromCodePoint("0xe02b");
         $.icon_cover.color = "#ccc";
         $.icon_express.text = entypo.fromCodePoint("0xf2b0");
-        $.icon_express.color = "#29ABE2";
-        $.expressNum.color = "#29ABE2";
-        $.lab_express.color = "#29ABE2";
+        $.icon_express.color = colorBlue;
+        $.expressNum.color = colorBlue;
+        $.lab_express.color = colorBlue;
         $.icon_level.text = entypo.fromCodePoint("0xf2e6");
-        $.icon_level.color = "#29ABE2";
-        $.levelNum.color = "#29ABE2";
-        $.lab_level.color = "#29ABE2";
+        $.icon_level.color = colorBlue;
+        $.levelNum.color = colorBlue;
+        $.lab_level.color = colorBlue;
         $.icon_attention.text = entypo.fromCodePoint("0xe02d");
-        $.icon_attention.color = "#ED1E79";
-        $.attentionNum.color = "#ED1E79";
-        $.lab_attention.color = "#ED1E79";
+        $.icon_attention.color = pinkColor;
+        $.attentionNum.color = pinkColor;
+        $.lab_attention.color = pinkColor;
         $.icon_like.text = entypo.fromCodePoint("0xe029");
-        $.icon_like.color = "#494949";
-        $.likePercent.color = "#494949";
-        $.lab_like.color = "#494949";
+        $.icon_like.color = kwColor;
+        $.likePercent.color = kwColor;
+        $.lab_like.color = kwColor;
         $.icon_body.text = entypo.fromCodePoint("0xe044");
-        $.icon_body.color = "#494949";
-        $.bodyPercent.color = "#494949";
-        $.lab_body.color = "#494949";
+        $.icon_body.color = kwColor;
+        $.bodyPercent.color = kwColor;
+        $.lab_body.color = kwColor;
         $.backToIndex.text = entypo.fromCodePoint("0xe023");
         $.backToParent.text = entypo.fromCodePoint("0xe023");
         $.splashBackBtn.text = entypo.fromCodePoint("0xe023");
@@ -55,7 +58,7 @@ function Controller() {
     var $ = this;
     var exports = {};
     $.__views.index = Ti.UI.createWindow({
-        backgroundColor: "#f2f2f2",
+        backgroundColor: Alloy.Globals.soryinBgColor,
         id: "index"
     });
     $.__views.index && $.addTopLevelView($.__views.index);
@@ -75,7 +78,7 @@ function Controller() {
         height: "110",
         layout: "vertical",
         width: "110",
-        backgroundColor: "#F39C12",
+        backgroundColor: Alloy.Globals.soryinOrangeColor,
         left: 0,
         top: 0,
         id: "view_left"
@@ -134,7 +137,7 @@ function Controller() {
     $.__views.viewFun = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.SIZE,
-        backgroundColor: "#f2f2f2",
+        backgroundColor: Alloy.Globals.soryinBgColor,
         id: "viewFun"
     });
     $.__views.scrollView.add($.__views.viewFun);
@@ -144,7 +147,7 @@ function Controller() {
         backgroundColor: "#fff",
         borderRadius: "10",
         borderWidth: "1",
-        borderColor: "#f2f2f2",
+        borderColor: Alloy.Globals.soryinBgColor,
         top: "10",
         left: "10",
         right: "10",
@@ -283,7 +286,7 @@ function Controller() {
         backgroundColor: "#fff",
         borderRadius: "10",
         borderWidth: "1",
-        borderColor: "#f2f2f2",
+        borderColor: Alloy.Globals.soryinBgColor,
         top: "10",
         left: "10",
         right: "10",
@@ -432,7 +435,7 @@ function Controller() {
         height: "110",
         layout: "vertical",
         width: "110",
-        backgroundColor: "#F39C12",
+        backgroundColor: Alloy.Globals.soryinOrangeColor,
         left: 0,
         top: 0,
         id: "__alloyId12"
@@ -483,7 +486,7 @@ function Controller() {
         left: 0,
         right: 0,
         borderWidth: 1,
-        borderColor: "#F39C12",
+        borderColor: Alloy.Globals.soryinOrangeColor,
         id: "__alloyId15"
     });
     $.__views.viewInfo1.add($.__views.__alloyId15);
@@ -504,7 +507,7 @@ function Controller() {
         left: 0,
         right: 0,
         borderWidth: 1,
-        borderColor: "#F39C12",
+        borderColor: Alloy.Globals.soryinOrangeColor,
         id: "__alloyId17"
     });
     $.__views.viewInfo1.add($.__views.__alloyId17);
@@ -557,7 +560,7 @@ function Controller() {
         left: 0,
         right: 0,
         borderWidth: 1,
-        borderColor: "#F39C12",
+        borderColor: Alloy.Globals.soryinOrangeColor,
         id: "__alloyId19"
     });
     $.__views.viewInfo2.add($.__views.__alloyId19);
@@ -578,7 +581,7 @@ function Controller() {
         left: 0,
         right: 0,
         borderWidth: 1,
-        borderColor: "#F39C12",
+        borderColor: Alloy.Globals.soryinOrangeColor,
         id: "__alloyId21"
     });
     $.__views.viewInfo2.add($.__views.__alloyId21);

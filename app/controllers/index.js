@@ -163,6 +163,10 @@ function viewAnimation() {
  * set icon
  */
 function setIconFont() {
+
+	var colorBlue = Alloy.Globals.soryinBlueColor;
+	var pinkColor = Alloy.Globals.soryinPinkColor;
+	var kwColor = Alloy.Globals.soryinKwGrayColor;
 	// icon 我
 	$.icon_me.text = entypo.fromCodePoint("0xe007");
 	$.icon_me.color = "#fff";
@@ -171,29 +175,29 @@ function setIconFont() {
 	$.icon_cover.color = "#ccc";
 	// icon 经验
 	$.icon_express.text = entypo.fromCodePoint("0xf2b0");
-	$.icon_express.color = "#29ABE2";
-	$.expressNum.color = "#29ABE2";
-	$.lab_express.color = "#29ABE2";
+	$.icon_express.color = colorBlue;
+	$.expressNum.color = colorBlue;
+	$.lab_express.color = colorBlue;
 	// icon 级别
 	$.icon_level.text = entypo.fromCodePoint("0xf2e6");
-	$.icon_level.color = "#29ABE2";
-	$.levelNum.color = "#29ABE2";
-	$.lab_level.color = "#29ABE2";
+	$.icon_level.color = colorBlue;
+	$.levelNum.color = colorBlue;
+	$.lab_level.color = colorBlue;
 	// icon 关注
 	$.icon_attention.text = entypo.fromCodePoint("0xe02d");
-	$.icon_attention.color = "#ED1E79";
-	$.attentionNum.color = "#ED1E79";
-	$.lab_attention.color = "#ED1E79";
+	$.icon_attention.color = pinkColor;
+	$.attentionNum.color = pinkColor;
+	$.lab_attention.color = pinkColor;
 	// icon 喜好
 	$.icon_like.text = entypo.fromCodePoint("0xe029");
-	$.icon_like.color = "#494949";
-	$.likePercent.color = "#494949";
-	$.lab_like.color = "#494949";
+	$.icon_like.color = kwColor;
+	$.likePercent.color = kwColor;
+	$.lab_like.color = kwColor;
 	// icon 身体
 	$.icon_body.text = entypo.fromCodePoint("0xe044");
-	$.icon_body.color = "#494949";
-	$.bodyPercent.color = "#494949";
-	$.lab_body.color = "#494949";
+	$.icon_body.color = kwColor;
+	$.bodyPercent.color = kwColor;
+	$.lab_body.color = kwColor;
 
 	// 返回首页
 	$.backToIndex.text = entypo.fromCodePoint("0xe023");
