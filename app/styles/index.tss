@@ -1,10 +1,10 @@
 ".container": { 
-	backgroundColor:'#f2f2f2',
+	backgroundColor:'#f2f2f2'
 },
 //顶部
 '#viewTop': { 
 	height:'110',
-	width:Titanium.UI.FILL,
+	width:Titanium.UI.FILL
 },
 '#viewContent': { 
 	height:'200',
@@ -53,7 +53,7 @@
 '#backBtn':{
 	font:{
 		fontSize:'70',
-	    fontFamily : 'soryin',
+	    fontFamily : 'soryin'
  },
  bottom:-10,
  left:0,

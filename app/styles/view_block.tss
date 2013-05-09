@@ -1,3 +1,182 @@
 ".container": {
-	backgroundColor: "white"
+	backgroundColor: "F7F3F2"
+},
+".view":{
+	height:100,
+	width:Titanium.UI.FILL,
+	borderRadius:6,
+	borderColor:"CCCCCC",
+	left:10,
+	top:10,
+	right:10
+},
+".plainView":{
+	height:100,
+	width:Titanium.UI.FILL
+},
+".icon":{
+	width:60,
+	height:60,
+	font:{
+		fontSize:'60',
+	    fontFamily : 'soryin'
+	},
+	color:"7F8C8D",
+	left:15,
+	top:20
+},
+".text":{
+	color:"FFFFFF" ,
+	font:{
+		fontSize:'28.5',
+		fontFamily:'冬青黑体简体中文'
+	}
+},
+".miniView":{
+	width:150,
+	height:100
+},
+".bigText":{
+	font:{
+		fontSize:'30',
+		fontFamily:'Orbitron'
+	},
+	color:"7F8C8D",
+	left:17.5,
+	top:20
+},
+".smallText":{
+	font:{
+		fontSize:'15',
+		fontFamily:'冬青黑体简体中文'
+	},
+	color:"CCCCCC",
+	left:17,
+	top:0
 }
+
+
+
+//==========以上是通用样式；
+
+
+"#viewTop":{
+	width:Titanium.UI.FILL,// 铺满
+	height:"110"
+},
+"#viewTop_viewEventType":{
+	backgroundColor:"F39C12",
+	width:110,
+	height:110,
+	left:0
+}
+"#icon_V":{//加v认证图标
+	width:15,
+	height:15,
+	left:5,
+	top:5,
+	color:"F2F2F2",
+	font:{
+		fontSize:'15',
+	    fontFamily : 'soryin'
+	}
+},
+"#icon_eventType":{//event类型图标
+	width:50,
+	height:50,
+	top:10,
+	left:10,
+		font:{
+		fontSize:'49',
+		fontFamily : 'soryin'
+	},
+	color:"FFFFFF"
+}
+"#text_eventType":{//eventType的文字
+	top:10,
+	left:10
+},
+"#viewTimeAndLocation_Time_icon":{//时间图标
+	color:"2ECC71"
+},
+"#viewTimeAndLocation_Time_textView_bigText":{//时间图标旁边的大数字
+	color:"2ECC71"
+},
+"#viewTimeAndLocation_Time_textView_smallText":{//时间旁边的小数字
+	color:"CCCCCC"
+},
+"#viewTimeAndLocation_Location_icon":{//距离图标
+	color:"2ECC71"
+},
+"#viewTimeAndLocation_Location_textView_bigText":{//距离旁边的大数字
+	color:"2ECC71"
+},
+"#viewTimeAndLocation_Location_textView_smallText":{//距离旁边的小数字
+	color:"CCCCCC"
+},
+"#viewFoot":{
+	height:200,
+	bottom:10
+},"#scrollable":{
+	backgroundColor:"F7F3F2"
+},
+'#maskview':{
+	backgroundColor:'black',
+	opacity:0
+},
+'#actionview':{
+	backgroundColor:'transparent'
+	
+},
+'#m2':{
+	height:'200dp',
+	width:'310dp',
+	backgroundColor:'#494949',
+	bottom:"0"
+},
+'#line':{
+	width:"310dp",
+	height:"1",
+	border:"1",
+	backgroundColor:'#fff',
+	top:"5dp",
+	bottom:"5dp"
+},
+'#toEmail':{
+	width:'57dp',
+	height:'57dp',
+	top:0,
+	image:'/imgs/share/icon-email.png'
+},
+'#toMsg':{
+	width:'57dp',
+	height:'57dp',
+	top:0,
+	image:'/imgs/share/icon-sms.png'
+},
+'#toCopy':{
+	width:'57dp',
+	height:'57dp',
+	top:0,
+	image:'/imgs/share/icon-copy.png'
+},
+'#toEvernote':{
+	width:'57dp',
+	height:'57dp',
+	top:0,
+	image:'/imgs/share/icon-evernote.png'
+},
+'#toWeixin':{
+	width:'57dp',
+	height:'57dp',
+	top:0,
+	image:'/imgs/share/icon-wechat.png'
+},
+'#toWeibo':{
+	width:'57dp',
+	height:'57dp',
+	top:0,
+	image:'/imgs/share/icon-weibo.png'
+},
+
+

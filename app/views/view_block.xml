@@ -1,4 +1,131 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window class="container">
+		<ScrollableView id="scrollable">
+			<!--总框体-->
+			<View layout="vertical">
+				<!-- 顶部大视图 -->
+				<View id="viewTop">
+					<View id="viewTop_viewEventType" layout="horizontal">
+						<Label class="icon" id="icon_V"/>
+						<View id="viewTop_viewEventType_iconView" layout="vertical">
+							<Label class="icon" id="icon_eventType" />
+							<Label class="text" id="text_eventType" />
+						</View>
+					</View>
+					<Label class="lab_img" id="img_default"/>
+				</View>
+				<ScrollView showVerticalScrollIndicator="true" layout="vertical">
+					<!-- 时间和地点视图 -->
+					<View id="viewTimeAndLocation" class="view" layout="horizontal">
+						<View id="viewTimeAndLocation_Time" class="miniView" layout="horizontal">
+							<Label id="viewTimeAndLocation_Time_icon" class="icon"/>
+							<View id="viewTimeAndLocation_Time_textView" class="textView" layout="vertical">
+								<Label id="viewTimeAndLocation_Time_textView_bigText" class="bigText"/>
+								<Label id="viewTimeAndLocation_Time_textView_smallText" class="smallText"/>
+							</View>
+						</View>
+						<View id="viewTimeAndLocation_Location" class="miniView"  layout="horizontal">
+							<Label id="viewTimeAndLocation_Location_icon" class="icon" layout="vertical"/>
+							<View id="viewTimeAndLocation_Location_textView" class="textView" layout="vertical">
+								<Label id="viewTimeAndLocation_Location_textView_bigText" class="bigText"/>
+								<Label id="viewTimeAndLocation_Location_textView_smallText" class="smallText"/>
+							</View>
+						</View>
+					</View>
+
+					<!-- 组织和人物大视图 -->
+					<View id="viewEntity" class="view"  layout="horizontal">
+						<View id="viewEntity_organization" class="miniView" layout="horizontal">
+							<Label id="viewEntity_organization_icon" class="icon"/>
+							<View id="viewEntity_organization_textView" class="textView" layout="vertical">
+								<Label id="viewEntity_organization_textView_bigText" class="bigText" />
+								<Label id="viewEntity_organization_textView_smallText" class="smallText"/>
+							</View>
+						</View>
+						<View id="viewEntity_personal" class="miniView" layout="horizontal">
+							<Label id="viewEntity_personal_icon" class="icon"/>
+							<View id="viewEntity_personal_textView" class="textView" layout="vertical">
+								<Label id="viewEntity_personal_textView_bigText" class="bigText" />
+								<Label id="viewEntity_personal_textView_smallText" class="smallText"/>
+							</View>
+						</View>
+
+					</View>
+
+					<!-- 底部大视图 -->
+					<View id="viewFoot" class="view"  layout="vertical">
+						<!-- 小活动列表、参加活动的条件 -->
+						<View id="viewFoot_top" class="plainView" layout="horizontal">
+							<View id="viewFoot_top_condition" class="miniView" layout="horizontal" >
+								<Label id="viewFoot_top_activityList_icon" class="icon"/>
+								<View id="viewFoot_top_activityList_textView" class="textView" layout="vertical">
+									<Label id="viewFoot_top_activityList_textView_bigText" class="bigText"/>
+									<Label id="viewFoot_top_activityList_textView_smallText" class="smallText"/>
+								</View>
+							</View>
+							<View id="viewFoot_top_condition" class="miniView"  layout="horizontal" >
+								<Label id="viewFoot_top_condition_icon" class="icon"/>
+								<View  id="viewFoot_top_condition_textView" class="textView" layout="vertical">
+									<Label id="viewFoot_top_condition_textView_bigText" class="bigText"/>
+									<Label id="viewFoot_top_condition_textView_smallText" class="smallText"/>
+								</View>
+							</View>
+						</View>
+						<!-- 参加活动的步骤、限制 -->
+						<View id="viewFoot_foot" class="plainView" layout="horizontal">
+							<View id="viewFoot_foot_steps" class="miniView" layout="horizontal">
+								<Label id="viewFoot_foot_steps_icon" class="icon"/>
+								<View id="viewFoot_foot_steps_textView" class="textView" layout="vertical">
+									<Label id="viewFoot_foot_steps_textView_bigText" class="bigText"/>
+									<Label id="viewFoot_foot_steps_textView_smallText" class="smallText"/>
+								</View>
+							</View>
+							<View id="viewFoot_foot_constrain" class="miniView" layout="horizontal">
+								<Label id="viewFoot_foot_constrain_icon" class="icon"/>
+								<View id="viewFoot_foot_constrain_textView" class="textView" layout="vertical">
+									<Label id="viewFoot_foot_constrain_textView_bigText" class="bigText"/>
+									<Label id="viewFoot_foot_constrain_textView_smallText" class="smallText"/>
+								</View>
+							</View>
+						</View>
+
+					</View>
+				</ScrollView>
+				
+				<View id="maskview" visible="false">
+					<View id='actionview'>
+						<View id="m2" layout="vertical">
+							<View layout="horizontal" class="rowstyle">
+								<View id="email" class="shareblock">
+									<Button id="toEmail"/>
+									<Label class="btnlabel">电子邮件</Label>
+								</View>
+								<View id="msg" class="shareblock">
+									<Button id="toMsg"/>
+									<Label class="btnlabel">短信</Label>
+								</View>
+								<View id="evernote" class="shareblock">
+									<Button id="toEvernote"/>
+									<Label class="btnlabel">印象笔记</Label>
+								</View>
+							</View>
+							<View id="line"/>
+							<View layout="horizontal" class="rowstyle">
+								<View id="msg" class="shareblock">
+									<Button id="toWeixin"/>
+									<Label class="btnlabel">微信</Label>
+								</View>
+								<View id="copy" class="shareblock">
+									<Button id="toWeibo"/>
+									<Label class="btnlabel">微博</Label>
+								</View>
+							</View>
+						</View>
+					</View>
+				</View>
+				<!-- <Widget id="loadIcon" src="com.appcelerator.loading" /> -->
+			</View>
+			
+		</ScrollableView>
+	</Window>
 </Alloy>

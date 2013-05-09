@@ -1,3 +1,21 @@
-".container": {
-	backgroundColor: "white"
+'.eventFontFamily':{
+	font:{
+		fontSize:'20dp',
+		opacity:'0.5',
+	    fontFamily : 'soryin'
+  }
+},
+'lab_text':{
+	font:{
+		fontSize:'24dp',
+		fontFamily : 'HiraginoSansGB-W6'
+	},
+	left:10
+},
+'#tab':{
+	width:Titanium.UI.FILL,
+	height:'50dp'
+},
+'#contentView':{
+	backgroundColor:'#fff'
 }

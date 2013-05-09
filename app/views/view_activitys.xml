@@ -1,4 +1,15 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="container" title="自我" navBarHidden="true">
+		<ScrollableView id="scrollableView" >
+			<View id="view1">
+				<View  id="s2">
+					<TableView id='table1'>
+						<TableViewRow>
+							<Label>done.....</Label>
+						</TableViewRow>
+					</TableView>
+				</View>
+			</View>
+		</ScrollableView>
+	</Window>
 </Alloy>

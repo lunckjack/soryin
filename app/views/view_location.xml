@@ -1,4 +1,13 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="container" title="自我" navBarHidden="true">
+
+		<View layout="vertical">
+			<ScrollableView id="scrollableView" showPagingControl="true" pagingControlOnTop="true"  pagingControlColor="#f2f2f2"></ScrollableView>
+			<TableView id='table1'>
+				<TableViewRow>
+					<Label>done.....</Label>
+				</TableViewRow>
+			</TableView>
+		</View>
+	</Window>
 </Alloy>

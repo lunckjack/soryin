@@ -1,3 +1,35 @@
-".container": {
-	backgroundColor: "white"
+'#container':{
+	backgroundColor:'#f2f2f2'
+},
+'#line':{
+	height:'1dp',
+	top:'20dp',
+	width:'130dp',
+	backgroundColor:'#CBCBCB'
+},
+'#num':{
+	color:'#29abe2',
+	font:{
+		fontSize:'80dp',
+	    fontFamily : 'Orbitron'
+	 },
+	top:'20dp'
+},
+'#now':{
+	color:'#29abe2',
+	top:'2.5dp'
+},
+'#s2':{
+	top:"100dp"
+},
+'#unit':{
+	top:'80dp',
+	left:'180dp',
+	font:{
+		fontSize:'20dp'
+	}
+},
+'#scrollableView':{
+	width:Titanium.UI.FILL,
+	height: '160dp'
 }

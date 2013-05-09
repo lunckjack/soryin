@@ -4,7 +4,7 @@
 '.lab_title':{
 	font : {
 			fontSize : '24',
-			fontFamily : 'HiraginoSansGB-W3',
+			fontFamily : 'HiraginoSansGB-W3'
 	},
 	textAlign:"right",
 	right : 10,
@@ -19,5 +19,5 @@
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.FILL,
 	layout:'vertical'
-},
+}
 

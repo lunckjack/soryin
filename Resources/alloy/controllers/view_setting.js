@@ -63,7 +63,7 @@ function Controller() {
         id: "setView"
     });
     $.__views.scrollView.add($.__views.setView);
-    $.__views.__alloyId49 = Ti.UI.createLabel({
+    $.__views.__alloyId71 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -72,29 +72,29 @@ function Controller() {
         right: 10,
         top: 20,
         text: "登录",
-        id: "__alloyId49"
+        id: "__alloyId71"
     });
-    $.__views.setView.add($.__views.__alloyId49);
-    $.__views.__alloyId50 = Ti.UI.createTableViewRow({
-        id: "__alloyId50"
+    $.__views.setView.add($.__views.__alloyId71);
+    $.__views.__alloyId72 = Ti.UI.createTableViewRow({
+        id: "__alloyId72"
     });
-    var __alloyId51 = [];
-    __alloyId51.push($.__views.__alloyId50);
-    $.__views.__alloyId52 = Ti.UI.createLabel({
+    var __alloyId73 = [];
+    __alloyId73.push($.__views.__alloyId72);
+    $.__views.__alloyId74 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId52"
+        id: "__alloyId74"
     });
-    $.__views.__alloyId50.add($.__views.__alloyId52);
+    $.__views.__alloyId72.add($.__views.__alloyId74);
     $.__views.table1 = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: 100,
         separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
-        data: __alloyId51,
+        data: __alloyId73,
         id: "table1",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table1);
-    $.__views.__alloyId53 = Ti.UI.createLabel({
+    $.__views.__alloyId75 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -103,27 +103,27 @@ function Controller() {
         right: 10,
         top: 20,
         text: "向导",
-        id: "__alloyId53"
+        id: "__alloyId75"
     });
-    $.__views.setView.add($.__views.__alloyId53);
-    $.__views.__alloyId54 = Ti.UI.createTableViewRow({
-        id: "__alloyId54"
+    $.__views.setView.add($.__views.__alloyId75);
+    $.__views.__alloyId76 = Ti.UI.createTableViewRow({
+        id: "__alloyId76"
     });
-    var __alloyId55 = [];
-    __alloyId55.push($.__views.__alloyId54);
-    $.__views.__alloyId56 = Ti.UI.createLabel({
+    var __alloyId77 = [];
+    __alloyId77.push($.__views.__alloyId76);
+    $.__views.__alloyId78 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId56"
+        id: "__alloyId78"
     });
-    $.__views.__alloyId54.add($.__views.__alloyId56);
+    $.__views.__alloyId76.add($.__views.__alloyId78);
     $.__views.table2 = Ti.UI.createTableView({
-        data: __alloyId55,
+        data: __alloyId77,
         id: "table2",
         height: "100",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table2);
-    $.__views.__alloyId57 = Ti.UI.createLabel({
+    $.__views.__alloyId79 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -132,21 +132,21 @@ function Controller() {
         right: 10,
         top: 20,
         text: "其他",
-        id: "__alloyId57"
+        id: "__alloyId79"
     });
-    $.__views.setView.add($.__views.__alloyId57);
-    $.__views.__alloyId58 = Ti.UI.createTableViewRow({
-        id: "__alloyId58"
+    $.__views.setView.add($.__views.__alloyId79);
+    $.__views.__alloyId80 = Ti.UI.createTableViewRow({
+        id: "__alloyId80"
     });
-    var __alloyId59 = [];
-    __alloyId59.push($.__views.__alloyId58);
-    $.__views.__alloyId60 = Ti.UI.createLabel({
+    var __alloyId81 = [];
+    __alloyId81.push($.__views.__alloyId80);
+    $.__views.__alloyId82 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId60"
+        id: "__alloyId82"
     });
-    $.__views.__alloyId58.add($.__views.__alloyId60);
+    $.__views.__alloyId80.add($.__views.__alloyId82);
     $.__views.table3 = Ti.UI.createTableView({
-        data: __alloyId59,
+        data: __alloyId81,
         id: "table3",
         height: "50",
         scrollable: "false"

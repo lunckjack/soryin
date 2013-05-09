@@ -377,7 +377,7 @@ function Controller() {
     $.view_right.width = curWidth - 110;
     var curview = "";
     $.view_left.addEventListener("click", function() {
-        var setView = Alloy.createController("view_setting").getView();
+        var setView = Alloy.createController("view_location").getView();
         "" != curview && $.content.remove(curview);
         curview = setView;
         $.content.add(curview);
