@@ -1,9 +1,8 @@
 ".container": { 
-<<<<<<< HEAD
-	backgroundColor:'#f2f2f2'
-=======
+backgroundColor:'#f2f2f2',
+
 	backgroundColor:Alloy.Globals.soryinBgColor,
->>>>>>> dc85394cbca9186ba4e1627ee99d2cd658ea52ff
+
 },
 //顶部
 '#viewTop': { 
