@@ -7,8 +7,9 @@ $.view_right.width = curWidth - 110;
 var curview = "";
 // 自我
 $.view_left.addEventListener('click', function() {
-	var setView = Alloy.createController('view_setting').getView();
-
+	// var setView = Alloy.createController('view_block').getView();
+	//var setView = Alloy.createController('view_detail').getView();
+	var setView = Alloy.createController('view_location').getView();
 	if (curview != "") {
 		$.content.remove(curview);
 	}
