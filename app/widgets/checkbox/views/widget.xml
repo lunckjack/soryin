@@ -1,6 +1,5 @@
 <Alloy>
 	<View id="checkbox">
-		<Label id="lbl">Text beside the checkbox</Label>
-		<Label id="chk"></Label>
+		<Label id="chk" class="iconCheckbox"></Label>
 	</View>
 </Alloy>

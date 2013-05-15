@@ -1,0 +1,26 @@
+".container": {
+	backgroundColor:"white",
+	layout:"vertical",
+},
+'.fontSmall':{
+	font:{
+		fontSize:15,
+	    fontFamily : 'HiraginoSansGB-W3',
+	    fontWeight:'bold'
+  },
+},
+'.fontMidum':{
+	font:{
+		fontSize:24,
+	    fontFamily : 'HiraginoSansGB-W3',
+	    fontWeight:'bold'
+  },
+},
+'.fontBig':{
+	font:{
+		fontSize:36,
+	    fontFamily : 'HiraginoSansGB-W3',
+	    fontWeight:'bold'
+  },
+}
+

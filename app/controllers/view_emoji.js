@@ -1,0 +1,3 @@
+$.switchBox.init(function(state) {
+	
+});

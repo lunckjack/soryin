@@ -1,14 +1,31 @@
+var entypo = require('ti.entypo');
 var args = arguments[0] || {};
 
-exports.init = function (callback) {
-	$.lbl.text = args.message || 'Set "message" attribute to change';
-	var checkState = false;
+$.chk.color = "#000";
+$.chk.text = entypo.fromCodePoint("0xe01c");
+var checkState = false;
+exports.init = function(callback) {
 	$.checkbox.addEventListener('click', function() {
 		checkState = !checkState;
-		$.chk.borderColor="#F39C12";
-		$.chk.text = (checkState) ? '\u2714' : '';
+		// $.chk.borderColor="#F39C12";
+		changeState(checkState);
 		callback(checkState);
 	});
 	_.extend($.chk, args);
-	_.extend($.lbl, args);
 };
+
+function changeState(state) {
+	$.chk.color = (state) ? Alloy.Globals.soryinOrangeColor : "#000";
+	$.chk.text = (state) ? entypo.fromCodePoint("0xe064") : entypo
+			.fromCodePoint("0xe01c");
+}
+// 设置被选中
+exports.setChecked = function(state) {
+	// alert();
+	changeState(state);
+	checkState=state;
+}
+// 是否被选选中
+exports.isChecked = function() {
+	return checkState;
+}

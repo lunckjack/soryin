@@ -1,0 +1,23 @@
+".container": { 
+	backgroundColor:"white",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	layout:"vertical",
+},
+'.timeFont':{
+			font:{
+			fontSize:30,
+		    fontFamily : "Let's go Digital",
+		    fontWeight:'bold'
+	  },
+	  color:Alloy.Globals.soryinKwGrayColor
+},
+'.labTxt':{
+	font:{
+		fontSize:15,
+	    fontFamily : 'HiraginoSansGB-W3',
+	    fontWeight:'bold'
+  },
+  left:5,
+  color:Alloy.Globals.soryinKwGrayColor
+}

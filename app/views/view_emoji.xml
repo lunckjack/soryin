@@ -1,0 +1,6 @@
+<Alloy>
+    <View class="emojiView">
+        <Widget id="switchBox" src="switchbox" />
+    </View>
+	
+</Alloy>

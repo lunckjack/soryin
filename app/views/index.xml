@@ -14,12 +14,11 @@
 						<Label text="添加封面" class="lab_cover" />
 					</View>
 				</View>
-				
+
 				<!-- 内容 -->
-				<ScrollView id="scrollView"
-					showHorizontalScrollIndifcator="true" showVerticalScrollIndicator="true"
+				<ScrollView id="scrollView" showVerticalScrollIndicator="false"
 					layout="vertical">
-					<View id=viewFun/>
+					<View id=viewFun />
 					<View id="viewContent">
 						<!-- 经验 级别 -->
 						<View id="view_express" class="view_fontL">

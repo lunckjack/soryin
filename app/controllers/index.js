@@ -89,11 +89,14 @@ $.view_level.addEventListener('click', function() {
 // 喜好
 
 $.view_like.addEventListener('click', function() {
+	$.like.init();
 	scrollToView($.content, $.like.getView(), 1);
+
 });
 // 身体
 
 $.view_body.addEventListener('click', function() {
+	$.body.init(); 
 	scrollToView($.content, $.body.getView(), 1);
 });
 // 返回首页
@@ -246,6 +249,50 @@ if (loadFirst) {
 
 	$.viewInfo1.top = (curHeight / 2) - $.viewInfo1.height;
 	$.viewInfo2.top = (curHeight / 2) - $.viewInfo2.height;
+}
+
+var a = 1, b = 1, c = 1, d = 1, e = 1;
+var a_num = 36, b_num = 3, c_num = 5, d_num = 80, e_num = 30;
+
+function changeExpress() {
+
+	$.expressNum.text = a;
+	if (a < a_num) {
+		a++;
+	}
+
+}
+
+function changeLevel() {
+	$.levelNum.text = b;
+	if (b < b_num) {
+		b++;
+	}
+}
+function changeAttention() {
+	$.attentionNum.text = c;
+	if (c < c_num) {
+		c++;
+	}
+}
+function changeLike() {
+	$.likePercent.text = (d + "%");
+	if (d < d_num) {
+		d++;
+	}
+}
+function changeBody() {
+	$.bodyPercent.text = (e + "%");
+	if (e < e_num) {
+		e++;
+	}
+}
+{
+	var crear_a = setInterval(changeExpress, (3000 / a_num));
+	var crear_b = setInterval(changeLevel, (3000 / b_num));
+	var crear_c = setInterval(changeAttention, (3000 / c_num));
+	var crear_d = setInterval(changeLike, (3000 / d_num));
+	var crear_e = setInterval(changeBody, (3000 / e_num));
 }
 
 $.index.open();

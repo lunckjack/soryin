@@ -1,0 +1,20 @@
+'.circleView':{
+	width:25,
+	height:25,
+	backgroundColor:'#fff',
+	borderRadius:12.5,
+	right:2,
+	top:2,
+	bottom:2
+},
+'#switchbox':{
+	width:80,
+	height:30,
+	backgroundColor:Alloy.Globals.soryinOrangeColor,
+	borderRadius:15,
+	left:0
+},
+'.viewSwitch':{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+}

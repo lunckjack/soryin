@@ -1,8 +1,6 @@
 ".container": { 
-backgroundColor:'#f2f2f2',
-
+	backgroundColor:'#f2f2f2',
 	backgroundColor:Alloy.Globals.soryinBgColor,
-
 },
 //顶部
 '#viewTop': { 
@@ -52,7 +50,10 @@ backgroundColor:'#f2f2f2',
 		fontSize:'60',
 	    fontFamily : 'soryin'
  },
-	top:0
+	top:0,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+
 },
 '.splashview2Icon':{
 	font:{
@@ -96,7 +97,9 @@ backgroundColor:'#f2f2f2',
 		fontSize:'35',
 		fontFamily : 'Orbitron'
   },
-  color:'#ccc'
+  color:'#ccc',
+  height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
 },
 '.view_fontL': { 
 	height:Titanium.UI.SIZE,
@@ -110,7 +113,7 @@ backgroundColor:'#f2f2f2',
 	width:Titanium.UI.SIZE,
 	layout:"horizontal",
 	top:10,
-	right:10
+	right:10,
 },
 '.view_fontB': { 
 	height:Titanium.UI.SIZE,

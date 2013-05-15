@@ -96,32 +96,32 @@ function Controller() {
         navBarHidden: "true"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    var __alloyId26 = [];
+    var __alloyId32 = [];
     $.__views.view1 = Ti.UI.createView({
         id: "view1"
     });
-    __alloyId26.push($.__views.view1);
+    __alloyId32.push($.__views.view1);
     $.__views.s2 = Ti.UI.createView({
         id: "s2"
     });
     $.__views.view1.add($.__views.s2);
-    $.__views.__alloyId27 = Ti.UI.createTableViewRow({
-        id: "__alloyId27"
+    $.__views.__alloyId33 = Ti.UI.createTableViewRow({
+        id: "__alloyId33"
     });
-    var __alloyId28 = [];
-    __alloyId28.push($.__views.__alloyId27);
-    $.__views.__alloyId29 = Ti.UI.createLabel({
+    var __alloyId34 = [];
+    __alloyId34.push($.__views.__alloyId33);
+    $.__views.__alloyId35 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId29"
+        id: "__alloyId35"
     });
-    $.__views.__alloyId27.add($.__views.__alloyId29);
+    $.__views.__alloyId33.add($.__views.__alloyId35);
     $.__views.table1 = Ti.UI.createTableView({
-        data: __alloyId28,
+        data: __alloyId34,
         id: "table1"
     });
     $.__views.s2.add($.__views.table1);
     $.__views.scrollableView = Ti.UI.createScrollableView({
-        views: __alloyId26,
+        views: __alloyId32,
         id: "scrollableView"
     });
     $.__views.container.add($.__views.scrollableView);

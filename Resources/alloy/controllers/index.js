@@ -52,6 +52,26 @@ function Controller() {
         $.viewIcon2.text = entypo.fromCodePoint("0xe07f");
         $.viewIcon2.color = "#fff";
     }
+    function changeExpress() {
+        $.expressNum.text = a;
+        a_num > a && a++;
+    }
+    function changeLevel() {
+        $.levelNum.text = b;
+        b_num > b && b++;
+    }
+    function changeAttention() {
+        $.attentionNum.text = c;
+        c_num > c && c++;
+    }
+    function changeLike() {
+        $.likePercent.text = d + "%";
+        d_num > d && d++;
+    }
+    function changeBody() {
+        $.bodyPercent.text = e + "%";
+        e_num > e && e++;
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
@@ -90,6 +110,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_me"
     });
     $.__views.view_left.add($.__views.icon_me);
@@ -118,6 +140,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_cover"
     });
     $.__views.view_right.add($.__views.icon_cover);
@@ -129,8 +153,7 @@ function Controller() {
     $.__views.view_right.add($.__views.__alloyId4);
     $.__views.scrollView = Ti.UI.createScrollView({
         id: "scrollView",
-        showHorizontalScrollIndifcator: "true",
-        showVerticalScrollIndicator: "true",
+        showVerticalScrollIndicator: "false",
         layout: "vertical"
     });
     $.__views.__alloyId2.add($.__views.scrollView);
@@ -169,6 +192,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_express"
     });
     $.__views.view_express.add($.__views.icon_express);
@@ -187,6 +212,8 @@ function Controller() {
             fontFamily: "Orbitron"
         },
         color: "#ccc",
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         text: "36",
         id: "expressNum"
     });
@@ -211,6 +238,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_level"
     });
     $.__views.view_level.add($.__views.icon_level);
@@ -229,6 +258,8 @@ function Controller() {
             fontFamily: "Orbitron"
         },
         color: "#ccc",
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         text: "1",
         id: "levelNum"
     });
@@ -253,6 +284,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_attention"
     });
     $.__views.view_attention.add($.__views.icon_attention);
@@ -271,6 +304,8 @@ function Controller() {
             fontFamily: "Orbitron"
         },
         color: "#ccc",
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         text: "5",
         id: "attentionNum"
     });
@@ -308,6 +343,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_like"
     });
     $.__views.view_like.add($.__views.icon_like);
@@ -326,6 +363,8 @@ function Controller() {
             fontFamily: "Orbitron"
         },
         color: "#ccc",
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         text: "0%",
         id: "likePercent"
     });
@@ -350,6 +389,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "icon_body"
     });
     $.__views.view_body.add($.__views.icon_body);
@@ -368,6 +409,8 @@ function Controller() {
             fontFamily: "Orbitron"
         },
         color: "#ccc",
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         text: "0%",
         id: "bodyPercent"
     });
@@ -447,6 +490,8 @@ function Controller() {
             fontFamily: "soryin"
         },
         top: 0,
+        height: Titanium.UI.SIZE,
+        width: Titanium.UI.SIZE,
         id: "splashIcon"
     });
     $.__views.__alloyId12.add($.__views.splashIcon);
@@ -643,9 +688,11 @@ function Controller() {
         scrollToView($.content, $.level.getView(), 1);
     });
     $.view_like.addEventListener("click", function() {
+        $.like.init();
         scrollToView($.content, $.like.getView(), 1);
     });
     $.view_body.addEventListener("click", function() {
+        $.body.init();
         scrollToView($.content, $.body.getView(), 1);
     });
     $.backToIndex.addEventListener("click", function() {
@@ -698,6 +745,13 @@ function Controller() {
         $.viewInfo1.top = curHeight / 2 - $.viewInfo1.height;
         $.viewInfo2.top = curHeight / 2 - $.viewInfo2.height;
     }
+    var a = 1, b = 1, c = 1, d = 1, e = 1;
+    var a_num = 36, b_num = 3, c_num = 5, d_num = 80, e_num = 30;
+    setInterval(changeExpress, 3e3 / a_num);
+    setInterval(changeLevel, 3e3 / b_num);
+    setInterval(changeAttention, 3e3 / c_num);
+    setInterval(changeLike, 3e3 / d_num);
+    setInterval(changeBody, 3e3 / e_num);
     $.index.open();
     _.extend($, exports);
 }

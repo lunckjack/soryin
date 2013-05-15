@@ -1,0 +1,24 @@
+<Alloy>
+	<View class="container">
+		<View class="viewWidget">
+			<View class="viewLeft">
+				<Label id="time" class="timeFont">11:01</Label>
+				<Label id="labTime" class="labTxt">晚</Label>
+			</View>
+			<Widget id="ckTime" src="checkbox" class="viewRight" />
+		</View>
+		<View class="viewWidget">
+			<View class="viewLeft">
+				<Label id="time12" class="timeFont">11:01</Label>
+				<Label id="labTime12" class="labTxt">PM</Label>
+			</View>
+			<Widget id="ckTime12" src="checkbox" class="viewRight" />
+		</View>
+		<View class="viewWidget">
+			<View class="viewLeft">
+				<Label id="time24" class="timeFont">11:01</Label>
+			</View>
+			<Widget id="ckTime24" src="checkbox" class="viewRight" />
+		</View>
+	</View>
+</Alloy>

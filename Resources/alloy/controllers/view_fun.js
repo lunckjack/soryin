@@ -17,13 +17,13 @@ function Controller() {
         id: "viewPublish"
     });
     $.__views.view_fun.add($.__views.viewPublish);
-    $.__views.__alloyId55 = Ti.UI.createView({
+    $.__views.__alloyId68 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId55"
+        id: "__alloyId68"
     });
-    $.__views.viewPublish.add($.__views.__alloyId55);
+    $.__views.viewPublish.add($.__views.__alloyId68);
     $.__views.iconPublish = Ti.UI.createLabel({
         font: {
             fontSize: "60",
@@ -32,13 +32,13 @@ function Controller() {
         color: "#F39C12",
         id: "iconPublish"
     });
-    $.__views.__alloyId55.add($.__views.iconPublish);
-    $.__views.__alloyId56 = Ti.UI.createLabel({
+    $.__views.__alloyId68.add($.__views.iconPublish);
+    $.__views.__alloyId69 = Ti.UI.createLabel({
         left: 10,
         text: "发布",
-        id: "__alloyId56"
+        id: "__alloyId69"
     });
-    $.__views.__alloyId55.add($.__views.__alloyId56);
+    $.__views.__alloyId68.add($.__views.__alloyId69);
     $.__views.viewSense = Ti.UI.createView({
         right: 20,
         width: Titanium.UI.SIZE,
@@ -46,13 +46,13 @@ function Controller() {
         id: "viewSense"
     });
     $.__views.view_fun.add($.__views.viewSense);
-    $.__views.__alloyId57 = Ti.UI.createView({
+    $.__views.__alloyId70 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId57"
+        id: "__alloyId70"
     });
-    $.__views.viewSense.add($.__views.__alloyId57);
+    $.__views.viewSense.add($.__views.__alloyId70);
     $.__views.iconSense = Ti.UI.createLabel({
         font: {
             fontSize: "60",
@@ -61,13 +61,13 @@ function Controller() {
         color: "#F39C12",
         id: "iconSense"
     });
-    $.__views.__alloyId57.add($.__views.iconSense);
-    $.__views.__alloyId58 = Ti.UI.createLabel({
+    $.__views.__alloyId70.add($.__views.iconSense);
+    $.__views.__alloyId71 = Ti.UI.createLabel({
         left: 10,
         text: "读取",
-        id: "__alloyId58"
+        id: "__alloyId71"
     });
-    $.__views.__alloyId57.add($.__views.__alloyId58);
+    $.__views.__alloyId70.add($.__views.__alloyId71);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var entypo = require("ti.entypo");

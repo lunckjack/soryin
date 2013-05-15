@@ -47,14 +47,14 @@ function Controller() {
         id: "view_color"
     });
     $.__views.view_color && $.addTopLevelView($.__views.view_color);
-    $.__views.__alloyId40 = Ti.UI.createView({
+    $.__views.__alloyId47 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
         top: 0,
-        id: "__alloyId40"
+        id: "__alloyId47"
     });
-    $.__views.view_color.add($.__views.__alloyId40);
+    $.__views.view_color.add($.__views.__alloyId47);
     $.__views.iconColor = Ti.UI.createLabel({
         font: {
             fontSize: "22",
@@ -63,7 +63,7 @@ function Controller() {
         color: "#fff",
         id: "iconColor"
     });
-    $.__views.__alloyId40.add($.__views.iconColor);
+    $.__views.__alloyId47.add($.__views.iconColor);
     $.__views.colorTable = Ti.UI.createTableView({
         top: 22,
         width: Titanium.UI.FILL,

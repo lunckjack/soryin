@@ -92,7 +92,7 @@ function Controller() {
         id: "setView"
     });
     $.__views.scrollView.add($.__views.setView);
-    $.__views.__alloyId132 = Ti.UI.createLabel({
+    $.__views.__alloyId144 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -101,30 +101,30 @@ function Controller() {
         right: 10,
         top: 20,
         text: "登录",
-        id: "__alloyId132"
+        id: "__alloyId144"
     });
-    $.__views.setView.add($.__views.__alloyId132);
-    $.__views.__alloyId133 = Ti.UI.createTableViewRow({
-        id: "__alloyId133"
+    $.__views.setView.add($.__views.__alloyId144);
+    $.__views.__alloyId145 = Ti.UI.createTableViewRow({
+        id: "__alloyId145"
     });
-    var __alloyId134 = [];
-    __alloyId134.push($.__views.__alloyId133);
-    $.__views.__alloyId135 = Ti.UI.createLabel({
+    var __alloyId146 = [];
+    __alloyId146.push($.__views.__alloyId145);
+    $.__views.__alloyId147 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId135"
+        id: "__alloyId147"
     });
-    $.__views.__alloyId133.add($.__views.__alloyId135);
+    $.__views.__alloyId145.add($.__views.__alloyId147);
     $.__views.table1 = Ti.UI.createTableView({
         width: Titanium.UI.FILL,
         height: "120",
         separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
-        data: __alloyId134,
+        data: __alloyId146,
         id: "table1",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table1);
     onClickTable1 ? $.__views.table1.addEventListener("click", onClickTable1) : __defers["$.__views.table1!click!onClickTable1"] = true;
-    $.__views.__alloyId136 = Ti.UI.createLabel({
+    $.__views.__alloyId148 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -133,28 +133,28 @@ function Controller() {
         right: 10,
         top: 20,
         text: "向导",
-        id: "__alloyId136"
+        id: "__alloyId148"
     });
-    $.__views.setView.add($.__views.__alloyId136);
-    $.__views.__alloyId137 = Ti.UI.createTableViewRow({
-        id: "__alloyId137"
+    $.__views.setView.add($.__views.__alloyId148);
+    $.__views.__alloyId149 = Ti.UI.createTableViewRow({
+        id: "__alloyId149"
     });
-    var __alloyId138 = [];
-    __alloyId138.push($.__views.__alloyId137);
-    $.__views.__alloyId139 = Ti.UI.createLabel({
+    var __alloyId150 = [];
+    __alloyId150.push($.__views.__alloyId149);
+    $.__views.__alloyId151 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId139"
+        id: "__alloyId151"
     });
-    $.__views.__alloyId137.add($.__views.__alloyId139);
+    $.__views.__alloyId149.add($.__views.__alloyId151);
     $.__views.table2 = Ti.UI.createTableView({
-        data: __alloyId138,
+        data: __alloyId150,
         id: "table2",
         height: "120",
         scrollable: "false"
     });
     $.__views.setView.add($.__views.table2);
     onClickTable2 ? $.__views.table2.addEventListener("click", onClickTable2) : __defers["$.__views.table2!click!onClickTable2"] = true;
-    $.__views.__alloyId140 = Ti.UI.createLabel({
+    $.__views.__alloyId152 = Ti.UI.createLabel({
         font: {
             fontSize: "24",
             fontFamily: "HiraginoSansGB-W3"
@@ -163,21 +163,21 @@ function Controller() {
         right: 10,
         top: 20,
         text: "其他",
-        id: "__alloyId140"
+        id: "__alloyId152"
     });
-    $.__views.setView.add($.__views.__alloyId140);
-    $.__views.__alloyId141 = Ti.UI.createTableViewRow({
-        id: "__alloyId141"
+    $.__views.setView.add($.__views.__alloyId152);
+    $.__views.__alloyId153 = Ti.UI.createTableViewRow({
+        id: "__alloyId153"
     });
-    var __alloyId142 = [];
-    __alloyId142.push($.__views.__alloyId141);
-    $.__views.__alloyId143 = Ti.UI.createLabel({
+    var __alloyId154 = [];
+    __alloyId154.push($.__views.__alloyId153);
+    $.__views.__alloyId155 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId143"
+        id: "__alloyId155"
     });
-    $.__views.__alloyId141.add($.__views.__alloyId143);
+    $.__views.__alloyId153.add($.__views.__alloyId155);
     $.__views.table3 = Ti.UI.createTableView({
-        data: __alloyId142,
+        data: __alloyId154,
         id: "table3",
         height: "60",
         scrollable: "false"

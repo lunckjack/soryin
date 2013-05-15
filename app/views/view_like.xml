@@ -1,17 +1,17 @@
 <Alloy>
 	<View class="container">
 		<!-- 进度 -->
-		<View id="progressView" class="progressView">
-			<ProgressBar id="pb" class="pdView" />
+		<View id="progressView">
+			<Label id="labProcess" class="labProcess"></Label>
 		</View>
-		
+
+
 		<!-- 文字描述 -->
-		<View>
-			<Label class="">喜好</Label>
-		</View>
-		
+
+		<Label class="labDesc">喜好</Label>
+
 		<!--内容 -->
-		<TableView id='table' scrollable="false" height="120">
+		<TableView id='table' scrollable="false">
 
 		</TableView>
 	</View>

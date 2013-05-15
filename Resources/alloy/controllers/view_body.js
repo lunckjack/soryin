@@ -1,57 +1,88 @@
 function Controller() {
+    function change_a() {
+        $.labProcess.text = a + "%";
+        a_num > a && a++;
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
     $.__views.view_body = Ti.UI.createView({
-        backgroundColor: "white",
+        backgroundColor: Alloy.Globals.soryinBgColor,
         layout: "vertical",
         id: "view_body"
     });
     $.__views.view_body && $.addTopLevelView($.__views.view_body);
-    $.__views.checkbox1 = Alloy.createWidget("checkbox", "widget", {
-        id: "checkbox1",
-        color: "red",
-        message: "checkbox1",
-        __parentSymbol: $.__views.view_body
+    $.__views.progressView = Ti.UI.createView({
+        height: 22,
+        width: "0%",
+        backgroundColor: Alloy.Globals.soryinOrangeColor,
+        left: 0,
+        top: 0,
+        id: "progressView"
     });
-    $.__views.checkbox1.setParent($.__views.view_body);
-    $.__views.checkbox2 = Alloy.createWidget("checkbox", "widget", {
-        id: "checkbox2",
-        color: "red",
-        message: "checkbox2",
-        __parentSymbol: $.__views.view_body
+    $.__views.view_body.add($.__views.progressView);
+    $.__views.labProcess = Ti.UI.createLabel({
+        font: {
+            fontSize: "15",
+            fontFamily: "Orbitron",
+            fontWeight: "bold"
+        },
+        color: "#fff",
+        right: 10,
+        id: "labProcess"
     });
-    $.__views.checkbox2.setParent($.__views.view_body);
-    $.__views.checkbox3 = Alloy.createWidget("checkbox", "widget", {
-        id: "checkbox3",
-        color: "red",
-        message: "checkbox3",
-        __parentSymbol: $.__views.view_body
+    $.__views.progressView.add($.__views.labProcess);
+    $.__views.__alloyId46 = Ti.UI.createLabel({
+        font: {
+            fontSize: 50,
+            fontFamily: "HiraginoSansGB-W3",
+            fontWeight: "bold"
+        },
+        color: "#CCCCCC",
+        right: 10,
+        width: Ti.UI.SIZE,
+        height: Ti.UI.SIZE,
+        top: 10,
+        text: "身体",
+        id: "__alloyId46"
     });
-    $.__views.checkbox3.setParent($.__views.view_body);
-    $.__views.checkbox4 = Alloy.createWidget("checkbox", "widget", {
-        id: "checkbox4",
-        color: "red",
-        message: "checkbox4",
-        __parentSymbol: $.__views.view_body
+    $.__views.view_body.add($.__views.__alloyId46);
+    $.__views.table = Ti.UI.createTableView({
+        separatorColor: "#CBCBCB",
+        borderWidth: 1,
+        borderColor: "#CBCBCB",
+        id: "table",
+        scrollable: "false"
     });
-    $.__views.checkbox4.setParent($.__views.view_body);
+    $.__views.view_body.add($.__views.table);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    $.checkbox1.init(function(state) {
-        alert("The box is " + (state ? "checked" : "unchecked"));
-    });
-    $.checkbox2.init(function(state) {
-        alert("The box is " + (state ? "checked" : "unchecked"));
-    });
-    $.checkbox3.init(function(state) {
-        alert("The box is " + (state ? "checked" : "unchecked"));
-    });
-    $.checkbox4.init(function(state) {
-        alert("The box is " + (state ? "checked" : "unchecked"));
-    });
+    var soryin = require("soryin");
+    $.viewFontSize = Alloy.createController("view_fontSize");
+    var a_num = 70;
+    var a = 1;
+    var descs = [ {
+        icon: "0xf2b5",
+        title: "眼睛",
+        subView: $.viewFontSize.getView()
+    } ];
+    var options = {
+        descs: descs,
+        table: $.table,
+        bgColor: Alloy.Globals.soryinBgColor,
+        selColor: Alloy.Globals.soryinOrangeColor
+    };
+    soryin.ckTableView(options);
+    $.init = function() {
+        $.progressView.width = "1%";
+        $.progressView.animate({
+            width: "70%",
+            duration: 800
+        });
+        setInterval(change_a, 3e3 / a_num);
+    };
     _.extend($, exports);
 }
 

@@ -1,0 +1,8 @@
+'#switchBox':{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+},
+'.emojiView':{
+	height:60,
+	width:Titanium.UI.SIZE,
+}

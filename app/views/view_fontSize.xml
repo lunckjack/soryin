@@ -1,0 +1,23 @@
+<Alloy>
+	<View class="container">
+		<View class="viewWidget">
+			<View class="viewLeft">
+				<Label class="fontSmall" id="labSmall">偏爱小字</Label>
+			</View>
+			<Widget id="ckSmall" src="checkbox" class="viewRight" />
+		</View>
+		<View class="viewWidget">
+			<View class="viewLeft">
+				<Label id="labMidum" class="fontMidum">喜欢适中</Label>
+			</View>
+			<Widget id="ckMidnum" src="checkbox" class="viewRight" />
+		</View>
+		<View class="viewWidget">
+			<View class="viewLeft">
+				<Label class="fontBig" id="labBig">越大越好看</Label>
+			</View>
+			<Widget id="ckBig" src="checkbox" class="viewRight" />
+		</View>
+
+	</View>
+</Alloy>

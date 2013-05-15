@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="viewSwitch">
+		<View id="switchbox" />
+		<Label id="circleView" class="circleView" />
+	</View>
+</Alloy>

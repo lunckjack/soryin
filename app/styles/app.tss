@@ -50,3 +50,30 @@
 	bottom:5,
 	color : "#F39C12"
 },
+'.labDesc':{
+	font:{
+		fontSize:50,
+	    fontFamily : 'HiraginoSansGB-W3',
+	    fontWeight:'bold'
+  },
+  color:'#CCCCCC',
+  right:10,
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  top:10
+},
+'.viewWidget':{
+	height:60,
+	width:Titanium.UI.FILL,
+},
+'.viewLeft':{
+	left:50,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	layout:"horizontal"
+},
+'.viewRight': {
+	right:10,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+},

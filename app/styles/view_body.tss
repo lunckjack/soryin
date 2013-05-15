@@ -1,4 +1,25 @@
 ".container": {
-	backgroundColor: "white",
-	layout:"vertical"
+	backgroundColor: Alloy.Globals.soryinBgColor,
+	layout:"vertical",
+},
+'#progressView':{
+	height:22,
+	width:'0%',
+	backgroundColor:Alloy.Globals.soryinOrangeColor,
+	left:0,
+	top:0,
+},
+'.labProcess':{
+	font:{
+		fontSize:'15',
+	    fontFamily : 'Orbitron',
+	    fontWeight:'bold'
+  },
+  color:'#fff',
+  right:10
+}
+'#table':{
+	separatorColor:'#CBCBCB',
+	borderWidth:1,
+	borderColor:'#CBCBCB',
 }

@@ -10,49 +10,49 @@ function Controller() {
         id: "view_mark"
     });
     $.__views.view_mark && $.addTopLevelView($.__views.view_mark);
-    $.__views.__alloyId88 = Ti.UI.createView({
+    $.__views.__alloyId100 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
-        id: "__alloyId88"
+        id: "__alloyId100"
     });
-    $.__views.view_mark.add($.__views.__alloyId88);
-    $.__views.__alloyId89 = Ti.UI.createLabel({
+    $.__views.view_mark.add($.__views.__alloyId100);
+    $.__views.__alloyId101 = Ti.UI.createLabel({
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
         color: "#fff",
         text: "缩影系统",
-        id: "__alloyId89"
+        id: "__alloyId101"
     });
-    $.__views.__alloyId88.add($.__views.__alloyId89);
-    $.__views.__alloyId90 = Ti.UI.createView({
+    $.__views.__alloyId100.add($.__views.__alloyId101);
+    $.__views.__alloyId102 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.SIZE,
         backgroundColor: "#fff",
         layout: "vertical",
-        id: "__alloyId90"
+        id: "__alloyId102"
     });
-    $.__views.view_mark.add($.__views.__alloyId90);
-    $.__views.__alloyId91 = Ti.UI.createView({
+    $.__views.view_mark.add($.__views.__alloyId102);
+    $.__views.__alloyId103 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 60,
-        id: "__alloyId91"
+        id: "__alloyId103"
     });
-    $.__views.__alloyId90.add($.__views.__alloyId91);
-    $.__views.__alloyId92 = Ti.UI.createView({
+    $.__views.__alloyId102.add($.__views.__alloyId103);
+    $.__views.__alloyId104 = Ti.UI.createView({
         left: 20,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId92"
+        id: "__alloyId104"
     });
-    $.__views.__alloyId91.add($.__views.__alloyId92);
-    $.__views.__alloyId93 = Ti.UI.createView({
+    $.__views.__alloyId103.add($.__views.__alloyId104);
+    $.__views.__alloyId105 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId93"
+        id: "__alloyId105"
     });
-    $.__views.__alloyId92.add($.__views.__alloyId93);
+    $.__views.__alloyId104.add($.__views.__alloyId105);
     $.__views.iconUser = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -62,8 +62,8 @@ function Controller() {
         textAlign: "center",
         id: "iconUser"
     });
-    $.__views.__alloyId93.add($.__views.iconUser);
-    $.__views.__alloyId94 = Ti.UI.createLabel({
+    $.__views.__alloyId105.add($.__views.iconUser);
+    $.__views.__alloyId106 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -72,23 +72,23 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "认证用户",
-        id: "__alloyId94"
+        id: "__alloyId106"
     });
-    $.__views.__alloyId93.add($.__views.__alloyId94);
-    $.__views.__alloyId95 = Ti.UI.createView({
+    $.__views.__alloyId105.add($.__views.__alloyId106);
+    $.__views.__alloyId107 = Ti.UI.createView({
         right: 10,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId95"
+        id: "__alloyId107"
     });
-    $.__views.__alloyId91.add($.__views.__alloyId95);
-    $.__views.__alloyId96 = Ti.UI.createView({
+    $.__views.__alloyId103.add($.__views.__alloyId107);
+    $.__views.__alloyId108 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId96"
+        id: "__alloyId108"
     });
-    $.__views.__alloyId95.add($.__views.__alloyId96);
+    $.__views.__alloyId107.add($.__views.__alloyId108);
     $.__views.iconLogout = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -99,8 +99,8 @@ function Controller() {
         text: "",
         id: "iconLogout"
     });
-    $.__views.__alloyId96.add($.__views.iconLogout);
-    $.__views.__alloyId97 = Ti.UI.createLabel({
+    $.__views.__alloyId108.add($.__views.iconLogout);
+    $.__views.__alloyId109 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -109,29 +109,29 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "登出",
-        id: "__alloyId97"
+        id: "__alloyId109"
     });
-    $.__views.__alloyId96.add($.__views.__alloyId97);
-    $.__views.__alloyId98 = Ti.UI.createView({
+    $.__views.__alloyId108.add($.__views.__alloyId109);
+    $.__views.__alloyId110 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 60,
-        id: "__alloyId98"
+        id: "__alloyId110"
     });
-    $.__views.__alloyId90.add($.__views.__alloyId98);
-    $.__views.__alloyId99 = Ti.UI.createView({
+    $.__views.__alloyId102.add($.__views.__alloyId110);
+    $.__views.__alloyId111 = Ti.UI.createView({
         left: 20,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId99"
+        id: "__alloyId111"
     });
-    $.__views.__alloyId98.add($.__views.__alloyId99);
-    $.__views.__alloyId100 = Ti.UI.createView({
+    $.__views.__alloyId110.add($.__views.__alloyId111);
+    $.__views.__alloyId112 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId100"
+        id: "__alloyId112"
     });
-    $.__views.__alloyId99.add($.__views.__alloyId100);
+    $.__views.__alloyId111.add($.__views.__alloyId112);
     $.__views.iconEnter = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -141,8 +141,8 @@ function Controller() {
         textAlign: "center",
         id: "iconEnter"
     });
-    $.__views.__alloyId100.add($.__views.iconEnter);
-    $.__views.__alloyId101 = Ti.UI.createLabel({
+    $.__views.__alloyId112.add($.__views.iconEnter);
+    $.__views.__alloyId113 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -151,23 +151,23 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "进入内容",
-        id: "__alloyId101"
+        id: "__alloyId113"
     });
-    $.__views.__alloyId100.add($.__views.__alloyId101);
-    $.__views.__alloyId102 = Ti.UI.createView({
+    $.__views.__alloyId112.add($.__views.__alloyId113);
+    $.__views.__alloyId114 = Ti.UI.createView({
         right: 10,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId102"
+        id: "__alloyId114"
     });
-    $.__views.__alloyId98.add($.__views.__alloyId102);
-    $.__views.__alloyId103 = Ti.UI.createView({
+    $.__views.__alloyId110.add($.__views.__alloyId114);
+    $.__views.__alloyId115 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId103"
+        id: "__alloyId115"
     });
-    $.__views.__alloyId102.add($.__views.__alloyId103);
+    $.__views.__alloyId114.add($.__views.__alloyId115);
     $.__views.iconExpend = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -177,8 +177,8 @@ function Controller() {
         textAlign: "center",
         id: "iconExpend"
     });
-    $.__views.__alloyId103.add($.__views.iconExpend);
-    $.__views.__alloyId104 = Ti.UI.createLabel({
+    $.__views.__alloyId115.add($.__views.iconExpend);
+    $.__views.__alloyId116 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -187,29 +187,29 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "展开内容",
-        id: "__alloyId104"
+        id: "__alloyId116"
     });
-    $.__views.__alloyId103.add($.__views.__alloyId104);
-    $.__views.__alloyId105 = Ti.UI.createView({
+    $.__views.__alloyId115.add($.__views.__alloyId116);
+    $.__views.__alloyId117 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 60,
-        id: "__alloyId105"
+        id: "__alloyId117"
     });
-    $.__views.__alloyId90.add($.__views.__alloyId105);
-    $.__views.__alloyId106 = Ti.UI.createView({
+    $.__views.__alloyId102.add($.__views.__alloyId117);
+    $.__views.__alloyId118 = Ti.UI.createView({
         left: 20,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId106"
+        id: "__alloyId118"
     });
-    $.__views.__alloyId105.add($.__views.__alloyId106);
-    $.__views.__alloyId107 = Ti.UI.createView({
+    $.__views.__alloyId117.add($.__views.__alloyId118);
+    $.__views.__alloyId119 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId107"
+        id: "__alloyId119"
     });
-    $.__views.__alloyId106.add($.__views.__alloyId107);
+    $.__views.__alloyId118.add($.__views.__alloyId119);
     $.__views.iconFun = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -219,8 +219,8 @@ function Controller() {
         textAlign: "center",
         id: "iconFun"
     });
-    $.__views.__alloyId107.add($.__views.iconFun);
-    $.__views.__alloyId108 = Ti.UI.createLabel({
+    $.__views.__alloyId119.add($.__views.iconFun);
+    $.__views.__alloyId120 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -229,23 +229,23 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "功能",
-        id: "__alloyId108"
+        id: "__alloyId120"
     });
-    $.__views.__alloyId107.add($.__views.__alloyId108);
-    $.__views.__alloyId109 = Ti.UI.createView({
+    $.__views.__alloyId119.add($.__views.__alloyId120);
+    $.__views.__alloyId121 = Ti.UI.createView({
         right: 10,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId109"
+        id: "__alloyId121"
     });
-    $.__views.__alloyId105.add($.__views.__alloyId109);
-    $.__views.__alloyId110 = Ti.UI.createView({
+    $.__views.__alloyId117.add($.__views.__alloyId121);
+    $.__views.__alloyId122 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId110"
+        id: "__alloyId122"
     });
-    $.__views.__alloyId109.add($.__views.__alloyId110);
+    $.__views.__alloyId121.add($.__views.__alloyId122);
     $.__views.iconSort = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -255,8 +255,8 @@ function Controller() {
         textAlign: "center",
         id: "iconSort"
     });
-    $.__views.__alloyId110.add($.__views.iconSort);
-    $.__views.__alloyId111 = Ti.UI.createLabel({
+    $.__views.__alloyId122.add($.__views.iconSort);
+    $.__views.__alloyId123 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -265,29 +265,29 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "筛选",
-        id: "__alloyId111"
+        id: "__alloyId123"
     });
-    $.__views.__alloyId110.add($.__views.__alloyId111);
-    $.__views.__alloyId112 = Ti.UI.createView({
+    $.__views.__alloyId122.add($.__views.__alloyId123);
+    $.__views.__alloyId124 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 60,
-        id: "__alloyId112"
+        id: "__alloyId124"
     });
-    $.__views.__alloyId90.add($.__views.__alloyId112);
-    $.__views.__alloyId113 = Ti.UI.createView({
+    $.__views.__alloyId102.add($.__views.__alloyId124);
+    $.__views.__alloyId125 = Ti.UI.createView({
         left: 20,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId113"
+        id: "__alloyId125"
     });
-    $.__views.__alloyId112.add($.__views.__alloyId113);
-    $.__views.__alloyId114 = Ti.UI.createView({
+    $.__views.__alloyId124.add($.__views.__alloyId125);
+    $.__views.__alloyId126 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId114"
+        id: "__alloyId126"
     });
-    $.__views.__alloyId113.add($.__views.__alloyId114);
+    $.__views.__alloyId125.add($.__views.__alloyId126);
     $.__views.iconSave = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -297,8 +297,8 @@ function Controller() {
         textAlign: "center",
         id: "iconSave"
     });
-    $.__views.__alloyId114.add($.__views.iconSave);
-    $.__views.__alloyId115 = Ti.UI.createLabel({
+    $.__views.__alloyId126.add($.__views.iconSave);
+    $.__views.__alloyId127 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -307,23 +307,23 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "保存",
-        id: "__alloyId115"
+        id: "__alloyId127"
     });
-    $.__views.__alloyId114.add($.__views.__alloyId115);
-    $.__views.__alloyId116 = Ti.UI.createView({
+    $.__views.__alloyId126.add($.__views.__alloyId127);
+    $.__views.__alloyId128 = Ti.UI.createView({
         right: 10,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId116"
+        id: "__alloyId128"
     });
-    $.__views.__alloyId112.add($.__views.__alloyId116);
-    $.__views.__alloyId117 = Ti.UI.createView({
+    $.__views.__alloyId124.add($.__views.__alloyId128);
+    $.__views.__alloyId129 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId117"
+        id: "__alloyId129"
     });
-    $.__views.__alloyId116.add($.__views.__alloyId117);
+    $.__views.__alloyId128.add($.__views.__alloyId129);
     $.__views.iconRet = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -333,8 +333,8 @@ function Controller() {
         textAlign: "center",
         id: "iconRet"
     });
-    $.__views.__alloyId117.add($.__views.iconRet);
-    $.__views.__alloyId118 = Ti.UI.createLabel({
+    $.__views.__alloyId129.add($.__views.iconRet);
+    $.__views.__alloyId130 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -343,52 +343,52 @@ function Controller() {
         height: Titanium.UI.SIZE,
         left: 10,
         text: "返回",
-        id: "__alloyId118"
+        id: "__alloyId130"
     });
-    $.__views.__alloyId117.add($.__views.__alloyId118);
-    $.__views.__alloyId119 = Ti.UI.createView({
+    $.__views.__alloyId129.add($.__views.__alloyId130);
+    $.__views.__alloyId131 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
-        id: "__alloyId119"
+        id: "__alloyId131"
     });
-    $.__views.view_mark.add($.__views.__alloyId119);
-    $.__views.__alloyId120 = Ti.UI.createLabel({
+    $.__views.view_mark.add($.__views.__alloyId131);
+    $.__views.__alloyId132 = Ti.UI.createLabel({
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
         color: "#fff",
         text: "世界通用",
-        id: "__alloyId120"
+        id: "__alloyId132"
     });
-    $.__views.__alloyId119.add($.__views.__alloyId120);
-    $.__views.__alloyId121 = Ti.UI.createView({
+    $.__views.__alloyId131.add($.__views.__alloyId132);
+    $.__views.__alloyId133 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: Titanium.UI.SIZE,
         backgroundColor: "#fff",
         layout: "vertical",
-        id: "__alloyId121"
+        id: "__alloyId133"
     });
-    $.__views.view_mark.add($.__views.__alloyId121);
-    $.__views.__alloyId122 = Ti.UI.createView({
+    $.__views.view_mark.add($.__views.__alloyId133);
+    $.__views.__alloyId134 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 60,
-        id: "__alloyId122"
+        id: "__alloyId134"
     });
-    $.__views.__alloyId121.add($.__views.__alloyId122);
-    $.__views.__alloyId123 = Ti.UI.createView({
+    $.__views.__alloyId133.add($.__views.__alloyId134);
+    $.__views.__alloyId135 = Ti.UI.createView({
         left: 20,
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId123"
+        id: "__alloyId135"
     });
-    $.__views.__alloyId122.add($.__views.__alloyId123);
-    $.__views.__alloyId124 = Ti.UI.createView({
+    $.__views.__alloyId134.add($.__views.__alloyId135);
+    $.__views.__alloyId136 = Ti.UI.createView({
         layout: "horizontal",
         width: Titanium.UI.SIZE,
         height: Titanium.UI.SIZE,
-        id: "__alloyId124"
+        id: "__alloyId136"
     });
-    $.__views.__alloyId123.add($.__views.__alloyId124);
+    $.__views.__alloyId135.add($.__views.__alloyId136);
     $.__views.iconLogo = Ti.UI.createLabel({
         font: {
             fontSize: 40,
@@ -398,8 +398,8 @@ function Controller() {
         textAlign: "center",
         id: "iconLogo"
     });
-    $.__views.__alloyId124.add($.__views.iconLogo);
-    $.__views.__alloyId125 = Ti.UI.createLabel({
+    $.__views.__alloyId136.add($.__views.iconLogo);
+    $.__views.__alloyId137 = Ti.UI.createLabel({
         font: {
             fontSize: "18",
             fontFamily: "HiraginoSansGB-W3"
@@ -410,9 +410,9 @@ function Controller() {
         color: "#F39C12",
         top: 10,
         text: "缩影Logo",
-        id: "__alloyId125"
+        id: "__alloyId137"
     });
-    $.__views.__alloyId124.add($.__views.__alloyId125);
+    $.__views.__alloyId136.add($.__views.__alloyId137);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var entypo = require("ti.entypo");
