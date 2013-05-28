@@ -3,15 +3,14 @@
 		<View id="viewPublish">
 			<View class="viewFun">
 				<Label id="iconPublish" class="iconFont"></Label>
-				<Label class="labView">发布</Label>
+				<!-- <Label class="labView">发布</Label> -->
 			</View>
 		</View>
 		<View id="viewSense">
 			<View class="viewFun">
 				<Label id="iconSense" class="iconFont"></Label>
-				<Label class="labView">读取</Label>
+				<!--<Label class="labView">读取</Label>  -->
 			</View>
-
 		</View>
 	</View>
 </Alloy>

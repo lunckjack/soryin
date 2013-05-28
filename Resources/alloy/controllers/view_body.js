@@ -17,7 +17,7 @@ function Controller() {
     $.__views.progressView = Ti.UI.createView({
         height: 22,
         width: "0%",
-        backgroundColor: Alloy.Globals.soryinOrangeColor,
+        backgroundColor: Alloy.Globals.soryinGreenColor,
         left: 0,
         top: 0,
         id: "progressView"
@@ -34,21 +34,21 @@ function Controller() {
         id: "labProcess"
     });
     $.__views.progressView.add($.__views.labProcess);
-    $.__views.__alloyId46 = Ti.UI.createLabel({
+    $.__views.__alloyId47 = Ti.UI.createLabel({
         font: {
             fontSize: 50,
             fontFamily: "HiraginoSansGB-W3",
             fontWeight: "bold"
         },
-        color: "#CCCCCC",
+        color: Alloy.Globals.soryinKwGrayColor,
         right: 10,
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         top: 10,
         text: "身体",
-        id: "__alloyId46"
+        id: "__alloyId47"
     });
-    $.__views.view_body.add($.__views.__alloyId46);
+    $.__views.view_body.add($.__views.__alloyId47);
     $.__views.table = Ti.UI.createTableView({
         separatorColor: "#CBCBCB",
         borderWidth: 1,
@@ -61,7 +61,7 @@ function Controller() {
     _.extend($, $.__views);
     var soryin = require("soryin");
     $.viewFontSize = Alloy.createController("view_fontSize");
-    var a_num = 70;
+    var a_num = 80;
     var a = 1;
     var descs = [ {
         icon: "0xf2b5",
@@ -76,9 +76,9 @@ function Controller() {
     };
     soryin.ckTableView(options);
     $.init = function() {
-        $.progressView.width = "1%";
+        $.progressView.width = "0.5%";
         $.progressView.animate({
-            width: "70%",
+            width: "80%",
             duration: 800
         });
         setInterval(change_a, 3e3 / a_num);

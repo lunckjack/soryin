@@ -1,7 +1,7 @@
 function Controller() {
     function loadColorTableView() {
         for (var i = 0; colors.length > i; i++) {
-            var colorName = colors[i].colorName;
+            colors[i].colorName;
             var iconColor = colors[i].iconColor;
             var colorDesc = colors[i].colorDesc;
             var row = Ti.UI.createTableViewRow({
@@ -9,17 +9,11 @@ function Controller() {
                 selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE
             });
             var title = Ti.UI.createLabel({
-                text: colorName,
-                left: 0,
-                width: 110,
-                height: 60,
-                font: {
-                    fontSize: "24",
-                    fontFamily: "HiraginoSansGB-W3"
-                },
-                color: "#fff",
+                left: 20,
+                width: 50,
+                height: 50,
                 backgroundColor: iconColor,
-                textAlign: "center"
+                borderRadius: 25
             });
             var desc = Ti.UI.createLabel({
                 font: {
@@ -28,7 +22,7 @@ function Controller() {
                 },
                 text: colorDesc,
                 color: iconColor,
-                left: 130,
+                left: 100,
                 textAlign: "center"
             });
             row.add(title);
@@ -47,14 +41,14 @@ function Controller() {
         id: "view_color"
     });
     $.__views.view_color && $.addTopLevelView($.__views.view_color);
-    $.__views.__alloyId47 = Ti.UI.createView({
+    $.__views.__alloyId48 = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: 22,
         backgroundColor: "#494949",
         top: 0,
-        id: "__alloyId47"
+        id: "__alloyId48"
     });
-    $.__views.view_color.add($.__views.__alloyId47);
+    $.__views.view_color.add($.__views.__alloyId48);
     $.__views.iconColor = Ti.UI.createLabel({
         font: {
             fontSize: "22",
@@ -63,7 +57,7 @@ function Controller() {
         color: "#fff",
         id: "iconColor"
     });
-    $.__views.__alloyId47.add($.__views.iconColor);
+    $.__views.__alloyId48.add($.__views.iconColor);
     $.__views.colorTable = Ti.UI.createTableView({
         top: 22,
         width: Titanium.UI.FILL,
@@ -78,19 +72,19 @@ function Controller() {
     var colors = [ {
         colorName: "缩影橙",
         iconColor: Alloy.Globals.soryinOrangeColor,
-        colorDesc: "缩影信息|功能"
+        colorDesc: "缩影"
     }, {
         colorName: "石灰绿",
         iconColor: Alloy.Globals.soryinGreenColor,
-        colorDesc: "即将|正确|通行"
+        colorDesc: "安全|正确|通行"
     }, {
         colorName: "大洞蓝",
         iconColor: Alloy.Globals.soryinBlueColor,
-        colorDesc: "一般信息"
+        colorDesc: "普通信息"
     }, {
         colorName: "石榴红",
         iconColor: Alloy.Globals.soryinSlRedColor,
-        colorDesc: "结束|警告|危险"
+        colorDesc: "停止|警告"
     }, {
         colorName: "小桃红",
         iconColor: Alloy.Globals.soryinPinkColor,
@@ -98,11 +92,11 @@ function Controller() {
     }, {
         colorName: "矿物灰",
         iconColor: Alloy.Globals.soryinKwGrayColor,
-        colorDesc: "文字内容|陪衬"
+        colorDesc: "细节"
     }, {
         colorName: "石棉灰",
         iconColor: Alloy.Globals.soryinSmGrayColor,
-        colorDesc: "其他辅助"
+        colorDesc: "辅助"
     } ];
     var tableData = [];
     loadColorTableView();

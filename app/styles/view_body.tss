@@ -5,7 +5,7 @@
 '#progressView':{
 	height:22,
 	width:'0%',
-	backgroundColor:Alloy.Globals.soryinOrangeColor,
+	backgroundColor:Alloy.Globals.soryinGreenColor,
 	left:0,
 	top:0,
 },

@@ -194,37 +194,37 @@ function Controller() {
         navBarHidden: "true"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId73 = Ti.UI.createView({
+    $.__views.__alloyId72 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId73"
+        id: "__alloyId72"
     });
-    $.__views.container.add($.__views.__alloyId73);
-    var __alloyId74 = [];
+    $.__views.container.add($.__views.__alloyId72);
+    var __alloyId73 = [];
     $.__views.scrollableView = Ti.UI.createScrollableView({
         width: Titanium.UI.FILL,
         height: "160dp",
-        views: __alloyId74,
+        views: __alloyId73,
         id: "scrollableView",
         showPagingControl: "true",
         pagingControlOnTop: "true",
         pagingControlColor: "#f2f2f2"
     });
-    $.__views.__alloyId73.add($.__views.scrollableView);
-    $.__views.__alloyId75 = Ti.UI.createTableViewRow({
-        id: "__alloyId75"
+    $.__views.__alloyId72.add($.__views.scrollableView);
+    $.__views.__alloyId74 = Ti.UI.createTableViewRow({
+        id: "__alloyId74"
     });
-    var __alloyId76 = [];
-    __alloyId76.push($.__views.__alloyId75);
-    $.__views.__alloyId77 = Ti.UI.createLabel({
+    var __alloyId75 = [];
+    __alloyId75.push($.__views.__alloyId74);
+    $.__views.__alloyId76 = Ti.UI.createLabel({
         text: "done.....",
-        id: "__alloyId77"
+        id: "__alloyId76"
     });
-    $.__views.__alloyId75.add($.__views.__alloyId77);
+    $.__views.__alloyId74.add($.__views.__alloyId76);
     $.__views.table1 = Ti.UI.createTableView({
-        data: __alloyId76,
+        data: __alloyId75,
         id: "table1"
     });
-    $.__views.__alloyId73.add($.__views.table1);
+    $.__views.__alloyId72.add($.__views.table1);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var ui = require("ui");

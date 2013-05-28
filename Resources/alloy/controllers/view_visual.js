@@ -21,13 +21,13 @@ function Controller() {
         id: "tab1"
     });
     $.__views.tab.add($.__views.tab1);
-    $.__views.__alloyId156 = Ti.UI.createView({
+    $.__views.__alloyId163 = Ti.UI.createView({
         layout: "horizontal",
         top: "10dp",
         left: "50dp",
-        id: "__alloyId156"
+        id: "__alloyId163"
     });
-    $.__views.tab1.add($.__views.__alloyId156);
+    $.__views.tab1.add($.__views.__alloyId163);
     $.__views.l2 = Ti.UI.createLabel({
         font: {
             fontSize: 20,
@@ -36,23 +36,23 @@ function Controller() {
         },
         id: "l2"
     });
-    $.__views.__alloyId156.add($.__views.l2);
+    $.__views.__alloyId163.add($.__views.l2);
     $.__views.l1 = Ti.UI.createLabel({
         text: "色彩",
         id: "l1"
     });
-    $.__views.__alloyId156.add($.__views.l1);
+    $.__views.__alloyId163.add($.__views.l1);
     $.__views.tab2 = Ti.UI.createView({
         id: "tab2"
     });
     $.__views.tab.add($.__views.tab2);
-    $.__views.__alloyId157 = Ti.UI.createView({
+    $.__views.__alloyId164 = Ti.UI.createView({
         layout: "horizontal",
         top: "10dp",
         left: "50dp",
-        id: "__alloyId157"
+        id: "__alloyId164"
     });
-    $.__views.tab2.add($.__views.__alloyId157);
+    $.__views.tab2.add($.__views.__alloyId164);
     $.__views.l4 = Ti.UI.createLabel({
         font: {
             fontSize: 20,
@@ -61,12 +61,12 @@ function Controller() {
         },
         id: "l4"
     });
-    $.__views.__alloyId157.add($.__views.l4);
+    $.__views.__alloyId164.add($.__views.l4);
     $.__views.l3 = Ti.UI.createLabel({
         text: "符号",
         id: "l3"
     });
-    $.__views.__alloyId157.add($.__views.l3);
+    $.__views.__alloyId164.add($.__views.l3);
     $.__views.scrollView = Ti.UI.createScrollView({
         id: "scrollView",
         showVerticalScrollIndicator: "true",

@@ -3,7 +3,7 @@ var soryin = require('soryin');
 $.viewFontSize = Alloy.createController('view_fontSize');
 
 
-var a_num = 70;
+var a_num = 80;
 
 var a = 1;
 
@@ -30,9 +30,9 @@ var options = {
 soryin.ckTableView(options);
 $.init = function() {
 	
-	$.progressView.width='1%';
+	$.progressView.width='0.5%';
 	$.progressView.animate({
-		width : '70%',
+		width : '80%',
 		duration : 800
 	});
 	var crear_a = setInterval(change_a, (3000 / a_num));

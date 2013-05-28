@@ -10,15 +10,15 @@ function Controller() {
         id: "row"
     });
     $.__views.row && $.addTopLevelView($.__views.row);
-    $.__views.__alloyId24 = Ti.UI.createImageView({
+    $.__views.__alloyId25 = Ti.UI.createImageView({
         height: "33dp",
         width: "33dp",
         left: "0",
         image: "undefined" != typeof $model.__transform["image"] ? $model.__transform["image"] : $model.get("image"),
-        id: "__alloyId24"
+        id: "__alloyId25"
     });
-    $.__views.row.add($.__views.__alloyId24);
-    $.__views.__alloyId25 = Ti.UI.createLabel({
+    $.__views.row.add($.__views.__alloyId25);
+    $.__views.__alloyId26 = Ti.UI.createLabel({
         color: "#222",
         font: {
             fontSize: "32dp",
@@ -27,9 +27,9 @@ function Controller() {
         height: Ti.UI.SIZE,
         left: "20dp",
         text: "undefined" != typeof $model.__transform["title"] ? $model.__transform["title"] : $model.get("title"),
-        id: "__alloyId25"
+        id: "__alloyId26"
     });
-    $.__views.row.add($.__views.__alloyId25);
+    $.__views.row.add($.__views.__alloyId26);
     $.__views.iconFont = Ti.UI.createLabel({
         right: 10,
         font: {

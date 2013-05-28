@@ -8,18 +8,17 @@ $.ckTime.init(function(state) {
 			$.ckTime24.setChecked(false);
 		}
 
-		$.time.color = Alloy.Globals.soryinOrangeColor;
-		$.labTime.color = Alloy.Globals.soryinOrangeColor;
+		$.time.color = Alloy.Globals.soryinSmGrayColor;
+		$.labTime.color = Alloy.Globals.soryinSmGrayColor;
 
-		$.time12.color = '#000';
-		$.labTime12.color = '#000';
+		$.time12.color = '#fff';
+		$.labTime12.color = '#fff';
 
-		$.time24.color = '#000';
+		$.time24.color = '#fff';
 	} else {
-		$.time.color = '#000';
-		$.labTime.color = '#000';
+		$.time.color = '#fff';
+		$.labTime.color = 'fff';
 	}
-
 });
 
 $.ckTime12.init(function(state) {
@@ -32,16 +31,16 @@ $.ckTime12.init(function(state) {
 			$.ckTime24.setChecked(false);
 		}
 
-		$.time12.color = Alloy.Globals.soryinOrangeColor;
-		$.labTime12.color = Alloy.Globals.soryinOrangeColor;
+		$.time12.color = Alloy.Globals.soryinSmGrayColor;
+		$.labTime12.color =Alloy.Globals.soryinSmGrayColor;
 
-		$.time.color = '#000';
-		$.labTime.color = '#000';
+		$.time.color = '#fff';
+		$.labTime.color = '#fff';
 
-		$.time24.color = '#000';
+		$.time24.color = '#fff';
 	} else {
-		$.time12.color = '#000';
-		$.labTime12.color = '#000';
+		$.time12.color = '#fff';
+		$.labTime12.color = '#fff';
 	}
 });
 
@@ -55,14 +54,14 @@ $.ckTime24.init(function(state) {
 		if ($.ckTime12.isChecked) {
 			$.ckTime12.setChecked(false);
 		}
-		$.time24.color = Alloy.Globals.soryinOrangeColor;
+		$.time24.color = Alloy.Globals.soryinSmGrayColor;
 
-		$.time.color = '#000';
-		$.labTime.color = '#000';
-		$.time12.color = '#000';
-		$.labTime12.color = '#000';
+		$.time.color = '#fff';
+		$.labTime.color = '#fff';
+		$.time12.color = '#fff';
+		$.labTime12.color = '#fff';
 	} else {
-		$.time24.color = '#000';
+		$.time24.color = '#fff';
 	}
 });
 

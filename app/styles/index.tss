@@ -1,6 +1,11 @@
 ".container": { 
-	backgroundColor:'#f2f2f2',
-	backgroundColor:Alloy.Globals.soryinBgColor,
+	
+},
+'#webview':{
+	width:320,
+	height:480,
+	showScrollbars:false,
+	disableBounce:true
 },
 //顶部
 '#viewTop': { 
@@ -8,27 +13,39 @@
 	width:Titanium.UI.FILL
 },
 '#viewContent': { 
-	height:'200',
+	height:'100',
 	width:Titanium.UI.FILL,
-	backgroundColor:'#fff',
+	backgroundColor:Alloy.Globals.soryinOrangeColor,
 	borderRadius:'10',
-	borderWidth:'1',
-	borderColor:Alloy.Globals.soryinBgColor,
 	top:'10',
 	left:'10',
-	right:'10'
-}
-,
+	right:'10',
+	opacity:0.8,
+	backgroundSelectedColor:'#F2940C'
+},
+'#viewSenond': {
+	height:'100',
+	width:Titanium.UI.FILL,
+	backgroundColor:Alloy.Globals.soryinPinkColor,
+	borderRadius:'10',
+	top:'10',
+	left:'10',
+	right:'10',
+	opacity:0.8,
+	backgroundSelectedColor:Alloy.Globals.soryinPinkColor,
+	backgroundFocusedColor:Alloy.Globals.soryinPinkColor
+},
 '#viewBoottom': { 
 	height:'100',
 	width:Titanium.UI.FILL,
-	backgroundColor:'#fff',
+	backgroundColor:Alloy.Globals.soryinKwGrayColor,
 	borderRadius:'10',
-	borderWidth:'1',
-	borderColor:Alloy.Globals.soryinBgColor,
 	top:'10',
 	left:'10',
-	right:'10'
+	right:'10',
+	opacity:0.8,
+	backgroundSelectedColor:Alloy.Globals.soryinKwGrayColor,
+	backgroundFocusedColor:Alloy.Globals.soryinKwGrayColor
 },
 '.view_left':{
 	height:'110',
@@ -167,5 +184,7 @@
 '#viewFun':{
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE,
-	backgroundColor:Alloy.Globals.soryinBgColor
+},
+'#webview':{
+	
 }

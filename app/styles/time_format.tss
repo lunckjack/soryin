@@ -1,5 +1,5 @@
 ".container": { 
-	backgroundColor:"white",
+	backgroundColor:Alloy.Globals.soryinGreenColor,
 	height:Titanium.UI.SIZE,
 	width:Titanium.UI.FILL,
 	layout:"vertical",
@@ -10,7 +10,7 @@
 		    fontFamily : "Let's go Digital",
 		    fontWeight:'bold'
 	  },
-	  color:Alloy.Globals.soryinKwGrayColor
+	  color:'#fff'
 },
 '.labTxt':{
 	font:{
@@ -19,5 +19,5 @@
 	    fontWeight:'bold'
   },
   left:5,
-  color:Alloy.Globals.soryinKwGrayColor
+  color:'#fff'
 }

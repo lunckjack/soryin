@@ -1,4 +1,5 @@
 var entypo = require('ti.entypo');
+$.iconSoryin.text=entypo.fromCodePoint("0xe054");
 $.iconUser.text = entypo.fromCodePoint("0xe06f");
 $.iconLogout.text = entypo.fromCodePoint("0xe047");
 $.iconEnter.text = entypo.fromCodePoint("0xf3c9");
@@ -7,4 +8,6 @@ $.iconFun.text = entypo.fromCodePoint("0xe02f");
 $.iconSort.text = entypo.fromCodePoint("0xe027");
 $.iconSave.text = entypo.fromCodePoint("0xe077");
 $.iconRet.text = entypo.fromCodePoint("0xe023");
+$.iconWorld.text=entypo.fromCodePoint("0xe08c");
 $.iconLogo.text = entypo.fromCodePoint("0xe054");
+$.iconFinish.text = entypo.fromCodePoint("0xe088");

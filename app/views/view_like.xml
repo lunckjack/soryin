@@ -4,10 +4,8 @@
 		<View id="progressView">
 			<Label id="labProcess" class="labProcess"></Label>
 		</View>
-
-
+		
 		<!-- 文字描述 -->
-
 		<Label class="labDesc">喜好</Label>
 
 		<!--内容 -->

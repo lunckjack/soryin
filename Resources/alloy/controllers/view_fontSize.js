@@ -10,20 +10,20 @@ function Controller() {
         id: "view_fontSize"
     });
     $.__views.view_fontSize && $.addTopLevelView($.__views.view_fontSize);
-    $.__views.__alloyId62 = Ti.UI.createView({
+    $.__views.__alloyId63 = Ti.UI.createView({
         height: 60,
         width: Titanium.UI.FILL,
-        id: "__alloyId62"
+        id: "__alloyId63"
     });
-    $.__views.view_fontSize.add($.__views.__alloyId62);
-    $.__views.__alloyId63 = Ti.UI.createView({
+    $.__views.view_fontSize.add($.__views.__alloyId63);
+    $.__views.__alloyId64 = Ti.UI.createView({
         left: 50,
         height: Titanium.UI.SIZE,
         width: Titanium.UI.FILL,
         layout: "horizontal",
-        id: "__alloyId63"
+        id: "__alloyId64"
     });
-    $.__views.__alloyId62.add($.__views.__alloyId63);
+    $.__views.__alloyId63.add($.__views.__alloyId64);
     $.__views.labSmall = Ti.UI.createLabel({
         font: {
             fontSize: 15,
@@ -33,29 +33,29 @@ function Controller() {
         text: "偏爱小字",
         id: "labSmall"
     });
-    $.__views.__alloyId63.add($.__views.labSmall);
+    $.__views.__alloyId64.add($.__views.labSmall);
     $.__views.ckSmall = Alloy.createWidget("checkbox", "widget", {
         right: 10,
         height: Titanium.UI.SIZE,
         width: Titanium.UI.SIZE,
         id: "ckSmall",
-        __parentSymbol: $.__views.__alloyId62
+        __parentSymbol: $.__views.__alloyId63
     });
-    $.__views.ckSmall.setParent($.__views.__alloyId62);
-    $.__views.__alloyId64 = Ti.UI.createView({
+    $.__views.ckSmall.setParent($.__views.__alloyId63);
+    $.__views.__alloyId65 = Ti.UI.createView({
         height: 60,
         width: Titanium.UI.FILL,
-        id: "__alloyId64"
+        id: "__alloyId65"
     });
-    $.__views.view_fontSize.add($.__views.__alloyId64);
-    $.__views.__alloyId65 = Ti.UI.createView({
+    $.__views.view_fontSize.add($.__views.__alloyId65);
+    $.__views.__alloyId66 = Ti.UI.createView({
         left: 50,
         height: Titanium.UI.SIZE,
         width: Titanium.UI.FILL,
         layout: "horizontal",
-        id: "__alloyId65"
+        id: "__alloyId66"
     });
-    $.__views.__alloyId64.add($.__views.__alloyId65);
+    $.__views.__alloyId65.add($.__views.__alloyId66);
     $.__views.labMidum = Ti.UI.createLabel({
         font: {
             fontSize: 24,
@@ -65,29 +65,29 @@ function Controller() {
         text: "喜欢适中",
         id: "labMidum"
     });
-    $.__views.__alloyId65.add($.__views.labMidum);
+    $.__views.__alloyId66.add($.__views.labMidum);
     $.__views.ckMidnum = Alloy.createWidget("checkbox", "widget", {
         right: 10,
         height: Titanium.UI.SIZE,
         width: Titanium.UI.SIZE,
         id: "ckMidnum",
-        __parentSymbol: $.__views.__alloyId64
+        __parentSymbol: $.__views.__alloyId65
     });
-    $.__views.ckMidnum.setParent($.__views.__alloyId64);
-    $.__views.__alloyId66 = Ti.UI.createView({
+    $.__views.ckMidnum.setParent($.__views.__alloyId65);
+    $.__views.__alloyId67 = Ti.UI.createView({
         height: 60,
         width: Titanium.UI.FILL,
-        id: "__alloyId66"
+        id: "__alloyId67"
     });
-    $.__views.view_fontSize.add($.__views.__alloyId66);
-    $.__views.__alloyId67 = Ti.UI.createView({
+    $.__views.view_fontSize.add($.__views.__alloyId67);
+    $.__views.__alloyId68 = Ti.UI.createView({
         left: 50,
         height: Titanium.UI.SIZE,
         width: Titanium.UI.FILL,
         layout: "horizontal",
-        id: "__alloyId67"
+        id: "__alloyId68"
     });
-    $.__views.__alloyId66.add($.__views.__alloyId67);
+    $.__views.__alloyId67.add($.__views.__alloyId68);
     $.__views.labBig = Ti.UI.createLabel({
         font: {
             fontSize: 36,
@@ -97,15 +97,15 @@ function Controller() {
         text: "越大越好看",
         id: "labBig"
     });
-    $.__views.__alloyId67.add($.__views.labBig);
+    $.__views.__alloyId68.add($.__views.labBig);
     $.__views.ckBig = Alloy.createWidget("checkbox", "widget", {
         right: 10,
         height: Titanium.UI.SIZE,
         width: Titanium.UI.SIZE,
         id: "ckBig",
-        __parentSymbol: $.__views.__alloyId66
+        __parentSymbol: $.__views.__alloyId67
     });
-    $.__views.ckBig.setParent($.__views.__alloyId66);
+    $.__views.ckBig.setParent($.__views.__alloyId67);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.ckSmall.init(function(state) {

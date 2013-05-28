@@ -1,7 +1,4 @@
 var soryin = require('soryin');
-// $.pb.value = 50;
-// $.pb.message = "%";
-// $.pb.show();
 $.timeFormat = Alloy.createController('time_format');
 $.viewEmoji = Alloy.createController('view_emoji');
 var a_num = 90;
@@ -15,11 +12,9 @@ function change_a() {
 	}
 }
 
-// $.process.width = '80%';
-
 var descs = [ {
 	'icon' : "0xe037",
-	'title' : "时间格式",
+	'title' : "时间显示",
 	'subView' : $.timeFormat.getView()
 }, {
 	'icon' : '0xe038',
@@ -31,13 +26,12 @@ var options = {
 	'descs' : descs,
 	'table' : $.table,
 	'bgColor' : Alloy.Globals.soryinBgColor,
-	'selColor' : Alloy.Globals.soryinOrangeColor
+	'selColor' : Alloy.Globals.soryinGreenColor
 };
 
 soryin.ckTableView(options);
 
 $.init = function() {
-	
 	$.progressView.width='1%';
 	$.progressView.animate({
 		width : '90%',

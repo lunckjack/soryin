@@ -1,23 +1,30 @@
 ".container": {
 	 width:Titanium.UI.FILL,
-	 height:100
+	 height:100,
+	 opacity:0.8
 },
 '#viewPublish': { 
 	left:20,
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE
+	width:100,
+	height:100,
+	backgroundColor:'#fff',
+	borderRadius:50,
+	
 },
 '#viewSense': {
 	right:20,
-	width:Titanium.UI.SIZE,
-	height:Titanium.UI.SIZE
+	width:100,
+	height:100,
+	backgroundColor:'#fff',
+	borderRadius:50,
+	
 },
 '.iconFont':{
 	font:{
 		fontSize:'60',
 	    fontFamily : 'soryin'
  },
- color:'#F39C12'
+ color:'#494949'
 },
 '.viewFun':{
 	layout:"horizontal",

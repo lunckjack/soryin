@@ -36,8 +36,8 @@ function bindTableEvent(table, options) {
                 table.deleteRow(i + 1);
                 rows[i].isOpen = false;
             }
-            e.row.backgroundColor = "#fff";
-            changeBgColor(e, selColor);
+            e.row.backgroundColor = selColor;
+            changeBgColor(e, "#fff");
         }
     });
 }
@@ -58,7 +58,7 @@ exports.ckTableView = function(options) {
     var table = options.table;
     var descs = options.descs;
     var bgColor = options.bgColor;
-    options.selColor;
+    var selColor = options.selColor;
     for (i = 0; descs.length > i; i++) {
         var icon = descs[i].icon;
         var title = descs[i].title;
@@ -105,7 +105,7 @@ exports.ckTableView = function(options) {
             color: Alloy.Globals.soryinKwGrayColor
         });
         var subrow = Ti.UI.createTableViewRow({
-            selectedBackgroundColor: "transparent",
+            selectedBackgroundColor: selColor,
             layout: "vertical",
             height: Titanium.UI.SIZE
         });

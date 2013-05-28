@@ -23,80 +23,80 @@ function Controller() {
         id: "column1"
     });
     $.__views.picker.add($.__views.column1);
-    $.__views.__alloyId52 = Ti.UI.createPickerRow({
-        id: "__alloyId52"
+    $.__views.__alloyId53 = Ti.UI.createPickerRow({
+        id: "__alloyId53"
     });
-    $.__views.column1.addRow($.__views.__alloyId52);
-    $.__views.__alloyId53 = Ti.UI.createLabel({
+    $.__views.column1.addRow($.__views.__alloyId53);
+    $.__views.__alloyId54 = Ti.UI.createLabel({
         font: {
             fontSize: 24
         },
         textAlign: "center",
         width: 126,
         text: "字母",
-        id: "__alloyId53"
-    });
-    $.__views.__alloyId52.add($.__views.__alloyId53);
-    $.__views.__alloyId54 = Ti.UI.createPickerRow({
         id: "__alloyId54"
     });
-    $.__views.column1.addRow($.__views.__alloyId54);
-    $.__views.__alloyId55 = Ti.UI.createLabel({
+    $.__views.__alloyId53.add($.__views.__alloyId54);
+    $.__views.__alloyId55 = Ti.UI.createPickerRow({
+        id: "__alloyId55"
+    });
+    $.__views.column1.addRow($.__views.__alloyId55);
+    $.__views.__alloyId56 = Ti.UI.createLabel({
         font: {
             fontSize: 24
         },
         textAlign: "center",
         width: 126,
         text: "时间",
-        id: "__alloyId55"
-    });
-    $.__views.__alloyId54.add($.__views.__alloyId55);
-    $.__views.__alloyId56 = Ti.UI.createPickerRow({
         id: "__alloyId56"
     });
-    $.__views.column1.addRow($.__views.__alloyId56);
-    $.__views.__alloyId57 = Ti.UI.createLabel({
+    $.__views.__alloyId55.add($.__views.__alloyId56);
+    $.__views.__alloyId57 = Ti.UI.createPickerRow({
+        id: "__alloyId57"
+    });
+    $.__views.column1.addRow($.__views.__alloyId57);
+    $.__views.__alloyId58 = Ti.UI.createLabel({
         font: {
             fontSize: 24
         },
         textAlign: "center",
         width: 126,
         text: "类别",
-        id: "__alloyId57"
+        id: "__alloyId58"
     });
-    $.__views.__alloyId56.add($.__views.__alloyId57);
+    $.__views.__alloyId57.add($.__views.__alloyId58);
     $.__views.column2 = Ti.UI.createPickerColumn({
         id: "column2"
     });
     $.__views.picker.add($.__views.column2);
-    $.__views.__alloyId58 = Ti.UI.createPickerRow({
-        id: "__alloyId58"
+    $.__views.__alloyId59 = Ti.UI.createPickerRow({
+        id: "__alloyId59"
     });
-    $.__views.column2.addRow($.__views.__alloyId58);
-    $.__views.__alloyId59 = Ti.UI.createLabel({
+    $.__views.column2.addRow($.__views.__alloyId59);
+    $.__views.__alloyId60 = Ti.UI.createLabel({
         font: {
             fontSize: 24
         },
         textAlign: "center",
         width: 126,
         text: "全部",
-        id: "__alloyId59"
-    });
-    $.__views.__alloyId58.add($.__views.__alloyId59);
-    $.__views.__alloyId60 = Ti.UI.createPickerRow({
         id: "__alloyId60"
     });
-    $.__views.column2.addRow($.__views.__alloyId60);
-    $.__views.__alloyId61 = Ti.UI.createLabel({
+    $.__views.__alloyId59.add($.__views.__alloyId60);
+    $.__views.__alloyId61 = Ti.UI.createPickerRow({
+        id: "__alloyId61"
+    });
+    $.__views.column2.addRow($.__views.__alloyId61);
+    $.__views.__alloyId62 = Ti.UI.createLabel({
         font: {
             fontSize: 24
         },
         textAlign: "center",
         width: 126,
         text: "喜欢",
-        id: "__alloyId61"
+        id: "__alloyId62"
     });
-    $.__views.__alloyId60.add($.__views.__alloyId61);
+    $.__views.__alloyId61.add($.__views.__alloyId62);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

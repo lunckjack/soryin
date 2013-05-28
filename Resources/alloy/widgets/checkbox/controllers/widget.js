@@ -6,7 +6,7 @@ function WPATH(s) {
 
 function Controller() {
     function changeState(state) {
-        $.chk.color = state ? Alloy.Globals.soryinOrangeColor : "#000";
+        $.chk.color = state ? Alloy.Globals.soryinSmGrayColor : "#fff";
         $.chk.text = state ? entypo.fromCodePoint("0xe064") : entypo.fromCodePoint("0xe01c");
     }
     new (require("alloy/widget"))("checkbox");
@@ -28,7 +28,7 @@ function Controller() {
             fontSize: 16,
             fontFamily: "soryin"
         },
-        color: "#000",
+        color: "#fff",
         id: "chk"
     });
     $.__views.checkbox.add($.__views.chk);

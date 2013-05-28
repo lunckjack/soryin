@@ -65,8 +65,8 @@ function bindTableEvent(table, options) {
 						rows[i].isOpen = false;
 					}
 				}
-				e.row.backgroundColor = '#fff';
-				changeBgColor(e, selColor);
+				e.row.backgroundColor = selColor;
+				changeBgColor(e, "#fff");
 			}
 		}
 	});
@@ -92,12 +92,10 @@ exports.ckTableView = function(options) {
 	// 选中后的颜色
 	var selColor = options.selColor;
 
-//	var tableHeight=0;
 	for (i = 0; i < descs.length; i++) {
 		var icon = descs[i].icon;
 		var title = descs[i].title;
 		var subView = descs[i].subView;
-//		tableHeight += subView.getHeight();
 		// row 一行
 		var row = Ti.UI
 				.createTableViewRow({
@@ -149,9 +147,9 @@ exports.ckTableView = function(options) {
 		});
 
 		var subrow = Ti.UI.createTableViewRow({
-			selectedBackgroundColor : 'transparent',
+			selectedBackgroundColor : selColor,
 			layout : 'vertical',
-			height : Titanium.UI.SIZE
+			height : Titanium.UI.SIZE,
 		});
 
 		subrow.add(subView);
@@ -170,7 +168,6 @@ exports.ckTableView = function(options) {
 		row.arrow = arrow;
 		tableData[i] = row;
 	}
-//	table.height = tableHeight + (descs.length) * 60;
 	table.setData(tableData);
 	// 绑定事件
 	bindTableEvent(table, options);

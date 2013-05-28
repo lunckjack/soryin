@@ -38,18 +38,18 @@ function Controller() {
         id: "view_block"
     });
     $.__views.view_block && $.addTopLevelView($.__views.view_block);
-    var __alloyId36 = [];
-    $.__views.__alloyId37 = Ti.UI.createView({
+    var __alloyId37 = [];
+    $.__views.__alloyId38 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId37"
+        id: "__alloyId38"
     });
-    __alloyId36.push($.__views.__alloyId37);
+    __alloyId37.push($.__views.__alloyId38);
     $.__views.viewTop = Ti.UI.createView({
         width: Titanium.UI.FILL,
         height: "110",
         id: "viewTop"
     });
-    $.__views.__alloyId37.add($.__views.viewTop);
+    $.__views.__alloyId38.add($.__views.viewTop);
     $.__views.viewTop_viewEventType = Ti.UI.createView({
         backgroundColor: Alloy.Globals.btn_orange,
         width: 110,
@@ -105,12 +105,12 @@ function Controller() {
         id: "img_default"
     });
     $.__views.viewTop.add($.__views.img_default);
-    $.__views.__alloyId38 = Ti.UI.createScrollView({
+    $.__views.__alloyId39 = Ti.UI.createScrollView({
         showVerticalScrollIndicator: "true",
         layout: "vertical",
-        id: "__alloyId38"
+        id: "__alloyId39"
     });
-    $.__views.__alloyId37.add($.__views.__alloyId38);
+    $.__views.__alloyId38.add($.__views.__alloyId39);
     $.__views.viewTimeAndLocation = Ti.UI.createView({
         height: 100,
         width: Titanium.UI.FILL,
@@ -122,7 +122,7 @@ function Controller() {
         id: "viewTimeAndLocation",
         layout: "horizontal"
     });
-    $.__views.__alloyId38.add($.__views.viewTimeAndLocation);
+    $.__views.__alloyId39.add($.__views.viewTimeAndLocation);
     $.__views.viewTimeAndLocation_Time = Ti.UI.createView({
         width: 150,
         height: 100,
@@ -229,7 +229,7 @@ function Controller() {
         id: "viewEntity",
         layout: "horizontal"
     });
-    $.__views.__alloyId38.add($.__views.viewEntity);
+    $.__views.__alloyId39.add($.__views.viewEntity);
     $.__views.viewEntity_organization = Ti.UI.createView({
         width: 150,
         height: 100,
@@ -336,7 +336,7 @@ function Controller() {
         id: "viewFoot",
         layout: "vertical"
     });
-    $.__views.__alloyId38.add($.__views.viewFoot);
+    $.__views.__alloyId39.add($.__views.viewFoot);
     $.__views.viewFoot_top = Ti.UI.createView({
         height: 100,
         width: Titanium.UI.FILL,
@@ -545,7 +545,7 @@ function Controller() {
         id: "maskview",
         visible: "false"
     });
-    $.__views.__alloyId37.add($.__views.maskview);
+    $.__views.__alloyId38.add($.__views.maskview);
     $.__views.actionview = Ti.UI.createView({
         backgroundColor: "transparent",
         id: "actionview"
@@ -560,15 +560,15 @@ function Controller() {
         layout: "vertical"
     });
     $.__views.actionview.add($.__views.m2);
-    $.__views.__alloyId39 = Ti.UI.createView({
+    $.__views.__alloyId40 = Ti.UI.createView({
         layout: "horizontal",
-        id: "__alloyId39"
+        id: "__alloyId40"
     });
-    $.__views.m2.add($.__views.__alloyId39);
+    $.__views.m2.add($.__views.__alloyId40);
     $.__views.email = Ti.UI.createView({
         id: "email"
     });
-    $.__views.__alloyId39.add($.__views.email);
+    $.__views.__alloyId40.add($.__views.email);
     $.__views.toEmail = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -577,15 +577,15 @@ function Controller() {
         id: "toEmail"
     });
     $.__views.email.add($.__views.toEmail);
-    $.__views.__alloyId40 = Ti.UI.createLabel({
+    $.__views.__alloyId41 = Ti.UI.createLabel({
         text: "电子邮件",
-        id: "__alloyId40"
+        id: "__alloyId41"
     });
-    $.__views.email.add($.__views.__alloyId40);
+    $.__views.email.add($.__views.__alloyId41);
     $.__views.msg = Ti.UI.createView({
         id: "msg"
     });
-    $.__views.__alloyId39.add($.__views.msg);
+    $.__views.__alloyId40.add($.__views.msg);
     $.__views.toMsg = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -594,15 +594,15 @@ function Controller() {
         id: "toMsg"
     });
     $.__views.msg.add($.__views.toMsg);
-    $.__views.__alloyId41 = Ti.UI.createLabel({
+    $.__views.__alloyId42 = Ti.UI.createLabel({
         text: "短信",
-        id: "__alloyId41"
+        id: "__alloyId42"
     });
-    $.__views.msg.add($.__views.__alloyId41);
+    $.__views.msg.add($.__views.__alloyId42);
     $.__views.evernote = Ti.UI.createView({
         id: "evernote"
     });
-    $.__views.__alloyId39.add($.__views.evernote);
+    $.__views.__alloyId40.add($.__views.evernote);
     $.__views.toEvernote = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -611,11 +611,11 @@ function Controller() {
         id: "toEvernote"
     });
     $.__views.evernote.add($.__views.toEvernote);
-    $.__views.__alloyId42 = Ti.UI.createLabel({
+    $.__views.__alloyId43 = Ti.UI.createLabel({
         text: "印象笔记",
-        id: "__alloyId42"
+        id: "__alloyId43"
     });
-    $.__views.evernote.add($.__views.__alloyId42);
+    $.__views.evernote.add($.__views.__alloyId43);
     $.__views.line = Ti.UI.createView({
         width: "310dp",
         height: "1",
@@ -626,15 +626,15 @@ function Controller() {
         id: "line"
     });
     $.__views.m2.add($.__views.line);
-    $.__views.__alloyId43 = Ti.UI.createView({
+    $.__views.__alloyId44 = Ti.UI.createView({
         layout: "horizontal",
-        id: "__alloyId43"
+        id: "__alloyId44"
     });
-    $.__views.m2.add($.__views.__alloyId43);
+    $.__views.m2.add($.__views.__alloyId44);
     $.__views.msg = Ti.UI.createView({
         id: "msg"
     });
-    $.__views.__alloyId43.add($.__views.msg);
+    $.__views.__alloyId44.add($.__views.msg);
     $.__views.toWeixin = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -643,15 +643,15 @@ function Controller() {
         id: "toWeixin"
     });
     $.__views.msg.add($.__views.toWeixin);
-    $.__views.__alloyId44 = Ti.UI.createLabel({
+    $.__views.__alloyId45 = Ti.UI.createLabel({
         text: "微信",
-        id: "__alloyId44"
+        id: "__alloyId45"
     });
-    $.__views.msg.add($.__views.__alloyId44);
+    $.__views.msg.add($.__views.__alloyId45);
     $.__views.copy = Ti.UI.createView({
         id: "copy"
     });
-    $.__views.__alloyId43.add($.__views.copy);
+    $.__views.__alloyId44.add($.__views.copy);
     $.__views.toWeibo = Ti.UI.createButton({
         width: "57dp",
         height: "57dp",
@@ -660,14 +660,14 @@ function Controller() {
         id: "toWeibo"
     });
     $.__views.copy.add($.__views.toWeibo);
-    $.__views.__alloyId45 = Ti.UI.createLabel({
+    $.__views.__alloyId46 = Ti.UI.createLabel({
         text: "微博",
-        id: "__alloyId45"
+        id: "__alloyId46"
     });
-    $.__views.copy.add($.__views.__alloyId45);
+    $.__views.copy.add($.__views.__alloyId46);
     $.__views.scrollable = Ti.UI.createScrollableView({
         backgroundColor: Alloy.Globals.reg_gray,
-        views: __alloyId36,
+        views: __alloyId37,
         id: "scrollable"
     });
     $.__views.view_block.add($.__views.scrollable);

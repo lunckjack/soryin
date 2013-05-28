@@ -15,7 +15,7 @@ exports.init = function(callback) {
 };
 
 function changeState(state) {
-	$.chk.color = (state) ? Alloy.Globals.soryinOrangeColor : "#000";
+	$.chk.color = (state) ? Alloy.Globals.soryinSmGrayColor : "#fff";
 	$.chk.text = (state) ? entypo.fromCodePoint("0xe064") : entypo
 			.fromCodePoint("0xe01c");
 }

@@ -13,6 +13,13 @@ $.publish = Alloy.createController('view_publish');
 $.sense = Alloy.createController('view_sense');
 $.like = Alloy.createController('view_like');
 $.body = Alloy.createController('view_body');
+
+var pageImg = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,
+		"/img/bg.svg");
+$.webview.html = "<html><head><style> html, body { margin: 0px; padding: 0px; } </style></head><body><image src="
+		+ pageImg.getNativePath()
+		+ " style='width:320;height:480;'/></body></html>";
+
 // 自我
 $.view_left.addEventListener('click', function() {
 	scrollToView($.content, $.seting.getView(), 1);
@@ -96,7 +103,7 @@ $.view_like.addEventListener('click', function() {
 // 身体
 
 $.view_body.addEventListener('click', function() {
-	$.body.init(); 
+	$.body.init();
 	scrollToView($.content, $.body.getView(), 1);
 });
 // 返回首页
@@ -167,6 +174,7 @@ function viewAnimation() {
  */
 function setIconFont() {
 
+	var defaultColor = '#fff';
 	var colorBlue = Alloy.Globals.soryinBlueColor;
 	var pinkColor = Alloy.Globals.soryinPinkColor;
 	var kwColor = Alloy.Globals.soryinKwGrayColor;
@@ -177,30 +185,36 @@ function setIconFont() {
 	$.icon_cover.text = entypo.fromCodePoint("0xe02b");
 	$.icon_cover.color = "#ccc";
 	// icon 经验
-	$.icon_express.text = entypo.fromCodePoint("0xf2b0");
-	$.icon_express.color = colorBlue;
-	$.expressNum.color = colorBlue;
-	$.lab_express.color = colorBlue;
+	$.icon_express.text = entypo.fromCodePoint("0xe07a");
+	$.icon_express.color = defaultColor;
+	$.expressNum.color = defaultColor;
+	$.lab_express.color = defaultColor;
 	// icon 级别
 	$.icon_level.text = entypo.fromCodePoint("0xf2e6");
-	$.icon_level.color = colorBlue;
-	$.levelNum.color = colorBlue;
-	$.lab_level.color = colorBlue;
+	$.icon_level.color = defaultColor;
+	$.levelNum.color = defaultColor;
+	$.lab_level.color = defaultColor;
 	// icon 关注
 	$.icon_attention.text = entypo.fromCodePoint("0xe02d");
-	$.icon_attention.color = pinkColor;
-	$.attentionNum.color = pinkColor;
-	$.lab_attention.color = pinkColor;
+	$.icon_attention.color = defaultColor;
+	$.attentionNum.color = defaultColor;
+	$.lab_attention.color = defaultColor;
+
+	$.icon_mine.text = entypo.fromCodePoint("0xe038");
+	$.icon_mine.color = defaultColor;
+	$.mineNum.color = defaultColor;
+	$.lab_mine.color = defaultColor;
+
 	// icon 喜好
-	$.icon_like.text = entypo.fromCodePoint("0xe029");
-	$.icon_like.color = kwColor;
-	$.likePercent.color = kwColor;
-	$.lab_like.color = kwColor;
+	$.icon_like.text = entypo.fromCodePoint("0xe08a");
+	$.icon_like.color = defaultColor;
+	$.likePercent.color = defaultColor;
+	$.lab_like.color = defaultColor;
 	// icon 身体
 	$.icon_body.text = entypo.fromCodePoint("0xe044");
-	$.icon_body.color = kwColor;
-	$.bodyPercent.color = kwColor;
-	$.lab_body.color = kwColor;
+	$.icon_body.color = defaultColor;
+	$.bodyPercent.color = defaultColor;
+	$.lab_body.color = defaultColor;
 
 	// 返回首页
 	$.backToIndex.text = entypo.fromCodePoint("0xe023");
@@ -252,7 +266,7 @@ if (loadFirst) {
 }
 
 var a = 1, b = 1, c = 1, d = 1, e = 1;
-var a_num = 36, b_num = 3, c_num = 5, d_num = 80, e_num = 30;
+var a_num = 36, b_num = 3, c_num = 5, d_num = 100, e_num = 0;
 
 function changeExpress() {
 
@@ -277,9 +291,11 @@ function changeAttention() {
 }
 function changeLike() {
 	$.likePercent.text = (d + "%");
+	
 	if (d < d_num) {
 		d++;
 	}
+	
 }
 function changeBody() {
 	$.bodyPercent.text = (e + "%");
@@ -293,6 +309,9 @@ function changeBody() {
 	var crear_c = setInterval(changeAttention, (3000 / c_num));
 	var crear_d = setInterval(changeLike, (3000 / d_num));
 	var crear_e = setInterval(changeBody, (3000 / e_num));
+}
+if(d_num>10){
+	$.likePercent.font = { fontSize: 25,fontFamily : 'Orbitron'}
 }
 
 $.index.open();

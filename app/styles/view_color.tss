@@ -18,4 +18,9 @@
 	    fontFamily : 'soryin'
  },
  color:'#fff'
+},
+'colorCircle':{
+	width:50,
+	height:50,
+	borderRadius:'25',
 }

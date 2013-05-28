@@ -17,7 +17,7 @@ function Controller() {
     $.__views.progressView = Ti.UI.createView({
         height: 22,
         width: "0%",
-        backgroundColor: Alloy.Globals.soryinOrangeColor,
+        backgroundColor: Alloy.Globals.soryinGreenColor,
         left: 0,
         top: 0,
         id: "progressView"
@@ -34,26 +34,27 @@ function Controller() {
         id: "labProcess"
     });
     $.__views.progressView.add($.__views.labProcess);
-    $.__views.__alloyId72 = Ti.UI.createLabel({
+    $.__views.__alloyId71 = Ti.UI.createLabel({
         font: {
             fontSize: 50,
             fontFamily: "HiraginoSansGB-W3",
             fontWeight: "bold"
         },
-        color: "#CCCCCC",
+        color: Alloy.Globals.soryinKwGrayColor,
         right: 10,
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         top: 10,
         text: "喜好",
-        id: "__alloyId72"
+        id: "__alloyId71"
     });
-    $.__views.view_like.add($.__views.__alloyId72);
+    $.__views.view_like.add($.__views.__alloyId71);
     $.__views.table = Ti.UI.createTableView({
         separatorColor: "#CBCBCB",
         borderWidth: 1,
         borderColor: "#CBCBCB",
         width: Titanium.UI.FILL,
+        height: Titanium.UI.FILL,
         id: "table",
         scrollable: "false"
     });
@@ -67,7 +68,7 @@ function Controller() {
     var a = 1;
     var descs = [ {
         icon: "0xe037",
-        title: "时间格式",
+        title: "时间显示",
         subView: $.timeFormat.getView()
     }, {
         icon: "0xe038",
@@ -78,7 +79,7 @@ function Controller() {
         descs: descs,
         table: $.table,
         bgColor: Alloy.Globals.soryinBgColor,
-        selColor: Alloy.Globals.soryinOrangeColor
+        selColor: Alloy.Globals.soryinGreenColor
     };
     soryin.ckTableView(options);
     $.init = function() {

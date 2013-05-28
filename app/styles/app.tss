@@ -56,7 +56,7 @@
 	    fontFamily : 'HiraginoSansGB-W3',
 	    fontWeight:'bold'
   },
-  color:'#CCCCCC',
+  color:Alloy.Globals.soryinKwGrayColor,
   right:10,
   width: Ti.UI.SIZE,
   height: Ti.UI.SIZE,

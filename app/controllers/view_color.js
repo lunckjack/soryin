@@ -4,19 +4,19 @@ $.iconColor.text = entypo.fromCodePoint("0xe070");
 var colors = [ {
 	'colorName' : "缩影橙",
 	'iconColor' : Alloy.Globals.soryinOrangeColor, // 缩影橙
-	'colorDesc' : "缩影信息|功能"
+	'colorDesc' : "缩影"
 }, {
 	'colorName' : '石灰绿',
 	'iconColor' : Alloy.Globals.soryinGreenColor, // 石灰绿
-	'colorDesc' : '即将|正确|通行'
+	'colorDesc' : '安全|正确|通行'
 }, {
 	'colorName' : '大洞蓝',
 	'iconColor' : Alloy.Globals.soryinBlueColor, // 大洞蓝
-	'colorDesc' : '一般信息'
+	'colorDesc' : '普通信息'
 }, {
 	'colorName' : '石榴红',
 	'iconColor' : Alloy.Globals.soryinSlRedColor, // 石榴红
-	'colorDesc' : '结束|警告|危险'
+	'colorDesc' : '停止|警告'
 }, {
 	'colorName' : '小桃红',
 	'iconColor' : Alloy.Globals.soryinPinkColor, // 小桃红
@@ -24,11 +24,11 @@ var colors = [ {
 }, {
 	'colorName' : '矿物灰',
 	'iconColor' : Alloy.Globals.soryinKwGrayColor, // 矿物灰
-	'colorDesc' : '文字内容|陪衬'
+	'colorDesc' : '细节'
 }, {
 	'colorName' : '石棉灰',
 	'iconColor' : Alloy.Globals.soryinSmGrayColor, // 石棉灰
-	'colorDesc' : '其他辅助'
+	'colorDesc' : '辅助'
 } ];
 var tableData = [];
 function loadColorTableView() {
@@ -43,17 +43,11 @@ function loadColorTableView() {
 
 				});
 		var title = Ti.UI.createLabel({
-			text : colorName,
-			left : 0,
-			width : 110,
-			height : 60,
-			font : {
-				fontSize : '24',
-				fontFamily : "HiraginoSansGB-W3",
-			},
-			color : '#fff',
+			left : 20,
+			width : 50,
+			height : 50,
 			backgroundColor : iconColor,
-			textAlign:'center'
+			borderRadius : 25
 		});
 		// 标题
 		var desc = Ti.UI.createLabel({
@@ -63,10 +57,9 @@ function loadColorTableView() {
 			},
 			text : colorDesc,
 			color : iconColor,
-			left : 130,
-			textAlign:'center'
+			left : 100,
+			textAlign : 'center'
 		});
-
 		row.add(title);
 		row.add(desc);
 		tableData[i] = row;

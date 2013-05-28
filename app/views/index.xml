@@ -1,81 +1,95 @@
 <Alloy>
 	<Window class="container">
-		<ScrollableView id="scrollable" scrollingEnabled="false">
-			<View layout="vertical">
+		<WebView id="webview">
+			<ScrollableView id="scrollable" scrollingEnabled="false">
 
-				<!-- 头部 -->
-				<View id="viewTop">
-					<View id="view_left" class="view_left">
-						<Label id="icon_me" class="iconFont" />
-						<Label text="我" class="lab_me" />
+				<View layout="vertical">
+					<!-- 头部 -->
+					<View id="viewTop">
+						<View id="view_left" class="view_left">
+							<Label id="icon_me" class="iconFont" />
+							<Label text="我" class="lab_me" />
+						</View>
+						<View id="view_right">
+							<Label id="icon_cover" class="iconFont" />
+							<Label text="添加封面" class="lab_cover" />
+						</View>
 					</View>
-					<View id="view_right">
-						<Label id="icon_cover" class="iconFont" />
-						<Label text="添加封面" class="lab_cover" />
-					</View>
+
+					<!-- 内容 -->
+					<ScrollView id="scrollView" showVerticalScrollIndicator="false"
+						layout="vertical">
+						<View id=viewFun />
+						<View id="viewContent">
+							<!-- 经验 级别 -->
+							<View id="view_express" class="view_fontL">
+								<Label class="iconFont" id="icon_express"></Label>
+								<View class="view_lab">
+									<Label class="fontNum" id="expressNum">36</Label>
+									<Label id="lab_express">经验</Label>
+								</View>
+							</View>
+
+							<View id="view_level" class="view_fontR">
+								<Label class="iconFont" id="icon_level"></Label>
+								<View class="view_lab">
+									<Label class="fontNum" id="levelNum">1</Label>
+									<Label id="lab_level">级别</Label>
+								</View>
+							</View>
+						</View>
+
+						<View id="viewSenond">
+							<!-- 关注 -->
+							<View id="view_attention" class="view_fontL">
+								<Label class="iconFont" id="icon_attention"></Label>
+								<View class="view_lab">
+									<Label class="fontNum" id="attentionNum">5</Label>
+									<Label id="lab_attention">关注</Label>
+								</View>
+							</View>
+							<!-- 我的 -->
+							<View id="view_mine" class="view_fontR">
+								<Label class="iconFont" id="icon_mine"></Label>
+								<View class="view_lab">
+									<Label class="fontNum" id="mineNum">0</Label>
+									<Label id="lab_mine">我的</Label>
+								</View>
+
+							</View>
+
+						</View>
+
+						<!-- 底部 -->
+						<View id="viewBoottom">
+							<View id="view_like" class="view_fontL">
+								<Label class="iconFont" id="icon_like"></Label>
+								<View class="view_lab">
+									<Label class="fontNum" id="likePercent">0%</Label>
+									<Label id="lab_like">喜好</Label>
+								</View>
+							</View>
+							<View id="view_body" class="view_fontR">
+								<Label class="iconFont" id="icon_body"></Label>
+								<View class="view_lab">
+									<Label class="fontNum" id="bodyPercent">0%</Label>
+									<Label id="lab_body">身体</Label>
+								</View>
+							</View>
+						</View>
+					</ScrollView>
+				</View>
+				<View>
+					<View id="content"></View>
+					<Label id="backToIndex" class="backButton" />
+				</View>
+				<View>
+					<View id="childContent"></View>
+					<Label id="backToParent" class="backButton" />
 				</View>
 
-				<!-- 内容 -->
-				<ScrollView id="scrollView" showVerticalScrollIndicator="false"
-					layout="vertical">
-					<View id=viewFun />
-					<View id="viewContent">
-						<!-- 经验 级别 -->
-						<View id="view_express" class="view_fontL">
-							<Label class="iconFont" id="icon_express"></Label>
-							<View class="view_lab">
-								<Label class="fontNum" id="expressNum">36</Label>
-								<Label id="lab_express">经验</Label>
-							</View>
-						</View>
-
-						<View id="view_level" class="view_fontR">
-							<Label class="iconFont" id="icon_level"></Label>
-							<View class="view_lab">
-								<Label class="fontNum" id="levelNum">1</Label>
-								<Label id="lab_level">级别</Label>
-							</View>
-						</View>
-						<!-- 关注 -->
-						<View id="view_attention" class="view_fontB">
-							<Label class="iconFont" id="icon_attention"></Label>
-							<View class="view_lab">
-								<Label class="fontNum" id="attentionNum">5</Label>
-								<Label id="lab_attention">关注</Label>
-							</View>
-
-						</View>
-					</View>
-
-					<!-- 底部 -->
-					<View id="viewBoottom">
-						<View id="view_like" class="view_fontL">
-							<Label class="iconFont" id="icon_like"></Label>
-							<View class="view_lab">
-								<Label class="fontNum" id="likePercent">0%</Label>
-								<Label id="lab_like">喜好</Label>
-							</View>
-						</View>
-						<View id="view_body" class="view_fontR">
-							<Label class="iconFont" id="icon_body"></Label>
-							<View class="view_lab">
-								<Label class="fontNum" id="bodyPercent">0%</Label>
-								<Label id="lab_body">身体</Label>
-							</View>
-						</View>
-					</View>
-				</ScrollView>
-			</View>
-			<View>
-				<View id="content"></View>
-				<Label id="backToIndex" class="backButton" />
-			</View>
-			<View>
-				<View id="childContent"></View>
-				<Label id="backToParent" class="backButton" />
-			</View>
-		</ScrollableView>
-
+			</ScrollableView>
+		</WebView>
 		<!-- 说明 1 -->
 		<View id="readView1" visible="false" class="splashView">
 			<View class="view_left">
